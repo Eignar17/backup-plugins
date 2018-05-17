@@ -1,0 +1,154 @@
+<compiz>
+  <!-- animationaddon metadata -->
+  <plugin name="animationjc" useBcop="true">
+    <_short>Animations Experimental</_short>
+    <_long>Extra window animations</_long>
+    <category>Effects</category>
+    <deps>
+      <requirement>
+	<plugin>opengl</plugin>
+	<plugin>animation</plugin>
+      </requirement>
+      <relation type="after">
+	<plugin>opengl</plugin>
+	<plugin>composite</plugin>
+	<plugin>animation</plugin>
+	<plugin>decor</plugin>
+      </relation>
+    </deps>
+
+    <options>
+    <group>
+      <_short>Effect Settings</_short>
+
+      <subgroup>
+        <_short>Black Hole</_short>
+	<option name="blackhole_delay" type="float">
+	  <_short>Delay</_short>
+	  <default>0.75</default>
+	  <min>0.0</min>
+	  <max>0.99</max>
+	  <precision>0.01</precision>
+	</option>
+      </subgroup>
+
+      <subgroup>
+        <_short>Flicker</_short>
+	<option name="flicker_amplitude" type="int">
+	  <_short>Amplitude</_short>
+	  <default>3</default>
+	  <min>1</min>
+	  <max>10</max>
+	</option>
+      </subgroup>
+
+      <subgroup>
+        <_short>Ghost</_short>
+	<option name="ghost_grid" type="int">
+	  <_short>Grid</_short>
+	  <default>20</default>
+	  <min>2</min>
+	  <max>20</max>
+	</option>
+
+	<option name="ghost_saturation" type="float">
+	  <_short>Saturation</_short>
+	  <default>0.0</default>
+	  <min>0.0</min>
+	  <max>1.0</max>
+	  <precision>0.1</precision>
+	</option>
+
+	<option name="ghost_amplitude" type="float">
+	  <_short>Amplitude</_short>
+	  <default>1.0</default>
+	  <min>0.0</min>
+	  <max>5.0</max>
+	</option>
+
+	<option name="ghost_wave_speed" type="float">
+	  <_short>Wave Speed</_short>
+	  <default>1.0</default>
+	  <min>0.0</min>
+	  <max>5.0</max>
+	</option>
+      </subgroup>
+
+      <subgroup>
+        <_short>Popcorn</_short>
+	<option name="popcorn_kernel_height" type="float">
+	  <_short>Kernel Height</_short>
+	  <default>1.0</default>
+	  <min>0.0</min>
+	  <max>5.0</max>
+	  <precision>0.1</precision>
+	</option>
+      </subgroup>
+
+      <subgroup>
+        <_short>Raindrop</_short>
+
+	<option name="raindrop_amplitude" type="float">
+	  <_short>Amplitude</_short>
+	  <default>1.0</default>
+	  <min>-5.0</min>
+	  <max>5.0</max>
+	  <precision>0.1</precision>
+	</option>
+
+	<option name="raindrop_wavelength" type="float">
+	  <_short>Wavelength</_short>
+	  <default>0.4</default>
+	  <min>0.0</min>
+	  <max>1.0</max>
+	  <precision>0.05</precision>
+	</option>
+
+	<option name="raindrop_num_waves" type="int">
+	  <_short>Number of Waves</_short>
+	  <default>1</default>
+	  <min>1</min>
+	  <max>5</max>
+	</option>
+      </subgroup>
+    </group>
+    </options>
+
+    <extension base_plugin="animation">
+      <base_option>open_effects</base_option>
+      <base_option>open_random_effects</base_option>
+      <base_option>close_effects</base_option>
+      <base_option>close_random_effects</base_option>
+      <base_option>minimize_effects</base_option>
+      <base_option>minimize_random_effects</base_option>
+      <restriction>
+        <value>animationjc:Black Hole</value>
+        <_name>Black Hole</_name>
+      </restriction>
+      <restriction>
+        <value>animationjc:Ghost</value>
+        <_name>Ghost</_name>
+      </restriction>
+      <restriction>
+        <value>animationjc:Popcorn</value>
+        <_name>Popcorn</_name>
+      </restriction>
+    </extension>
+
+    <extension base_plugin="animation">
+      <base_option>open_effects</base_option>
+      <base_option>open_random_effects</base_option>
+      <base_option>close_effects</base_option>
+      <base_option>close_random_effects</base_option>
+      <base_option>focus_effects</base_option>
+      <restriction>
+        <value>animationjc:Flicker</value>
+        <_name>Flicker</_name>
+      </restriction>
+      <restriction>
+        <value>animationjc:Raindrop</value>
+        <_name>Raindrop</_name>
+      </restriction>
+    </extension>
+  </plugin>
+</compiz>
