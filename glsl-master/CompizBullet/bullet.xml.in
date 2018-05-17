@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<compiz>
+    <plugin name="bullet" useBcop="true">
+		<_short>Bullet Physics</_short>
+		<_long>Bullet Physics</_long>
+		
+		<category>Effects</category>
+		<deps>
+			<requirement>
+				<plugin>opengl</plugin>
+				<plugin>mousepoll</plugin>
+			</requirement>
+			<relation type="after">
+				<plugin>move</plugin>
+	    	</relation>
+		</deps>
+		
+		<options>
+			<option name="toggle_debug_draw_key" type="key">
+				<_short>Toggle Debug Draw</_short>
+				<_long>toggles Debug Drawing</_long>
+				<default>&lt;Super&gt;t</default>
+		    </option>
+		    <option name="init_all_key" type="key">
+		    	<_short>Init All Windows</_short>
+		    	<_long>Initializes Physics on all Windows</_long>
+		    	<default>&lt;Super&gt;i</default>
+		    </option>
+		    <option name="toggle_screen_borders" type="key">
+		    	<_short>Toggle Screen Borders</_short>
+		    	<_long>Toggles Screen Borders (infinite "walls" at the top, bottom, left and right of the screen; constraining the windows to the inside of a cube)</_long>
+		    	<default>&lt;Super&gt;s</default>
+		    </option>
+			<option name="select_move_window" type="button">
+				<_short>Initiate Window Move</_short>
+				<_long>Start moving window</_long>
+				<default>&lt;Alt&gt;Button1</default>
+			</option>
+			<!--<option name="select_move_window" type="button">
+		    	<_short>Select Window to Move</_short>
+		    	<_long>Bla</_long>
+		    	<default>Button1</default>
+		    	<passive_grab>false</passive_grab>
+		    	<internal/>
+		    </option>-->    
+		    <option name="gravity" type="int">
+				<_short>Gravity</_short>
+				<_long>Gravity (in m/s²)</_long>
+				<default>10</default>
+				<min>-50</min>
+				<max>50</max>
+			</option>
+		    <option name="border_restitution" type="float">
+				<_short>Border Restitution</_short>
+				<_long>Sets "bouncyness" of window vs. borders</_long>
+				<default>0.0</default>
+				<min>0.0</min>
+				<max>1.0</max>
+				<precision>0.01</precision>
+			</option>
+		    <option name="window_restitution" type="float">
+				<_short>Window Restitution</_short>
+				<_long>Sets "bouncyness" of window vs. window</_long>
+				<default>0.0</default>
+				<min>0.0</min>
+				<max>1.0</max>
+				<precision>0.01</precision>
+			</option>
+		    <option name="border_friction" type="float">
+				<_short>Border Friction</_short>
+				<_long>Sets Friction of screen borders</_long>
+				<default>0.5</default>
+				<min>0.0</min>
+				<max>1.0</max>
+				<precision>0.01</precision>
+			</option>
+		    <option name="window_friction" type="float">
+				<_short>Window Friction</_short>
+				<_long>Sets Friction on windows</_long>
+				<default>0.5</default>
+				<min>0.0</min>
+				<max>1.0</max>
+				<precision>0.01</precision>
+			</option>
+		    <option name="world_damping" type="float">
+				<_short>World Damping</_short>
+				<_long>Sets Damping for each</_long>
+				<default>0.0</default>
+				<min>0.0</min>
+				<max>1.0</max>
+				<precision>0.01</precision>
+			</option>
+		    <option name="attract_initiate_key" type="key">
+		    	<_short>Init Attraction</_short>
+		    	<_long>Init Window Attraction to MousePointer</_long>
+		    	<default>&lt;Super&gt;n</default>
+		    </option>
+		    <option name="repulse_initiate_key" type="key">
+		    	<_short>Init Repulsion</_short>
+		    	<_long>Init Window Repulsion to MousePointer</_long>
+		    	<default>&lt;Super&gt;x</default>
+		    </option>
+		    <option name="force_multiplier" type="int">
+				<_short>Attraction/Repulsion Strength</_short>
+				<_long>Sets Strength of Attraction/Repulsion</_long>
+				<default>500</default>
+				<min>50</min>
+				<max>1000</max>
+			</option>
+			<option name="toggle_spring_key" type="key">
+				<_short>Toggle Spring</_short>
+				<_long>toggles Spring</_long>
+				<default>&lt;Super&gt;q</default>
+		    </option>
+		</options>
+    
+    </plugin>
+</compiz>

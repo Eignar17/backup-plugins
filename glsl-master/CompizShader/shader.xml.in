@@ -1,0 +1,13 @@
+<compiz>
+    <plugin name="shader" useBcop="true">
+    <_short>Shader plugin</_short>
+    <_long>Draws a shaded quad on top of all windows</_long>
+    <category>Effects</category>
+    <deps>
+			<requirement>
+				<plugin>opengl</plugin>
+			</requirement>
+	</deps>
+    </plugin>
+</compiz>
+
