@@ -1,0 +1,3 @@
+PLUGIN = sndportaudio
+LDFLAGS_ADD = -lportaudio
+CFLAGS_ADD = -I../include

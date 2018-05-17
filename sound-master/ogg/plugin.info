@@ -1,0 +1,3 @@
+PLUGIN = sndogg
+PKG_DEP = vorbisfile
+CFLAGS_ADD = -I../include

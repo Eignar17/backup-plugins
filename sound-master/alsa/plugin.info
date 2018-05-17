@@ -1,0 +1,3 @@
+PLUGIN = alsa
+PKG_DEP = alsa
+CFLAGS_ADD = -I../include

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <!-- alsa metadata -->
+    <plugin name="alsa">
+        <category>Sound</category>
+        <feature>sounddriver</feature>
+        <deps>
+                <relation type="before">
+                        <plugin>soundeffects</plugin>
+                </relation>
+                <relation type="after">
+                        <plugin>sound</plugin>
+                </relation>
+        </deps>
+        <_short>ALSA</_short>
+        <_long>Compiz ALSA driver.</_long>
+        <display>
+        </display>
+        <screen>
+        </screen>
+    </plugin>
+</compiz>

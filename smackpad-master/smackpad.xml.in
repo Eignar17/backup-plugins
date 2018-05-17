@@ -1,0 +1,21 @@
+<compiz>
+  <plugin name="smackpad" useBcop="true">
+    <_short>SmackPad</_short>
+    <_long>Smack your ThinkPad</_long>
+    <category>Extras</category>
+    <display>
+	    <option name="sensitivity_rate" type="int">
+					<_short>Sensitivity</_short>
+					<_long>Adjust sensitivity rate</_long>
+					<default>4</default>
+					<min>4</min>
+					<max>100</max>
+	    </option>
+		<option name="initiate_key" type="key">
+					<_short>Initiate</_short>
+          			<_long>Start SmackPad</_long>
+	  				<default>&lt;Alt&gt;v</default>
+		</option>
+    </display>
+  </plugin>
+</compiz>

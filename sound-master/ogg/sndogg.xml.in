@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <!-- sndogg metadata -->
+    <plugin name="sndogg">
+        <category>Sound</category>
+        <deps>
+                <relation type="before">
+                        <plugin>soundeffects</plugin>
+                </relation>
+                <relation type="after">
+                        <plugin>sound</plugin>
+                        <plugin>alsa</plugin>
+                </relation>
+        </deps>
+        <_short>OGG Vorbis</_short>
+        <_long>Play and load OGG Vorbis files.</_long>
+        <display>
+        </display>
+        <screen>
+        </screen>
+    </plugin>
+</compiz>

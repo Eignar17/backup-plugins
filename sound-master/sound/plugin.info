@@ -1,0 +1,2 @@
+PLUGIN = sound
+CFLAGS_ADD = -I../include

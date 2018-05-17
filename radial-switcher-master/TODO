@@ -1,0 +1,6 @@
+Tasks:
+  * Unittest, then fix,  current (intended) behaviour of switcher-util
+  * Add a "createFilteredWindowList".
+  * Rip a skeleton plugin out of switcher.c
+  * Rip the cairo stuff out of wall.c
+  * Start drawing :)

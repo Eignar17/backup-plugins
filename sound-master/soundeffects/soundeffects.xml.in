@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <!-- soundeffects metadata -->
+    <plugin name="soundeffects">
+        <category>Sound</category>
+        <deps>
+                <relation type="after">
+                        <plugin>sound</plugin>
+                </relation>
+                <requirement>
+                        <plugin>sound</plugin>
+                </requirement>
+        </deps>
+        <_short>Sound Effects</_short>
+        <_long>The sound effects plug-in.</_long>
+        <display>
+        </display>
+        <screen>
+        </screen>
+    </plugin>
+</compiz>

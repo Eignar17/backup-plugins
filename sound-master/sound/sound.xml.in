@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <!-- sound metadata -->
+    <plugin name="sound">
+        <category>Sound</category>
+	<deps>
+            <requirement>
+                <feature>sounddriver</feature>
+            </requirement>
+	</deps>
+	<_short>Sound Driver Controller</_short>
+	<_long>Plug-in to control the sound drivers.</_long>
+	<display>
+            <option type="int" read_only="true" name="abi"/>
+            <option type="int" read_only="true" name="index"/>
+            <option type="bool" name="use_alsa">
+                <_short>Use ALSA</_short>
+                <_long>Use ALSA for sound.</_long>
+                <default>true</default>
+            </option>
+	</display>
+	<screen>
+	</screen>
+    </plugin>
+</compiz>
