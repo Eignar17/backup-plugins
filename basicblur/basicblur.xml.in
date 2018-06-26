@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<compiz>
+  <plugin name="basicblur" useBcop="true">
+    <_short>Basicblur</_short>
+	<_long>Make it slightly easier to concentrate by dimming all but the active window.</_long>
+	<category>Accessibility</category>
+	<deps>
+		<relation type="after">
+			<plugin>fade</plugin>
+		</relation>
+	</deps>
+    <display>
+      <group>
+        <_short>Bindings</_short>
+        <option name="window_toggle_key" type="key">
+          <_short>Toggle Window</_short>
+          <_long>Use this to enable/disable AddHelper on the fly.</_long>
+          <default>&lt;Super&gt;b</default>
+        </option>
+         <option name="screen_toggle_key" type="key">
+          <_short>Toggle Screen</_short>
+          <_long>Use this to enable/disable AddHelper on the fly.</_long>
+          <default>&lt;Super&gt;b</default>
+        </option>
+      </group>
+     </display>
+     <screen>
+      <group>
+       <_short>Values</_short>
+       <option name="blur_factor" type="int">
+       	<_short>Blur Factor</_short>
+       	<_long>Use this to enable/disable AddHelper on the fly.</_long>\
+       	<default>&lt;Super&gt;b</default>
+       </option>
+      </group>
+     </screen>
+  </plugin>
+</compiz>

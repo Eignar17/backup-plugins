@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<compiz>
+	<plugin name="ringmenu" useBcop="true">
+		<_short>Ring menu</_short>
+		<_long>Creates a ring menu.</_long>
+		<category>Accessibility</category>
+		<deps>
+			<relation type="after">
+				<plugin>showmouse</plugin>
+			</relation>
+			<requirement>
+				<plugin>mousepoll</plugin>
+			</requirement>
+		</deps>
+		<display>
+			<group>
+				<_short>General</_short>
+				<option name="initiate" type="key">
+					<_short>Initiate</_short>
+					<_long>Show the ring menu.</_long>
+					<default>&lt;Ctrl&gt;&lt;Alt&gt;H</default>
+				</option>
+				<option name="initiate_button" type="button">
+					<_short>Initiate</_short>
+					<_long>Show the ring menu.</_long>
+					<default/>
+				</option>
+			</group>
+		</display>
+		<screen>
+			<subgroup>
+				<_short>Options</_short>
+				<option name="opt_start" type="list">
+					<_short>Start</_short>
+					<_long>Start angle(0..1)</_long>
+					<type>float</type>
+					<min>0.0</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+				<option name="opt_end" type="list">
+					<_short>End</_short>
+					<_long>End angle(0..1)</_long>
+					<type>float</type>
+					<min>0.0</min>
+					<max>1.0</max>
+					<precision>0.01</precision>
+				</option>
+				<option name="opt_ident" type="list">
+					<_short>Ident</_short>
+					<_long>Identifier</_long>
+					<type>string</type>
+				</option>
+				<option name="opt_command" type="list">
+					<_short>Command</_short>
+					<_long>Command to execute</_long>
+					<type>string</type>
+				</option>
+			</subgroup>
+		</screen>
+	</plugin>
+</compiz>
