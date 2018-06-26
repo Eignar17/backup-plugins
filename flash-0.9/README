@@ -1,0 +1,18 @@
+
+ Beryl plugin FLASH
+
+ Copyright : (C) 2007 by Jean-François Souville & Charles Jeremy
+ E-mail    : souville@ecole.ensicaen.fr , charles@ecole.ensicaen.fr
+
+
+Install directions:
+
+	Do "make install".
+	Then activate Flash in "misc" section in beryl manager.
+	Do <super> + F5 for start lightnings.
+	
+Uninstall directions:
+	Do "make uninstall".
+	
+Cleaning repertories:
+	Do "make clean".
