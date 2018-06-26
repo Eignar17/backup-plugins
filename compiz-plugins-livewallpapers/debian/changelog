@@ -1,0 +1,23 @@
+compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa4) maverick; urgency=low
+
+  * Updated control file.
+
+ -- Pal Dorogi <pal.dorogi@gmail.com>  Sat, 09 Oct 2010 13:50:16 +1100
+
+compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa3) maverick; urgency=low
+
+  * Updated control file.
+
+ -- Pal Dorogi <pal.dorogi@gmail.com>  Sat, 09 Oct 2010 13:03:48 +1100
+
+compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa2) maverick; urgency=low
+
+  * Updated rules file.
+
+ -- Pal Dorogi <pal.dorogi@gmail.com>  Fri, 08 Oct 2010 23:19:15 +1100
+
+compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa1) maverick; urgency=low
+
+  * Initial package.
+
+ -- Pal Dorogi <pal.dorogi@gmail.com>  Fri, 08 Oct 2010 19:45:43 +1100

@@ -1,0 +1,23 @@
+This package was debianized by Pal Dorogi <pal.dorogi@gmail.com> on 
+Thu, 07 Oct 2010 23:27:16 +1100
+
+It was downloaded from
+https://code.launchpad.net/~ilap/compiz-plugins-livewallpapers
+by bzr branch lp:~ilap/compiz-plugins-livewallpapers
+
+Copyright © 2010 : Pal Dorogi <pal.dorogi@gmail.com>
+
+License: GPL
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+On Debian systems, the full text of the LGPL can be found in
+/usr/share/common-licenses/GPL-3

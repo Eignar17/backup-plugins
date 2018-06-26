@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+	<plugin useBcop="true" name="galaxy">
+		<short>Galaxy Live Wallpaper</short>
+		<long>Galaxy Live Wallpaper for Compiz</long>
+		<category>Live Wallpapers</category>
+		<deps>
+			<relation type="after">
+				<plugin>png</plugin>
+				<plugin>svg</plugin>
+				<plugin>jpeg</plugin>
+                                <plugin>imgjpeg</plugin>
+			</relation>
+		</deps>
+		<display>
+			<group>
+				<short>Settings</short>
+				<option type="int" name="particles_count">
+					<short>Number Of Stars</short>
+					<long>Number of stars (This has not been implemented yet)</long>
+					<default>12500</default>
+					<min>0</min>
+					<max>25000</max>
+				</option>
+				<option type="float" name="particles_size">
+					<short>Size Of Stars</short>
+					<long>Size of stars</long>
+					<default>13.5</default>
+					<min>0.0</min>
+					<max>64.0</max>
+					<precision>0.5</precision>
+				</option>
+				<option type="int" name="update_delay">
+					<short>Update Delay</short>
+					<long>Delay in ms between screen updates. Example 1000ms/40ms = 25/sec</long>
+					<default>40</default>
+					<min>20</min>
+					<max>200</max>
+				</option>
+				<option type="bool" name="draw_streaks">
+					<short>Draw Star streaks</short>
+					<long>Draw a Star with streaks</long>
+					<default>true</default>
+				</option>
+			</group>
+			<group>
+				<short>Rotation</short>
+				<option type="int" name="rotate_x">
+					<short>Rotate X</short>
+					<long>Rotate Galaxy through X coordinate</long>
+					<default>-60</default>
+					<min>-90</min>
+					<max>90</max>
+				</option>
+				<option type="int" name="rotate_y">
+					<short>Rotate Y</short>
+					<long>Rotate Galaxy through Y coordinate</long>
+					<default>15</default>
+					<min>-90</min>
+					<max>90</max>
+				</option>
+				<option type="int" name="rotate_z">
+					<short>Rotate Z</short>
+					<long>Rotate Galaxy through Z coordinate</long>
+					<default>0</default>
+					<min>0</min>
+					<max>360</max>
+				</option>
+				<option type="float" name="zoom">
+					<short>Zoom in/out</short>
+					<long>Zoom in and out</long>
+					<default>2.0</default>
+					<min>0.0</min>
+					<max>10</max>
+					<precision>0.1</precision>
+                                </option>
+			</group>
+			<group>
+				<short>Key Bindings</short>
+				<option type="key" name="toggle_key">
+					<short>Galaxy Live Wallpaper Toggle</short>
+					<long>Galaxy Live Wallpaper toggle key</long>
+					<default>&lt;Super&gt;F4</default>
+				</option>
+			</group>
+		</display>
+	</plugin>
+</compiz>
