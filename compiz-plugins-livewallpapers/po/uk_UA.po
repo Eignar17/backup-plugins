@@ -1,0 +1,104 @@
+# compiz-plugins-livewallpapers plugins translations.
+# Copyright (C) 2010 Pal Dorogi
+# This file is distributed under the same license as the compiz-plugins-livewallpapers package.
+# Pal Dorogi <pal.dorogi@gmail.com>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: compiz-plugins-livewallpapers 0.1\n"
+"Report-Msgid-Bugs-To:https://bugs.launchpad.net/~ilap\n"
+"POT-Creation-Date: 2010-10-07 18:10+1100\n"
+"PO-Revision-Date: 2010-10-07 19:33+1100\n"
+"Last-Translator: Romek Marszcziwski <marszcziwski@gmail.com>\n"
+"Language-Team: uk_UA <marszcziwski@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+msgid  "Galaxy Live Wallpaper"
+msgstr "Живі шпалери Galaxy"
+
+msgid  "Galaxy Live Wallpaper for Compiz"
+msgstr "Живі шпалери Galaxy для Compiz"
+
+msgid  "Settings"
+msgstr "Налаштування"
+
+msgid  "Number Of Stars"
+msgstr "Кількість зірок"
+
+msgid  "Number of stars (This has not been implemented yet)"
+msgstr "Кількість зірок (Це не було реалізовано)"
+
+msgid  "Size Of Stars"
+msgstr "Розмір зірок"
+
+msgid  "Size of stars"
+msgstr "Розмір зірок"
+
+msgid  "Update Delay"
+msgstr "Оновлення затримки"
+
+msgid  "Delay in ms between screen updates. Example 1000ms/40ms = 25/sec"
+msgstr "Затримка у мс між оновленням екрана. Приклад 1000мс/40мс = 25/сек"
+
+msgid  "Draw Star streaks"
+msgstr "Промальовування зірки зі смугами"
+
+msgid  "Draw a Star with streaks"
+msgstr "Промальовування зірки зі смугами"
+
+msgid  "Rotation"
+msgstr "Обертання"
+
+msgid  "Rotate X"
+msgstr "Обертання по осі X"
+
+msgid  "Rotate Galaxy through X coordinate"
+msgstr "Обертання галактики по осі X"
+
+msgid  "Rotate Y"
+msgstr "Обертання по осі Y"
+
+msgid  "Rotate Galaxy through Y coordinate"
+msgstr "Обертання галактики по осі Y"
+
+msgid  "Rotate Z"
+msgstr "Обертання по осі Z"
+
+msgid  "Rotate Galaxy through Z coordinate"
+msgstr "Обертання галактики по осі Z"
+
+msgid  "Zoom in/out"
+msgstr "Збільшення +/-"
+
+msgid  "Zoom in and out"
+msgstr "Збільшення +/-"
+
+msgid  "Key Bindings"
+msgstr "Сполучення клавіш"
+
+msgid  "Galaxy Live Wallpaper Toggle"
+msgstr "Увімкнути Живі шпалери Galaxy"
+
+msgid  "Galaxy Live Wallpaper toggle key"
+msgstr "Клавіша увімкнення Живих шпалер Galaxy"
+
+msgid  "Offset X"
+msgstr "Offset X"
+
+msgid  "X offset of the centre of Galaxy"
+msgstr "X offset of the centre of Galaxy"
+
+msgid  "Offset Y"
+msgstr "Offset Y"
+
+msgid  "Y offset of the centre of Galaxy"
+msgstr "Y offset of the centre of Galaxy"
+
+msgid  "Speed Ratio"
+msgstr "Speed Ratio"
+
+msgid  "Speed ratio of the Galaxy"
+msgstr "Speed ratio of the Galaxy"
