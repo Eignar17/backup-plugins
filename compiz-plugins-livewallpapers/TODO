@@ -1,0 +1,28 @@
+= General:
+
+* Configurable speed option.
+
+* Configurable X and Y offset.
+
+* Automated configuration based on the screen ratio (What if dual-screen?)
+  If ratio > 2.0 then it should be multiple-screen.
+
+* Create 1080p and better background and light.
+
+* Implement more light textures.
+
+* Find better quadratic values.
+
+* Generate better flare texture.
+
+* Implement some other animated wallpapers.
+
+* More translations.
+
+* Update translation files.
+
+= Compiz 0.9
+
+* Redesign the framework
+
+* Port to Compiz 0.9

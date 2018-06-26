@@ -1,1 +1,13 @@
+2010-10-16  Pal Dorogi  <pal.dorogi@gmail.com>
 
+    * metadata/galaxy.xml.in: Add the Offset X and Y, Speed ratio (3x).
+
+    * particle.h: Add maxusr, offsetX, offsetY and speedRatio variables to
+        ParticleSystem structure.
+
+    * galaxy.c:
+    * galaxy.h:
+    * particle.c: Implement Galaxy's offset, speed and some other tunings.
+
+    * Add uk_UA and ru_RU translation files given and translated by
+                                  Romek Marszcziwski <marszcziwski@gmail.com>
