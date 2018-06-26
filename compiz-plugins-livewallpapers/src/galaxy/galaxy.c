@@ -37,8 +37,18 @@ updateGalaxy (void *closure)
     if (!gs->active)
 	return TRUE;
 
-    if (gs->ps)
+    /* Probably wont slow it down too much */
+    if (gs->ps) {
+        if  ((s->width != gs->ps->screenWidth) ||
+                     (s->height != gs->ps->screenHeight)) {
+            
+            gs->ps->screenWidth  = s->width;
+            gs->ps->screenHeight = s->height;
+            gs->ps->maxusr = (GLfloat) s->width / (GLfloat )s->height;
+        }
+
         updateParticles (gs->ps);
+    }
 
     CompWindow *w;
 
@@ -61,6 +71,9 @@ initParticleSystem (CompScreen *s)
 
     ParticleSystem *ps = gs->ps;
 
+    /* Screen ratio */
+    ps->maxusr         = (GLfloat) s->width / (GLfloat) s->height;
+
     ps->particlesCount = galaxyGetParticlesCount (s->display);
     ps->particlesSize  = galaxyGetParticlesSize (s->display);
 
@@ -73,6 +86,10 @@ initParticleSystem (CompScreen *s)
     ps->rotateZ         = galaxyGetRotateZ (s->display);
     ps->zoom            = galaxyGetZoom (s->display);
 
+    ps->offsetX         = galaxyGetOffsetX (s->display);
+    ps->offsetY         = galaxyGetOffsetY (s->display);
+
+    ps->speedRatio      = galaxyGetSpeedRatio (s->display);
 
     ps->lightTexture    = 0;
     ps->flareTexture    = 0;
@@ -227,6 +244,23 @@ galaxyDisplayOptionChanged (CompDisplay          *d,
                 gs->ps->zoom = galaxyGetZoom (d);
         }
         break;
+        case GalaxyDisplayOptionOffsetX:
+        {
+            if (gs->ps)
+                gs->ps->offsetX = galaxyGetOffsetX (d);
+        }
+        break;
+        case GalaxyDisplayOptionOffsetY:
+        {
+            if (gs->ps)
+                gs->ps->offsetY = galaxyGetOffsetY (d);
+        }
+        case GalaxyDisplayOptionSpeedRatio:
+        {
+            if (gs->ps)
+                gs->ps->speedRatio = galaxyGetSpeedRatio (d);
+        }
+        break;
     }
 }
 
@@ -284,6 +318,9 @@ galaxyInitDisplay (CompPlugin  *p,
     galaxySetRotateYNotify (d, galaxyDisplayOptionChanged);
     galaxySetRotateZNotify (d, galaxyDisplayOptionChanged);
     galaxySetZoomNotify (d, galaxyDisplayOptionChanged);
+    galaxySetOffsetXNotify (d, galaxyDisplayOptionChanged);
+    galaxySetOffsetYNotify (d, galaxyDisplayOptionChanged);
+    galaxySetSpeedRatioNotify (d, galaxyDisplayOptionChanged);
 
     galaxySetToggleKeyInitiate (d, galaxyDisplayToggleChanged);
 
