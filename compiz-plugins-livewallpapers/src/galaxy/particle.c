@@ -81,7 +81,8 @@ clampf (float num, float min, float max)
    if(num > max)
    {
      num = max;
-   } else if (num < min)
+   }
+   else if (num < min)
    {
      num = min;
    }
@@ -172,7 +173,7 @@ generateFlare (ParticleSystem *ps, GLboolean drawStreaks)
             data[i + 0] = 255; /* Red */
             data[i + 1] = 255; /* Ggreen */
             data[i + 2] = 255; /* Blue */
-            data[i + 3] = (GLubyte)(255.0f * fa); /* Alpha */
+            data[i + 3] = (GLubyte) (255.0f * fa); /* Alpha */
         }
     }
 
@@ -298,7 +299,8 @@ updateParticles (ParticleSystem *ps)
 
     for (i = 0; i < ps->particlesCount; i++)
     {
-        particles[i].angle = particles[i].angle + particles[i].speed;
+        particles[i].angle = particles[i].angle + 
+                             particles[i].speed * ps->speedRatio;
 
         x = particles[i].distance * cosf (particles[i].angle);
         y = particles[i].distance * sinf (particles[i].angle) * -ELLIPSE_RATIO;
@@ -341,7 +343,7 @@ GLvoid
 drawParticles (ParticleSystem *ps)
 {
     /* FIXME: Find a proper qudratic attenuation  */
-    static GLfloat quadratic[] =  { 1.f, .0f, .050f };
+    static GLfloat quadratic[] =  { 0.4f, .0f, .1f };
     static GLfloat max_size = .0f;
 
     glBindTexture (GL_TEXTURE_2D, ps->flareTexture);
@@ -357,7 +359,8 @@ drawParticles (ParticleSystem *ps)
     #endif
 
     glDepthMask(GL_FALSE);
-    glPointSize (ps->particlesSize); /* It's faster than call the get func */
+    glPointSize (ps->particlesSize *
+                 ps->maxusr); /* It's faster than call the get func */
 
     glTexEnvf (GL_POINT_SPRITE_ARB, GL_COORD_REPLACE, GL_TRUE);
     glTexEnvf (GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
@@ -395,20 +398,20 @@ drawGalaxy (ParticleSystem *ps)
      * http://www.opengl.org/wiki/GluPerspective_code
      */
     double ymax, xmax;
-    ymax = ps->nearClip * tanf (ps->fovy * M_PI / 360.0);
+    ymax = ps->nearClip * tanf (ps->fovy * _PI / 360.0);
     xmax = ymax * ((double) ps->screenWidth / (double) ps->screenHeight);
     /* Set the correct Galaxy perspective. */
-    glFrustum(-xmax, xmax, -ymax, ymax, ps->nearClip, ps->farClip);
+    glFrustum (-xmax, xmax, -ymax, ymax, ps->nearClip, ps->farClip);
 
     glMatrixMode (GL_MODELVIEW);
     glPushMatrix ();
-        glLoadIdentity();
+        glLoadIdentity ();
         /*
-        * FIXME: Find a solution for proper background/wallpaper drawing
-        drawBackground (ps);
+         * FIXME: Find a solution for proper background/wallpaper drawing
+         drawBackground (ps);
         */
 
-        glTranslatef (0.0f, 0.0f, -ps->zoom);
+        glTranslatef (ps->offsetX, ps->offsetY, -ps->zoom * ps->maxusr);
 
         glRotatef (ps->rotateX, 1.0f, 0.0f, 0.0f); /* Rotate on X axis */
         glRotatef (ps->rotateY, 0.0f, 1.0f, 0.0f); /* Rotate on Y axis */
