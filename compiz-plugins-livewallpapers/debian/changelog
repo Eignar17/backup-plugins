@@ -1,3 +1,9 @@
+compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa5) maverick; urgency=low
+
+  * Implement Galaxy's offset, speed and some other tunings.
+
+ -- Pal Dorogi <pal.dorogi@gmail.com>  Sat, 16 Oct 2010 22:45:28 +1000
+
 compiz-plugins-livewallpapers (0.0.1-0ubuntu1~ppa4) maverick; urgency=low
 
   * Updated control file.
