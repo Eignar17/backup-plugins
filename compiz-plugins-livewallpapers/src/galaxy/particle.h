@@ -27,7 +27,6 @@ COMPIZ_BEGIN_DECLS
 #define _2PI   (float) (2 * _PI)
 
 #define ELLIPSE_RATIO .885f /* 0 (line) -> 1.0f (circle) */
-#define ELLIPSE_TWIST _2PI
 
 /* Fovy angle a.k.a theta */
 #define FOVY 45.0f
@@ -46,6 +45,12 @@ typedef struct _Particle {
 } Particle;
 
 typedef struct _ParticleSystem {
+    /**
+     * maxusr is promoted for a basis for calculating the other plugin's
+     * parameters such pointsize, quadration etc.
+     */
+    GLfloat maxusr; /* You should not know why it's named to this.;) */
+
     GLint   particlesCount;
     GLint   particlesSize;
 
@@ -57,6 +62,11 @@ typedef struct _ParticleSystem {
     GLint   rotateY;
     GLint   rotateZ;
     GLfloat zoom;
+
+    GLfloat offsetX;
+    GLfloat offsetY;
+
+    GLfloat speedRatio;
 
     GLuint  lightTexture;
     GLuint  flareTexture;
