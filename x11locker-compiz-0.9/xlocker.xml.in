@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+	<plugin name="xlocker" useBcop="true">
+	<_short>X11 Locker</_short>
+	<_long>X11 Window Based Locker</_long>
+	<category>Utility</category>
+	<options>
+	</options>
+	</plugin>
+</compiz>
