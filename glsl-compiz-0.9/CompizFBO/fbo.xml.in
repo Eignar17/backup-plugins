@@ -1,0 +1,71 @@
+<compiz>
+    <plugin name="fbo" useBcop="true">
+	<_short>FBO</_short>
+	<_long>Renders screen content to OpenGL frame buffer object and uses that as texture for a screen size quad. GLSL vertex and fragment shader can be loaded to change its appearance</_long>
+	<category>Effects</category>
+	<deps>
+	    <relation type="before">
+			<plugin>blur</plugin>
+			<plugin>video</plugin>
+	    </relation>
+	    <requirement>
+	    	<plugin>composite</plugin>
+			<plugin>opengl</plugin>
+			<plugin>mousepoll</plugin>
+			<feature>imageext:png</feature>
+	    </requirement>
+	</deps>
+	<options>
+	    <option name="toggle_fbo_key" type="key">
+		<_short>Toggle FBO</_short>
+		<_long>Toggle Offscreen-Rendering via FBO</_long>
+		<default>&lt;Shift&gt;F9</default>
+	    </option>
+	    <option name="reload_shader_key" type="key">
+		<_short>Reload Shader</_short>
+		<_long>Reloads Shader from HDD</_long>
+		<default>&lt;Shift&gt;F8</default>
+	    </option>
+	    <option name="toggle_shader_key" type="key">
+		<_short>Toggle Shader</_short>
+		<_long>Switches Shader on and off</_long>
+		<default>&lt;Shift&gt;F7</default>
+	    </option>
+	    <option name="file_dist_proj1" type="string">
+			<_short>Distortion map for projector 1</_short>
+			<_long>The distortion map for the fragment shader for projector 1 (vertical projection)</_long>
+			<hints>file;image;</hints>		
+	    </option>
+	    <option name="file_dist_proj2" type="string">
+			<_short>Distortion map for projector 2</_short>
+			<_long>The distortion map for the fragment shader for projector 2 (horizontal projection)</_long>
+			<hints>file;image;</hints>		
+	    </option>
+		<option name="file_blend" type="string">
+			<_short>Blend map</_short>
+			<_long>The blend map for the fragment shader</_long>
+			<hints>file;image;</hints>		
+		</option>
+	    <option name="file_vert" type="string">
+			<_short>Vertex Shader</_short>
+			<_long>The GLSL Vertex Shader File</_long>
+			<hints>file;text;</hints>		
+		</option>
+	    <option name="file_frag" type="string">
+			<_short>Fragment Shader</_short>
+			<_long>The GLSL Fragment Shader File</_long>
+			<hints>file;text;</hints>		
+		</option>
+		<option type="bool" name="transform_cursor">
+		    <_short>Transform the mouse pointer</_short>
+		    <_long>Enable this to get a transformed mouse pointer</_long>
+		    <default>true</default>
+		</option>
+		<option type="bool" name="hide_original_mouse">
+		    <_short>Hide original mouse pointer</_short>
+		    <_long>Hides the original mouse pointer when transformed</_long>
+		    <default>true</default>
+		</option>
+	</options>
+    </plugin>
+</compiz>
