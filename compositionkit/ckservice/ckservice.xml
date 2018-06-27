@@ -1,0 +1,79 @@
+<node>
+	<interface name='com.canonical.CompositionKit.Service'>
+
+		<method name='AddSurface'>
+			<arg type='i' name='id' direction='in'/>
+		</method>
+
+		<method name='RemoveSurface'>
+			<arg type='i' name='id' direction='in'/> 
+		</method>
+
+		<method name='ListSurfaces'>
+			<arg type='ai' name='surfaces' direction='out'/>
+		</method>
+
+	</interface>
+	<interface name='com.canonical.CompositionKit.Surface'>
+
+		<method name='AddShader'>
+			<arg type='s' name='shader_name' direction='in'/>
+		</method>
+
+		<method name='RemoveShader'>
+			<arg type='s' name='shader_name' direction='in'/> 
+		</method>
+
+		<method name='ListShaders'>
+			<arg type='as' name='shaders' direction='out'/>
+		</method>
+
+	</interface>
+
+	<interface name='com.canonical.CompositionKit.Shader'>
+
+		<method name='AddUniform'>
+			<arg type='s' name='uniform_name' direction='in'/>
+			<arg type='s' name='uniform_type' direction='in'/>
+		</method>
+
+		<method name='AddAttribute'>
+			<arg type='s' name='attribute_name' direction='in'/>
+			<arg type='s' name='attribute_type' direction='in'/>
+		</method>
+
+		<method name='RemoveAttribute'>
+			<arg type='s' name='attribute_name' direction='in'/>
+		</method>
+
+		<method name='RemoveUniform'>
+			<arg type='s' name='uniform_name' direction='in'/>
+		</method>
+
+		<method name='SetShaderSource'>
+			<arg type='s' name='shader_source' direction='in'/>
+		</method>
+
+		<method name='GetShaderSource'>
+			<arg type='s' name='shader_source' direction='out'/>
+		</method>
+
+	</interface>
+
+	<interface name='com.canonical.CompositionKit.Uniform'>
+
+		<method name='SetData'>
+			<arg type='v' name='uniform_data' direction='in'/>
+		</method>
+
+	</interface>
+
+	<interface name='com.canonical.CompositionKit.Attribute'>
+
+		<method name='SetData'>
+			<arg type='v' name='attribute_data' direction='in'/>
+		</method>
+
+	</interface>
+		
+</node>
