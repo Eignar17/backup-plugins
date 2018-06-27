@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<compiz>
+	<plugin name="mousetrails" useBcop="true">
+		<_short>Mouse Trails</_short>
+		<_long>Adds trails that follow the mouse pointer</_long>
+		<category>Accessibility</category>
+		<deps>
+			<relation type="after">
+				<plugin>cube</plugin>
+			</relation>
+			<requirement>
+				<plugin>mousepoll</plugin>
+			</requirement>
+		</deps>
+		<options>
+			<group>
+				<_short>Trail Toggle</_short>
+				<option name="initiate" type="key">
+					<_short>Initiate</_short>
+				    <_long>Toggle the mouse pointer trail.</_long>
+					<default>&lt;Super&gt;t</default>
+				</option>
+			</group>
+			<group>
+				<_short>Trail Options</_short>
+				<option name="num_particles" type="int">
+					<_short>Trail Length</_short>
+					<_long>Length of the mouse trail (in trail elements)</_long>
+					<default>20</default>
+					<min>1</min>
+					<max>50</max>
+				</option>
+				<option name="alpha" type="float">
+					<_short>Initial Opacity</_short>
+					<_long>Initial opacity of the trails elements before fading out.</_long>
+					<default>0.5</default>
+					<min>0.1</min>
+					<max>1.0</max>
+					<precision>0.1</precision>
+				</option>
+				<option name="slowdown" type="float">
+					<_short>Fade Rate</_short>
+					<_long>The rate that trail elements fade out.</_long>
+					<default>5</default>
+					<min>1</min>
+					<max>10</max>
+				</option>
+				<option name="threshold" type="int">
+					<_short>Threshold</_short>
+					<_long>If the cursor has moved less than this distance (in pixels) from the last mouse position check, it's initial opacity will be lowered proportionally to the distance moved.  This helps prevent precision operations like text selecting from being blurred over with trails.</_long>
+					<default>50</default>
+					<min>1</min>
+					<max>200</max>
+				</option>
+				<option name="skip" type="int">
+					<_short>Distance</_short>
+					<_long>The distance between cursor trail elements (in X cursor position checks)</_long>
+					<default>4</default>
+					<min>1</min>
+					<max>10</max>
+				</option>
+				<option name="size" type="int">
+					<_short>Size</_short>
+					<_long>The size of the cursor elements in the trail.</_long>
+					<default>10</default>
+					<min>1</min>
+					<max>10</max>
+				</option>
+				<!--<option name="life" type="float">
+					<_short>Trail Life</_short>
+					<_long>Trail life.</_long>
+					<default>0.4</default>
+					<min>0.1</min>
+					<max>1</max>
+					<precision>0.1</precision>
+				</option>-->
+				<option name="color" type="color">
+					<_short>Trail Color</_short>
+					<_long>Trail color.</_long>
+					<default>
+					<red>0xffff</red>
+					<green>0xffff</green>
+					<blue>0xffff</blue>
+					<alpha>0xffff</alpha>
+					</default>
+				</option>
+				<option name="random" type="bool">
+					<_short>Randomly Colored Trails</_short>
+					<_long>Have random colors for the trails.</_long>
+					<default>false</default>
+				</option>
+				<option name="colorrate" type="int">
+					<_short>Color Change Rate</_short>
+					<_long>Rate that the random colors change.</_long>
+					<default>10</default>
+					<min>2</min>
+					<max>100</max>
+				</option>
+				<!--<option name="mousepoll" type="bool">
+					<_short>Use Mousepoll Plugin</_short>
+					<_long>Use mousepoll plugin instead of XQueryPointer</_long>
+					<default>false</default>
+				</option>-->
+			    </group>
+		</options>
+	</plugin>
+</compiz>
