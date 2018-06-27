@@ -1,0 +1,75 @@
+This plugin can be compiled by executing the usual
+make && make install
+
+To uninstall, run
+make uninstall
+
+That (and restarting Compiz Fusion) should be all that is required to run the
+plugin.
+
+
+
+For those interested in how 3D models are turned into c code:
+
+Some older models are from the atlantis xscreensaver, but the newer ones
+(those in the "models" subdirectory) have been transformed into c code from
+obj files via the ObjToC.java tool. See the models/CONTRIBUTIONS file for the
+authors of the "obj" files in that directory.
+
+Steps to run ObjToC.java:
+cd models
+javac ObjToC.java
+java ObjToC [configuration file(s)...]
+
+This should create a ".c" source file and a ".h" header file and place them in
+the output folder.
+
+An example configuration file is ObjToC.config. Such a file should include:
+
+@filename
+filename here
+
+@output folder
+folder for generated source and header output
+
+@numberedAnimation
+boolean (true for converting a sequence of files file01.obj, file02.obj, etc.)
+
+@methodName
+name used in Draw(methodName), init(methodName), etc.
+If not specified, a part of the filename is used.
+
+@scaleFactor
+scale factor (loaded as a floating point number)
+
+@waveEffect
+(leave blank for no wave effect, otherwise apply wave effect if numberedAnimation is false)
+1 2 3
+
+1 is amplitude (float)
+2 is frequency (float)
+3 is offset (float)
+
+test done on y axis and wave effect applied in x axis
+
+
+@headerIntro
+TOP OF HEADER GOES HERE
+headerIntro@
+
+@sourceIntro
+TOP OF SOURCE CODE GOES HERE
+sourceIntro@
+
+
+
+In the ".mtl" file (not required):
+
+To set runtime colors of a material, prepend "UserDefined_" to the material
+name (case shouldn't matter). Color passed in in "init..." routine as a
+4-component float (r, g, b, alpha).
+
+If not specified, material is assumed visible from the front side only. To get
+a double sided material, prepend "DS_" to the material name.
+
+To get a combination of both, prepend "UserDefined_DS_" to the material name.
