@@ -1,0 +1,2092 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1400"
+   height="1200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="New document 2">
+  <defs
+     id="defs4">
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.2,26.6499,585.2)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4898"
+       xlink:href="#linearGradient4862-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5">
+      <stop
+         id="stop4864-5"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7" />
+      <stop
+         id="stop4866-7"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.2,26.6499,814.2)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4935"
+       xlink:href="#linearGradient4862-5-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-5">
+      <stop
+         id="stop4864-5-3"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-1" />
+      <stop
+         id="stop4866-7-4"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.2,26.6499,1026.2)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4972"
+       xlink:href="#linearGradient4862-5-5-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-5-8">
+      <stop
+         id="stop4864-5-3-4"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-1-8" />
+      <stop
+         id="stop4866-7-4-3"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.2,456.15,733.2)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5009"
+       xlink:href="#linearGradient4862-5-6"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-6">
+      <stop
+         id="stop4864-5-9"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-17" />
+      <stop
+         id="stop4866-7-5"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.2,456.15,1060.2)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5046"
+       xlink:href="#linearGradient4862-5-6-3"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-6-3">
+      <stop
+         id="stop4864-5-9-2"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-17-0" />
+      <stop
+         id="stop4866-7-5-1"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0,0.742428,-1,0,1565.37,-185.755)"
+       y2="152"
+       x2="1838.5"
+       y1="152"
+       x1="523.5"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4092"
+       xlink:href="#linearGradient4862-5-6-3-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-6-3-9">
+      <stop
+         id="stop4864-5-9-2-71"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-17-0-4" />
+      <stop
+         id="stop4866-7-5-1-4"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9"
+       id="linearGradient4121"
+       x1="527.5"
+       y1="152"
+       x2="1810.5"
+       y2="152"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.1,14,137.45)" />
+    <linearGradient
+       y2="131"
+       x2="1851.5"
+       y1="131"
+       x1="989.5"
+       gradientTransform="matrix(0.498839,0,0,0.032,936.65,466.308)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4683"
+       xlink:href="#linearGradient4862-5-6-1"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-6-1">
+      <stop
+         id="stop4864-5-9-9"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-17-4" />
+      <stop
+         id="stop4866-7-5-7"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <clipPath
+       id="clipPath4249"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4251"
+         d="M 0,2834.65 0,0 l 2834.65,0 0,2834.65 -2834.65,0 z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9"
+       id="linearGradient4301"
+       x1="1634.5021"
+       y1="420"
+       x2="1705.5021"
+       y2="420"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.13263,0,0,0.0707893,-221.49,390.868)" />
+    <linearGradient
+       gradientTransform="matrix(0,0.412088,-0.0257555,0,1682.22,-283.188)"
+       y2="420"
+       x2="1705.5021"
+       y1="420"
+       x1="1634.5021"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4337"
+       xlink:href="#linearGradient4862-5-6-3-9-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4862-5-6-3-9-5">
+      <stop
+         id="stop4864-5-9-2-71-6"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.78260869;"
+         offset="0.5"
+         id="stop4868-7-17-0-4-2" />
+      <stop
+         id="stop4866-7-5-1-4-2"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.01960784;" />
+    </linearGradient>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4445"
+       x="-0.16177475"
+       width="1.3235495"
+       y="-0.20285305"
+       height="1.405706">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.446014"
+         id="feGaussianBlur4447" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9"
+       id="linearGradient5051"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.13263,0,0,0.0707893,-221.49,390.868)"
+       x1="1634.5021"
+       y1="420"
+       x2="1705.5021"
+       y2="420" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9-5"
+       id="linearGradient5053"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,0.412088,-0.0257555,0,1682.22,-283.188)"
+       x1="1634.5021"
+       y1="420"
+       x2="1705.5021"
+       y2="420" />
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4464"
+       x="-0.36225"
+       width="1.7244999"
+       y="-0.11975207"
+       height="1.2395041">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0672893"
+         id="feGaussianBlur4466" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9"
+       id="linearGradient5122"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.13263,0,0,0.0707893,-221.49,390.868)"
+       x1="1634.5021"
+       y1="420"
+       x2="1705.5021"
+       y2="420" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4862-5-6-3-9-5"
+       id="linearGradient5124"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,0.412088,-0.0257555,0,1682.22,-283.188)"
+       x1="1634.5021"
+       y1="420"
+       x2="1705.5021"
+       y2="420" />
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4437"
+       x="-0.16074096"
+       width="1.3214819"
+       y="-0.20450227"
+       height="1.4090044">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.4659003"
+         id="feGaussianBlur4439" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5575"
+     inkscape:cx="733"
+     inkscape:cy="600"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="918"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,147.63782)">
+    <g
+       transform="translate(-483.50006,-213.13794)"
+       style="display:inline"
+       id="g3723">
+      <rect
+         rx="19"
+         ry="18.999998"
+         y="91.000122"
+         x="494.00006"
+         height="1149"
+         width="1379"
+         id="rect3052-4"
+         style="fill:#000000;fill-opacity:0.35449733;stroke:#ffffff;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3841-7"
+         y="130"
+         x="820"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:32px;fill:#ffffff"
+           y="130"
+           x="820"
+           id="tspan3843-4"
+           sodipodi:role="line">Keyboard Shortcuts</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3841-7-6"
+         y="130"
+         x="1550"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:32px;fill:#ffffff"
+           y="130"
+           x="1550"
+           id="tspan3843-4-4"
+           sodipodi:role="line">Mouse Tricks</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5"
+         y="220"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;letter-spacing:0;fill:#ffffff"
+           y="220"
+           x="1460"
+           id="tspan3889-6-13-5"
+           sodipodi:role="line">Clicking and holding an icon and then dragging it around</tspan><tspan
+           id="tspan4204"
+           style="font-size:14px;fill:#ffffff"
+           y="237.66667"
+           x="1460"
+           sodipodi:role="line">will allow you to reorder it on the launcher. You can also</tspan><tspan
+           id="tspan4206"
+           style="font-size:14px;fill:#ffffff"
+           y="255.33333"
+           x="1460"
+           sodipodi:role="line">drag it off to the right of the launcher to move it around.</tspan><tspan
+           id="tspan4208"
+           style="font-size:14px;fill:#ffffff"
+           y="273"
+           x="1460"
+           sodipodi:role="line">Note that you need to make an explicit movement to the</tspan><tspan
+           id="tspan4212"
+           style="font-size:14px;fill:#ffffff"
+           y="290.66666"
+           x="1460"
+           sodipodi:role="line">right to move the icon off the launcher before you can</tspan><tspan
+           id="tspan4216"
+           style="font-size:14px;fill:#ffffff"
+           y="308.33334"
+           x="1460"
+           sodipodi:role="line">move it around.</tspan><tspan
+           id="tspan4202"
+           style="font-size:14px;fill:#ffffff"
+           y="326"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8"
+         y="340"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4616"
+           style="font-size:14px;fill:#ffffff"
+           y="340"
+           x="1460"
+           sodipodi:role="line">Dragging and Dropping an icon into the trash can will</tspan><tspan
+           id="tspan4620"
+           style="font-size:14px;fill:#ffffff"
+           y="357.66666"
+           x="1460"
+           sodipodi:role="line">remove it from the Launcher. The program itself will</tspan><tspan
+           id="tspan4622"
+           style="font-size:14px;fill:#ffffff"
+           y="375.33334"
+           x="1460"
+           sodipodi:role="line">remain installed and accessible through the dash.</tspan><tspan
+           id="tspan4202-0"
+           style="font-size:14px;fill:#ffffff"
+           y="393"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5"
+         y="410"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4659"
+           style="font-size:14px;fill:#ffffff"
+           y="410"
+           x="1460"
+           sodipodi:role="line">Scrolling the mouse wheel while over the Launcher</tspan><tspan
+           id="tspan4663"
+           style="font-size:14px;fill:#ffffff"
+           y="427.66666"
+           x="1460"
+           sodipodi:role="line">scrolls the icons if you have too many and need to</tspan><tspan
+           id="tspan4665"
+           style="font-size:14px;fill:#ffffff"
+           y="445.33334"
+           x="1460"
+           sodipodi:role="line">move around quickly.</tspan><tspan
+           id="tspan4202-0-8"
+           style="font-size:14px;fill:#ffffff"
+           y="463"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5"
+         y="550"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4665-9"
+           style="font-size:14px;fill:#ffffff"
+           y="550"
+           x="1460"
+           sodipodi:role="line">Maximizing - Dragging a window to the top panel will</tspan><tspan
+           id="tspan4761"
+           style="font-size:14px;fill:#ffffff"
+           y="567.66669"
+           x="1460"
+           sodipodi:role="line">maximize it</tspan><tspan
+           id="tspan4202-0-8-9"
+           style="font-size:14px;fill:#ffffff"
+           y="585.33331"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-2"
+         y="600"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4792"
+           style="font-size:14px;fill:#ffffff"
+           y="600"
+           x="1460"
+           sodipodi:role="line">Restore - There are two ways to restore, or unmaximize</tspan><tspan
+           id="tspan4796"
+           style="font-size:14px;fill:#ffffff"
+           y="617.66669"
+           x="1460"
+           sodipodi:role="line">the topmost maximized window of the current monitor</tspan><tspan
+           id="tspan4798"
+           style="font-size:14px;fill:#ffffff"
+           y="635.33331"
+           x="1460"
+           sodipodi:role="line">for this workspace (not using the window controls)</tspan><tspan
+           id="tspan4202-0-8-9-1"
+           style="font-size:14px;fill:#ffffff"
+           y="653"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-9"
+         y="660"
+         x="1480"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4761-2"
+           style="font-size:14px;fill:#ffffff"
+           y="660"
+           x="1480"
+           sodipodi:role="line">1. Double clicking on the top panel (but not in the</tspan><tspan
+           id="tspan4829"
+           style="font-size:14px;fill:#ffffff"
+           y="677.66669"
+           x="1480"
+           sodipodi:role="line">     application's menu)</tspan><tspan
+           id="tspan4202-0-8-9-7"
+           style="font-size:14px;fill:#ffffff"
+           y="695.33331"
+           x="1480"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-9-8"
+         y="700"
+         x="1480"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4829-7"
+           style="font-size:14px;fill:#ffffff"
+           y="700"
+           x="1480"
+           sodipodi:role="line">2. Dragging the top panel down</tspan><tspan
+           id="tspan4202-0-8-9-7-6"
+           style="font-size:14px;fill:#ffffff"
+           y="717.66669"
+           x="1480"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3"
+         y="730"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4889"
+           style="font-size:14px;fill:#ffffff"
+           y="730"
+           x="1460"
+           sodipodi:role="line">Middle click on Maximize - Maximize window vertically</tspan><tspan
+           id="tspan4202-0-8-9-13"
+           style="font-size:14px;fill:#ffffff"
+           y="747.66669"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3"
+         y="760"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5084"
+           style="font-size:14px;fill:#ffffff"
+           y="760"
+           x="1460"
+           sodipodi:role="line">Right click on Maximize - Maximize window horizontally</tspan><tspan
+           id="tspan4202-0-8-9-13-7"
+           style="font-size:14px;fill:#ffffff"
+           y="777.66669"
+           x="1460"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3-9"
+         y="790"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4202-0-8-9-13-7-1"
+           style="font-size:14px;fill:#ffffff"
+           y="790"
+           x="1460"
+           sodipodi:role="line">Focus the topmost maximized window of the current</tspan><tspan
+           id="tspan5156"
+           style="font-size:14px;fill:#ffffff"
+           y="807.66669"
+           x="1460"
+           sodipodi:role="line">monitor for this workspace: Left click on the top panel</tspan><tspan
+           id="tspan5158"
+           style="font-size:14px;fill:#ffffff"
+           y="825.33331"
+           x="1460"
+           sodipodi:role="line">(but not in the application's menu)</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3-9-4"
+         y="860"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5192"
+           style="font-size:14px;fill:#ffffff"
+           y="860"
+           x="1460"
+           sodipodi:role="line">Cycle between maximized windows of the current</tspan><tspan
+           id="tspan5196"
+           style="font-size:14px;fill:#ffffff"
+           y="877.66669"
+           x="1460"
+           sodipodi:role="line">monitor for this workspace: Middle click on the top panel</tspan><tspan
+           id="tspan5198"
+           style="font-size:14px;fill:#ffffff"
+           y="895.33331"
+           x="1460"
+           sodipodi:role="line">(but not in the application's menu)</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3-9-4-0"
+         y="930"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5198-5"
+           style="font-size:14px;fill:#ffffff"
+           y="930"
+           x="1460"
+           sodipodi:role="line">Tiling - Dragging a window to the left/right border</tspan><tspan
+           id="tspan5232"
+           style="font-size:14px;fill:#ffffff"
+           y="947.66669"
+           x="1460"
+           sodipodi:role="line">will auto tile it to that side of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3-9-4-0-8"
+         y="980"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5232-1"
+           style="font-size:14px;fill:#ffffff"
+           y="980"
+           x="1460"
+           sodipodi:role="line">Middle click on an application's launcher icon - Open a</tspan><tspan
+           id="tspan5260"
+           style="font-size:14px;fill:#ffffff"
+           y="997.66669"
+           x="1460"
+           sodipodi:role="line">new instance of the application in a new window.</tspan><tspan
+           id="tspan5262"
+           style="font-size:14px;fill:#ffffff"
+           y="1015.3333"
+           x="1460"
+           sodipodi:role="line">If the application isn't running it will just open it normally</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-3-3-9-4-0-8-0"
+         y="1050"
+         x="1460"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5262-0"
+           style="font-size:14px;fill:#ffffff"
+           y="1050"
+           x="1460"
+           sodipodi:role="line">Middle click on the top panel (but not the menu) - send</tspan><tspan
+           id="tspan5296"
+           style="font-size:14px;fill:#ffffff"
+           y="1067.6666"
+           x="1460"
+           sodipodi:role="line">the current window behind all other windows</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8"
+         y="670"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="670"
+           x="514"
+           id="tspan3889-2"
+           sodipodi:role="line">Super (tap)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3"
+         y="670"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="670"
+           x="674"
+           id="tspan3889-6-14"
+           sodipodi:role="line">Opens the Dash</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-0"
+         y="700"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="700"
+           x="514"
+           id="tspan3889-2-7"
+           sodipodi:role="line">Alt + F2</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3-9"
+         y="700"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="700"
+           x="674"
+           id="tspan3889-6-14-0"
+           sodipodi:role="line">Invokes the Dash in the</tspan><tspan
+           id="tspan5807"
+           style="font-size:14px;fill:#ffffff"
+           y="717.5"
+           x="674"
+           sodipodi:role="line"><tspan
+   id="tspan6109"
+   style="font-style:italic;-inkscape-font-specification:Ubuntu Italic">Run Command</tspan> mode, typing a</tspan><tspan
+           id="tspan5809"
+           style="font-size:14px;fill:#ffffff"
+           y="735"
+           x="674"
+           sodipodi:role="line">folder name will find that folder</tspan><tspan
+           id="tspan6119"
+           style="font-size:14px;fill:#ffffff"
+           y="752.5"
+           x="674"
+           sodipodi:role="line">in Nautilus</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-0-1"
+         y="780"
+         x="514"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Italic"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="780"
+           x="514"
+           id="tspan3889-2-7-1"
+           sodipodi:role="line">Note: the Dash will open with focus on the search box to find</tspan><tspan
+           id="tspan5836"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="797.5"
+           x="514"
+           sodipodi:role="line">           applications and files. Navigate the rsults using the arrow</tspan><tspan
+           id="tspan6125"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="815"
+           x="514"
+           sodipodi:role="line">          keys, use Enter to launch</tspan><tspan
+           id="tspan5834"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="832.5"
+           x="514"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4"
+         y="640"
+         x="694"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="640"
+           x="694"
+           id="tspan3893-9"
+           sodipodi:role="line">Dash</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4-3"
+         y="870"
+         x="694"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="870"
+           x="694"
+           id="tspan3893-9-8"
+           sodipodi:role="line">Panel</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-2"
+         y="900"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="900"
+           x="514"
+           id="tspan3889-2-72"
+           sodipodi:role="line">F10</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3-1"
+         y="900"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5902"
+           style="font-size:14px;font-style:normal;fill:#ffffff;-inkscape-font-specification:Ubuntu"
+           y="900"
+           x="674"
+           sodipodi:role="line">Opens the first menu on the</tspan><tspan
+           id="tspan5904"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="917.5"
+           x="674"
+           sodipodi:role="line"><tspan
+   style="font-size:14px;font-style:normal;fill:#ffffff;-inkscape-font-specification:Ubuntu"
+   id="tspan6148">Panel, use the arrow keys to </tspan>scrub</tspan><tspan
+           id="tspan5906"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="935"
+           x="674"
+           sodipodi:role="line"><tspan
+   id="tspan6153"
+   style="font-size:14px;font-style:normal;fill:#ffffff;-inkscape-font-specification:Ubuntu">across the menus. </tspan>(There is no</tspan><tspan
+           id="tspan6159"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="952.5"
+           x="674"
+           sodipodi:role="line">shortcut for the sessions menu, so</tspan><tspan
+           id="tspan6141"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="970"
+           x="674"
+           sodipodi:role="line">hitting F10 and left arrow is a quick</tspan><tspan
+           id="tspan6165"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="987.5"
+           x="674"
+           sodipodi:role="line">way to get there)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-2-1"
+         y="1020"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1020"
+           x="514"
+           id="tspan3889-2-72-1"
+           sodipodi:role="line">ESC</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3-2"
+         y="1020"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1020"
+           x="674"
+           id="tspan3889-6-14-1"
+           sodipodi:role="line">Closes the menus without choosing</tspan><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1037.5"
+           x="674"
+           sodipodi:role="line"
+           id="tspan6332">anything</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4-3-5"
+         y="1080"
+         x="614"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1080"
+           x="614"
+           id="tspan3893-9-8-7"
+           sodipodi:role="line">Window Management</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-2-4"
+         y="1110"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1110"
+           x="514"
+           id="tspan3889-2-72-2"
+           sodipodi:role="line">Super + W</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3-2-2"
+         y="1110"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1110"
+           x="674"
+           id="tspan3889-6-14-1-5"
+           sodipodi:role="line">Spread mode, zooms out on all windows</tspan><tspan
+           id="tspan6334"
+           style="font-size:14px;fill:#ffffff"
+           y="1127.5"
+           x="674"
+           sodipodi:role="line">in all workspaces</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-2-4-3"
+         y="1160"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1160"
+           x="514"
+           id="tspan3889-2-72-2-5"
+           sodipodi:role="line">Super + D</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-3-2-2-0"
+         y="1160"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1160"
+           x="674"
+           id="tspan3889-6-14-1-5-8"
+           sodipodi:role="line">Minimize all windows, hitting it again</tspan><tspan
+           id="tspan6336"
+           style="font-size:14px;fill:#ffffff"
+           y="1177.5"
+           x="674"
+           sodipodi:role="line">restores them</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4-3-5-1"
+         y="510"
+         x="1540"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="510"
+           x="1540"
+           id="tspan3893-9-8-7-3"
+           sodipodi:role="line">Window Management</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-1"
+         y="190"
+         x="1094"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="190"
+           x="1094"
+           id="tspan3893-3"
+           sodipodi:role="line">Window Placement</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9"
+         y="220"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="220"
+           x="984"
+           id="tspan3889-8"
+           sodipodi:role="line">Ctrl + Alt + Num 0</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0"
+         y="220"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="220"
+           x="1174"
+           id="tspan3889-6-13"
+           sodipodi:role="line">Maximizes window</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5"
+         y="250"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="250"
+           x="984"
+           id="tspan3889-8-6"
+           sodipodi:role="line">Ctrl + Alt + Num 1</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1"
+         y="250"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="250"
+           x="1174"
+           id="tspan3889-6-13-6"
+           sodipodi:role="line">Places window in the bottom left</tspan><tspan
+           id="tspan3227"
+           style="font-size:14px;fill:#ffffff"
+           y="267.5"
+           x="1174"
+           sodipodi:role="line">corner of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7"
+         y="300"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="300"
+           x="984"
+           id="tspan3889-8-6-2"
+           sodipodi:role="line">Ctrl + Alt + Num 2</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1"
+         y="300"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="300"
+           x="1174"
+           id="tspan3889-6-13-6-6"
+           sodipodi:role="line">Places window in the bottom half</tspan><tspan
+           id="tspan3227-3"
+           style="font-size:14px;fill:#ffffff"
+           y="317.5"
+           x="1174"
+           sodipodi:role="line">of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0"
+         y="350"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="350"
+           x="984"
+           id="tspan3889-8-6-2-8"
+           sodipodi:role="line">Ctrl + Alt + Num 3</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3"
+         y="350"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="350"
+           x="1174"
+           id="tspan3889-6-13-6-6-7"
+           sodipodi:role="line">Places window in the bottom right</tspan><tspan
+           id="tspan3227-3-8"
+           style="font-size:14px;fill:#ffffff"
+           y="367.5"
+           x="1174"
+           sodipodi:role="line">corner of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0"
+         y="400"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="400"
+           x="984"
+           id="tspan3889-8-6-2-8-3"
+           sodipodi:role="line">Ctrl + Alt + Num 4</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1"
+         y="400"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3227-3-8-7"
+           style="font-size:14px;fill:#ffffff"
+           y="400"
+           x="1174"
+           sodipodi:role="line">Places window on the left side</tspan><tspan
+           id="tspan3370"
+           style="font-size:14px;fill:#ffffff"
+           y="417.5"
+           x="1174"
+           sodipodi:role="line">of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0-1"
+         y="450"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="450"
+           x="984"
+           id="tspan3889-8-6-2-8-3-9"
+           sodipodi:role="line">Ctrl + Alt + Num 5</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2"
+         y="450"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3370-1"
+           style="font-size:14px;fill:#ffffff"
+           y="450"
+           x="1174"
+           sodipodi:role="line">Centers / Maximizes the window</tspan><tspan
+           id="tspan3419"
+           style="font-size:14px;fill:#ffffff"
+           y="467.5"
+           x="1174"
+           sodipodi:role="line">in the middle of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0-1-4"
+         y="500"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="500"
+           x="984"
+           id="tspan3889-8-6-2-8-3-9-9"
+           sodipodi:role="line">Ctrl + Alt + Num 6</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3"
+         y="500"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3419-6"
+           style="font-size:14px;fill:#ffffff"
+           y="500"
+           x="1174"
+           sodipodi:role="line">Places window on the right side</tspan><tspan
+           id="tspan3468"
+           style="font-size:14px;fill:#ffffff"
+           y="517.5"
+           x="1174"
+           sodipodi:role="line">of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0-1-4-8"
+         y="550"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="550"
+           x="984"
+           id="tspan3889-8-6-2-8-3-9-9-0"
+           sodipodi:role="line">Ctrl + Alt + Num 7</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1"
+         y="550"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3468-0"
+           style="font-size:14px;fill:#ffffff"
+           y="550"
+           x="1174"
+           sodipodi:role="line">Places window in the top left</tspan><tspan
+           id="tspan3519"
+           style="font-size:14px;fill:#ffffff"
+           y="567.5"
+           x="1174"
+           sodipodi:role="line">corner of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0-1-4-8-0"
+         y="600"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="600"
+           x="984"
+           id="tspan3889-8-6-2-8-3-9-9-0-3"
+           sodipodi:role="line">Ctrl + Alt + Num 8</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5"
+         y="600"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3468-0-9"
+           style="font-size:14px;fill:#ffffff"
+           y="600"
+           x="1174"
+           sodipodi:role="line">Places window in the top half</tspan><tspan
+           id="tspan3519-4"
+           style="font-size:14px;fill:#ffffff"
+           y="617.5"
+           x="1174"
+           sodipodi:role="line">of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-5-7-0-0-1-4-8-0-4"
+         y="650"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="650"
+           x="984"
+           id="tspan3889-8-6-2-8-3-9-9-0-3-9"
+           sodipodi:role="line">Ctrl + Alt + Num 9</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3"
+         y="650"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3468-0-9-6"
+           style="font-size:14px;fill:#ffffff"
+           y="650"
+           x="1174"
+           sodipodi:role="line">Places window in the top right</tspan><tspan
+           id="tspan3519-4-8"
+           style="font-size:14px;fill:#ffffff"
+           y="667.5"
+           x="1174"
+           sodipodi:role="line">corner of the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-8-0-1-0"
+         y="700"
+         x="984"
+         style="font-size:14px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Italic"
+         xml:space="preserve"><tspan
+           id="tspan6125-3"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="700"
+           x="984"
+           sodipodi:role="line">Note: if you cycle through the same key Unity will cycle through</tspan><tspan
+           id="tspan3646"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="717.5"
+           x="984"
+           sodipodi:role="line">           different placement widths, so experiment by hitting the</tspan><tspan
+           id="tspan3648"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="735"
+           x="984"
+           sodipodi:role="line">           numkey multiple times, for example Ctrl + Alt + Num 5 5 5.</tspan><tspan
+           id="tspan5834-1"
+           style="font-size:14px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="752.5"
+           x="984"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-1-2"
+         y="189.714"
+         x="1599.5852"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="189.714"
+           x="1599.5852"
+           id="tspan3893-3-0"
+           sodipodi:role="line">Launcher</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4-9"
+         y="790"
+         x="1064"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="790"
+           x="1064"
+           id="tspan3893-9-9"
+           sodipodi:role="line">Workspace Management</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4"
+         y="830"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3519-4-8-8"
+           style="font-size:14px;fill:#ffffff"
+           y="830"
+           x="1174"
+           sodipodi:role="line">Expo mode (for everything),</tspan><tspan
+           id="tspan3761"
+           style="font-size:14px;fill:#ffffff"
+           y="847.5"
+           x="1174"
+           sodipodi:role="line">zooms out on all the workspaces</tspan><tspan
+           id="tspan3763"
+           style="font-size:14px;fill:#ffffff"
+           y="865"
+           x="1174"
+           sodipodi:role="line">and lets you manage windows</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8"
+         y="900"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3763-4"
+           style="font-size:14px;fill:#ffffff"
+           y="900"
+           x="1174"
+           sodipodi:role="line">Expo mode for all windows in the</tspan><tspan
+           id="tspan3818"
+           style="font-size:14px;fill:#ffffff"
+           y="917.5"
+           x="1174"
+           sodipodi:role="line">current workspace</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8-4"
+         y="950"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3818-0"
+           style="font-size:14px;fill:#ffffff"
+           y="950"
+           x="1174"
+           sodipodi:role="line">Changes to a new workspace</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8-4-1"
+         y="1000"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3818-0-1"
+           style="font-size:14px;fill:#ffffff"
+           y="1000"
+           x="1174"
+           sodipodi:role="line">Places window to a new workspace</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8-4-1-4"
+         y="1070"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3818-0-1-8"
+           style="font-size:14px;fill:#ffffff"
+           y="1070"
+           x="1174"
+           sodipodi:role="line">Lock the screen</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891-4-9-9"
+         y="1110"
+         x="1124"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1110"
+           x="1124"
+           id="tspan3893-9-9-7"
+           sodipodi:role="line">Screenshots</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1-1-4"
+         y="1140"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1140"
+           x="984"
+           id="tspan3889-8-0-9-1-0"
+           sodipodi:role="line">Print</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8-4-1-4-0"
+         y="1140"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3818-0-1-8-8"
+           style="font-size:14px;fill:#ffffff"
+           y="1140"
+           x="1174"
+           sodipodi:role="line">Take a screenshot to the current</tspan><tspan
+           id="tspan4032"
+           style="font-size:14px;fill:#ffffff"
+           y="1157.5"
+           x="1174"
+           sodipodi:role="line">workspace</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1-1-4-2"
+         y="1190"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1190"
+           x="984"
+           id="tspan3889-8-0-9-1-0-1"
+           sodipodi:role="line">Alt + Print</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-0-1-1-3-1-2-3-1-5-3-4-8-4-1-4-0-5"
+         y="1190"
+         x="1174"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4032-5"
+           style="font-size:14px;fill:#ffffff"
+           y="1190"
+           x="1174"
+           sodipodi:role="line">Take a screenshot of the current</tspan><tspan
+           id="tspan4081"
+           style="font-size:14px;fill:#ffffff"
+           y="1207.5"
+           x="1174"
+           sodipodi:role="line">window</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3"
+         d="M 520.50003,611.4 950,611.4"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient4898);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3-3"
+         d="m 520.5,840.4 429.5,0"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient4935);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3-3-5"
+         d="m 520.5,1052.4 429.5,0"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient4972);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3-6"
+         d="m 950,759.4 429.5,0"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient5009);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3-6-6"
+         d="m 950,1086.4 429.5,0"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient5046);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3251-2"
+         d="m 1413.374,203.27863 0,979.26017"
+         style="fill:none;stroke:url(#linearGradient4092);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4113"
+         d="m 542,152.65 1282,0"
+         style="fill:none;stroke:url(#linearGradient4121);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4287"
+         d="M 1670,420 z"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4084-3-6-8"
+         d="m 1430.5,470.5 429.5,0"
+         style="opacity:0.5;fill:#ffffff;stroke:url(#linearGradient4683);stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887"
+         y="220"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="220"
+           x="514"
+           id="tspan3889"
+           sodipodi:role="line">Super (press)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3891"
+         y="190"
+         x="674"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:22px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="190"
+           x="674"
+           id="tspan3893"
+           sodipodi:role="line">Launcher</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3"
+         y="220"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="220"
+           x="674"
+           id="tspan3889-6"
+           sodipodi:role="line">Invokes the Launcher</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6"
+         y="250"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="250"
+           x="514"
+           id="tspan3889-7"
+           sodipodi:role="line">Super + 1 .. 0</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-7"
+         y="250"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="250"
+           x="674"
+           id="tspan3889-6-6"
+           sodipodi:role="line">Opens of focuses an</tspan><tspan
+           id="tspan3962"
+           style="font-size:14px;fill:#ffffff"
+           y="267.5"
+           x="674"
+           sodipodi:role="line">application whose position</tspan><tspan
+           id="tspan3964"
+           style="font-size:14px;fill:#ffffff"
+           y="285"
+           x="674"
+           sodipodi:role="line">in the launcher corresponds</tspan><tspan
+           id="tspan6085"
+           style="font-size:14px;fill:#ffffff"
+           y="302.5"
+           x="674"
+           sodipodi:role="line">to the pressed number</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8"
+         y="330"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="330"
+           x="514"
+           id="tspan3889-7-7"
+           sodipodi:role="line">Super + Shift + 1 .. 0</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-1"
+         y="330"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan4008"
+           style="font-size:14px;fill:#ffffff"
+           y="330"
+           x="674"
+           sodipodi:role="line">Opens a new instance of</tspan><tspan
+           id="tspan6089"
+           style="font-size:14px;fill:#ffffff"
+           y="347.5"
+           x="674"
+           sodipodi:role="line">that application if it is already</tspan><tspan
+           id="tspan6091"
+           style="font-size:14px;fill:#ffffff"
+           y="365"
+           x="674"
+           sodipodi:role="line">open</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8"
+         y="390"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="390"
+           x="514"
+           id="tspan3889-7-7-8"
+           sodipodi:role="line">Super + T</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-3-9"
+         y="390"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="390"
+           x="674"
+           id="tspan3889-6-1"
+           sodipodi:role="line">Opens the trash can</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6"
+         y="420"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="420"
+           x="514"
+           id="tspan3889-7-7-8-2"
+           sodipodi:role="line">Alt + F1</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7"
+         y="520"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="520"
+           x="514"
+           id="tspan3889-7-7-8-2-6"
+           sodipodi:role="line">Ctrl + Alt + T</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7-6"
+         y="520"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="520"
+           x="674"
+           id="tspan3889-7-7-8-2-6-9"
+           sodipodi:role="line">Launch a terminal window</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7-2"
+         y="550"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="550"
+           x="514"
+           id="tspan3889-7-7-8-2-6-2"
+           sodipodi:role="line">Super + A</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7-6-7"
+         y="550"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="550"
+           x="674"
+           id="tspan3889-7-7-8-2-6-9-4"
+           sodipodi:role="line">Opens the <tspan
+   id="tspan5693"
+   style="font-size:14px;font-style:italic;-inkscape-font-specification:Ubuntu Italic">Applications</tspan> lens</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7-2-7"
+         y="580"
+         x="514"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="580"
+           x="514"
+           id="tspan3889-7-7-8-2-6-2-4"
+           sodipodi:role="line">Super + F</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-6-7-6-7-5"
+         y="580"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="580"
+           x="674"
+           id="tspan3889-7-7-8-2-6-9-4-3"
+           sodipodi:role="line">Opens the <tspan
+   id="tspan5695"
+   style="font-size:14px;font-style:italic;-inkscape-font-specification:Ubuntu Italic">Files &amp; Folders</tspan> lens</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-6-8-8-8"
+         y="420"
+         x="674"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan5561"
+           style="font-size:14px;fill:#ffffff"
+           y="420"
+           x="674"
+           sodipodi:role="line">Puts the focus on the Launcher,</tspan><tspan
+           id="tspan6095"
+           style="font-size:14px;fill:#ffffff"
+           y="437.5"
+           x="674"
+           sodipodi:role="line">use arrow keys the navigate,</tspan><tspan
+           id="tspan5563"
+           style="font-size:14px;fill:#ffffff"
+           y="455"
+           x="674"
+           sodipodi:role="line">Enter launches an application,</tspan><tspan
+           id="tspan5565"
+           style="font-size:14px;fill:#ffffff"
+           y="472.5"
+           x="674"
+           sodipodi:role="line">right arrow exposes the quicklist</tspan><tspan
+           id="tspan6105"
+           style="font-size:14px;fill:#ffffff"
+           y="490"
+           x="674"
+           sodipodi:role="line">if available</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8"
+         y="830"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="830"
+           x="984"
+           id="tspan3889-8-0"
+           sodipodi:role="line">Super + S</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1"
+         y="900"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="900"
+           x="984"
+           id="tspan3889-8-0-9"
+           sodipodi:role="line">Shift + Alt + Up</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1-7"
+         y="950"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="950"
+           x="984"
+           id="tspan3889-8-0-9-7"
+           sodipodi:role="line">Ctrl + Alt + Left / Right /</tspan><tspan
+           id="tspan3844"
+           style="font-size:14px;fill:#ffffff"
+           y="967.5"
+           x="984"
+           sodipodi:role="line">                      Up / Down</tspan><tspan
+           id="tspan3841"
+           style="font-size:14px;fill:#ffffff"
+           y="985"
+           x="984"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1-7-9"
+         y="1000"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1000"
+           x="984"
+           id="tspan3889-8-0-9-7-6"
+           sodipodi:role="line">Ctrl + Alt + Shift + Left /</tspan><tspan
+           id="tspan3844-5"
+           style="font-size:14px;fill:#ffffff"
+           y="1017.5"
+           x="984"
+           sodipodi:role="line">                      Right / Up /</tspan><tspan
+           id="tspan3903"
+           style="font-size:14px;fill:#ffffff"
+           y="1035"
+           x="984"
+           sodipodi:role="line">                      Down</tspan><tspan
+           id="tspan3841-7"
+           style="font-size:14px;fill:#ffffff"
+           y="1052.5"
+           x="984"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3887-9-8-1-1"
+         y="1070"
+         x="984"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           style="font-size:14px;fill:#ffffff"
+           y="1070"
+           x="984"
+           id="tspan3889-8-0-9-1"
+           sodipodi:role="line">Ctrl + Alt + L</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-9-8-7"
+         y="1190"
+         x="1455"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Italic"
+         xml:space="preserve"><tspan
+           id="tspan4829-7-9"
+           style="font-size:12px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1190"
+           x="1455"
+           sodipodi:role="line">left click</tspan><tspan
+           id="tspan4202-0-8-9-7-6-1"
+           style="font-size:12px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1205.1428"
+           x="1455"
+           sodipodi:role="line" /></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-9-8-7-1"
+         y="1190"
+         x="1610"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Italic"
+         xml:space="preserve"><tspan
+           id="tspan4202-0-8-9-7-6-1-1"
+           style="font-size:12px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1190"
+           x="1610"
+           sodipodi:role="line">middle click</tspan></text>
+      <text
+         sodipodi:linespacing="126.19047%"
+         id="text3887-3-0-5-8-5-5-9-8-7-1-8"
+         y="1190"
+         x="1775"
+         style="font-size:12px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:126.19047165%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Italic"
+         xml:space="preserve"><tspan
+           id="tspan4202-0-8-9-7-6-1-1-1"
+           style="font-size:12px;font-style:italic;fill:#ffffff;-inkscape-font-specification:Ubuntu Italic"
+           y="1190"
+           x="1775"
+           sodipodi:role="line">right click</tspan></text>
+      <g
+         transform="matrix(0.560243,0,0,0.560243,543.19,881.505)"
+         id="g4489"
+         style="display:inline">
+        <path
+           style="fill:#ffffff;fill-opacity:0.13227515;stroke:#ffffff;stroke-width:1.427953;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.65608467;display:inline"
+           d="m 1710,455 c 0,51.39851 -22.9086,65 -40,65 -16.5914,0 -40,-16.10149 -40,-65 0,-57.39851 2.9086,-65 40,-65 37.0914,0 40,7.10149 40,65 z"
+           id="path4220"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssszs" />
+        <g
+           style="opacity:0.2;display:inline"
+           transform="matrix(0.134055,0,0,-0.134055,1652,505.666)"
+           inkscape:label="ink_ext_XXXXXX"
+           id="g4241">
+          <g
+             transform="scale(0.1,0.1)"
+             id="g4243">
+            <g
+               id="g4245">
+              <g
+                 clip-path="url(#clipPath4249)"
+                 id="g4247">
+                <path
+                   id="path4253"
+                   style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="M 2834.65,1417.31 C 2834.65,634.57 2200.08,0 1417.3,0 634.531,0 0,634.57 0,1417.31 c 0,782.79 634.531,1417.34 1417.3,1417.34 782.78,0 1417.35,-634.55 1417.35,-1417.34"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path4255"
+                   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="m 1804.6,2088.16 c 90.5,-52.27 206.19,-21.27 258.42,69.2 52.25,90.52 21.28,206.19 -69.23,258.45 -90.49,52.24 -206.17,21.24 -258.43,-69.26 -52.23,-90.48 -21.24,-206.16 69.24,-258.39 z M 1417.33,864.57 c -83.21,0 -162.07,18.5 -232.85,51.43 L 1053,680.379 C 1162.83,626 1286.47,595.27 1417.33,595.27 c 76.1,0 149.68,10.55 219.61,29.91 12.37,76 57.5,146.05 129.44,187.59 71.82,41.468 154.94,45.582 226.88,18.39 139.92,137.578 230.97,324.76 244.22,533.21 l -269.68,3.93 C 1942.98,1085.94 1706.1,864.57 1417.33,864.57 z m 0,1105.51 c 288.77,0 525.65,-221.41 550.47,-503.73 l 269.68,3.93 c -13.27,208.44 -104.32,395.62 -244.25,533.2 -71.94,-27.18 -155.05,-23.06 -226.88,18.41 -71.93,41.53 -117.05,111.57 -129.42,187.57 -69.92,19.35 -143.5,29.91 -219.6,29.91 -130.86,0 -254.49,-30.73 -364.31,-85.12 l 131.47,-235.6 c 70.77,32.93 149.63,51.43 232.84,51.43 z M 864.578,1417.33 c 0,187.01 92.938,352.18 235.042,452.2 L 961.285,2101.27 C 795.688,1990.63 672.5,1821.5 621.34,1623.39 c 59.769,-48.72 97.957,-122.91 97.957,-206.08 0,-83.16 -38.192,-157.35 -97.969,-206.06 C 672.484,1013.13 795.676,844 961.273,733.359 l 138.347,231.75 C 957.516,1065.12 864.578,1230.29 864.578,1417.33 z M 1804.63,746.512 c -90.51,-52.25 -121.5,-167.93 -69.26,-258.403 52.26,-90.507 167.93,-121.519 258.44,-69.257 90.48,52.238 121.48,167.918 69.23,258.418 -52.24,90.468 -167.93,121.48 -258.41,69.242 z M 453.562,1606.53 c -104.531,0 -189.226,-84.69 -189.226,-189.22 0,-104.5 84.695,-189.2 189.226,-189.2 104.497,0 189.204,84.7 189.204,189.2 0,104.53 -84.707,189.22 -189.204,189.22"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:url(#linearGradient4301);stroke-width:1.42795289;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 1630.3601,420.59999 33.9789,0 5.6631,0 5.6631,0 33.9789,0"
+           id="path4285"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:url(#linearGradient4337);stroke-width:1.427953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 1671.4021,390.57692 0,12.36264 0,2.06044 0,2.06044 0,12.36264"
+           id="path4285-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <path
+         transform="matrix(0.529312,0,0,0.477468,594.774,915.341)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect4372"
+         d="m 1640.3123,395.70001 c 8.7625,-5 12.6166,-4.46257 27.9199,-4.9929 l -0.1767,28.76256 -36.111,0.17678 c 2.3484,-13.23224 1.9535,-16.2948 8.3678,-23.94644 z"
+         style="fill:#ff8e00;fill-opacity:0.57142861;stroke:none;display:inline;filter:url(#filter4445)" />
+      <g
+         id="g5014"
+         transform="matrix(0.560243,0,0,0.560243,703.835,881.505)"
+         style="display:inline">
+        <path
+           sodipodi:nodetypes="ssszs"
+           inkscape:connector-curvature="0"
+           id="path5016"
+           d="m 1710,455 c 0,51.39851 -22.9086,65 -40,65 -16.5914,0 -40,-16.10149 -40,-65 0,-57.39851 2.9086,-65 40,-65 37.0914,0 40,7.10149 40,65 z"
+           style="fill:#ffffff;fill-opacity:0.13227515;stroke:#ffffff;stroke-width:1.427953;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.65608467;display:inline" />
+        <g
+           id="g5018"
+           inkscape:label="ink_ext_XXXXXX"
+           transform="matrix(0.134055,0,0,-0.134055,1652,505.666)"
+           style="opacity:0.2;display:inline">
+          <g
+             id="g5020"
+             transform="scale(0.1,0.1)">
+            <g
+               id="g5022">
+              <g
+                 id="g5024"
+                 clip-path="url(#clipPath4249)">
+                <path
+                   inkscape:connector-curvature="0"
+                   d="M 2834.65,1417.31 C 2834.65,634.57 2200.08,0 1417.3,0 634.531,0 0,634.57 0,1417.31 c 0,782.79 634.531,1417.34 1417.3,1417.34 782.78,0 1417.35,-634.55 1417.35,-1417.34"
+                   style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="path5026" />
+                <path
+                   inkscape:connector-curvature="0"
+                   d="m 1804.6,2088.16 c 90.5,-52.27 206.19,-21.27 258.42,69.2 52.25,90.52 21.28,206.19 -69.23,258.45 -90.49,52.24 -206.17,21.24 -258.43,-69.26 -52.23,-90.48 -21.24,-206.16 69.24,-258.39 z M 1417.33,864.57 c -83.21,0 -162.07,18.5 -232.85,51.43 L 1053,680.379 C 1162.83,626 1286.47,595.27 1417.33,595.27 c 76.1,0 149.68,10.55 219.61,29.91 12.37,76 57.5,146.05 129.44,187.59 71.82,41.468 154.94,45.582 226.88,18.39 139.92,137.578 230.97,324.76 244.22,533.21 l -269.68,3.93 C 1942.98,1085.94 1706.1,864.57 1417.33,864.57 z m 0,1105.51 c 288.77,0 525.65,-221.41 550.47,-503.73 l 269.68,3.93 c -13.27,208.44 -104.32,395.62 -244.25,533.2 -71.94,-27.18 -155.05,-23.06 -226.88,18.41 -71.93,41.53 -117.05,111.57 -129.42,187.57 -69.92,19.35 -143.5,29.91 -219.6,29.91 -130.86,0 -254.49,-30.73 -364.31,-85.12 l 131.47,-235.6 c 70.77,32.93 149.63,51.43 232.84,51.43 z M 864.578,1417.33 c 0,187.01 92.938,352.18 235.042,452.2 L 961.285,2101.27 C 795.688,1990.63 672.5,1821.5 621.34,1623.39 c 59.769,-48.72 97.957,-122.91 97.957,-206.08 0,-83.16 -38.192,-157.35 -97.969,-206.06 C 672.484,1013.13 795.676,844 961.273,733.359 l 138.347,231.75 C 957.516,1065.12 864.578,1230.29 864.578,1417.33 z M 1804.63,746.512 c -90.51,-52.25 -121.5,-167.93 -69.26,-258.403 52.26,-90.507 167.93,-121.519 258.44,-69.257 90.48,52.238 121.48,167.918 69.23,258.418 -52.24,90.468 -167.93,121.48 -258.41,69.242 z M 453.562,1606.53 c -104.531,0 -189.226,-84.69 -189.226,-189.22 0,-104.5 84.695,-189.2 189.226,-189.2 104.497,0 189.204,84.7 189.204,189.2 0,104.53 -84.707,189.22 -189.204,189.22"
+                   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="path5028" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path5030"
+           d="m 1630.3601,420.59999 33.9789,0 5.6631,0 5.6631,0 33.9789,0"
+           style="fill:none;stroke:url(#linearGradient5051);stroke-width:1.42795289;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path5032"
+           d="m 1671.4021,390.57692 0,12.36264 0,2.06044 0,2.06044 0,12.36264"
+           style="fill:none;stroke:url(#linearGradient5053);stroke-width:1.427953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      </g>
+      <path
+         sodipodi:type="arc"
+         style="fill:#ff8e00;fill-opacity:0.57142861;stroke:none;display:inline;filter:url(#filter4464)"
+         id="path5044"
+         sodipodi:cx="1669.4791"
+         sodipodi:cy="404.86697"
+         sodipodi:rx="3.5355339"
+         sodipodi:ry="10.69499"
+         d="m 1673.0147,404.86697 c 0,5.90668 -1.583,10.69499 -3.5356,10.69499 -1.9526,0 -3.5355,-4.78831 -3.5355,-10.69499 0,-5.90668 1.5829,-10.69499 3.5355,-10.69499 1.9526,0 3.5356,4.78831 3.5356,10.69499 z"
+         transform="matrix(0.560243,0,0,0.560243,704.912,881.58)" />
+      <g
+         transform="matrix(0.560243,0,0,0.560243,863.19,881.505)"
+         id="g5090"
+         style="display:inline">
+        <path
+           style="fill:#ffffff;fill-opacity:0.13227515;stroke:#ffffff;stroke-width:1.427953;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.65608467;display:inline"
+           d="m 1710,455 c 0,51.39851 -22.9086,65 -40,65 -16.5914,0 -40,-16.10149 -40,-65 0,-57.39851 2.9086,-65 40,-65 37.0914,0 40,7.10149 40,65 z"
+           id="path5092"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssszs" />
+        <g
+           style="opacity:0.2;display:inline"
+           transform="matrix(0.134055,0,0,-0.134055,1652,505.666)"
+           inkscape:label="ink_ext_XXXXXX"
+           id="g5094">
+          <g
+             transform="scale(0.1,0.1)"
+             id="g5096">
+            <g
+               id="g5098">
+              <g
+                 clip-path="url(#clipPath4249)"
+                 id="g5100">
+                <path
+                   id="path5102"
+                   style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="M 2834.65,1417.31 C 2834.65,634.57 2200.08,0 1417.3,0 634.531,0 0,634.57 0,1417.31 c 0,782.79 634.531,1417.34 1417.3,1417.34 782.78,0 1417.35,-634.55 1417.35,-1417.34"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path5104"
+                   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   d="m 1804.6,2088.16 c 90.5,-52.27 206.19,-21.27 258.42,69.2 52.25,90.52 21.28,206.19 -69.23,258.45 -90.49,52.24 -206.17,21.24 -258.43,-69.26 -52.23,-90.48 -21.24,-206.16 69.24,-258.39 z M 1417.33,864.57 c -83.21,0 -162.07,18.5 -232.85,51.43 L 1053,680.379 C 1162.83,626 1286.47,595.27 1417.33,595.27 c 76.1,0 149.68,10.55 219.61,29.91 12.37,76 57.5,146.05 129.44,187.59 71.82,41.468 154.94,45.582 226.88,18.39 139.92,137.578 230.97,324.76 244.22,533.21 l -269.68,3.93 C 1942.98,1085.94 1706.1,864.57 1417.33,864.57 z m 0,1105.51 c 288.77,0 525.65,-221.41 550.47,-503.73 l 269.68,3.93 c -13.27,208.44 -104.32,395.62 -244.25,533.2 -71.94,-27.18 -155.05,-23.06 -226.88,18.41 -71.93,41.53 -117.05,111.57 -129.42,187.57 -69.92,19.35 -143.5,29.91 -219.6,29.91 -130.86,0 -254.49,-30.73 -364.31,-85.12 l 131.47,-235.6 c 70.77,32.93 149.63,51.43 232.84,51.43 z M 864.578,1417.33 c 0,187.01 92.938,352.18 235.042,452.2 L 961.285,2101.27 C 795.688,1990.63 672.5,1821.5 621.34,1623.39 c 59.769,-48.72 97.957,-122.91 97.957,-206.08 0,-83.16 -38.192,-157.35 -97.969,-206.06 C 672.484,1013.13 795.676,844 961.273,733.359 l 138.347,231.75 C 957.516,1065.12 864.578,1230.29 864.578,1417.33 z M 1804.63,746.512 c -90.51,-52.25 -121.5,-167.93 -69.26,-258.403 52.26,-90.507 167.93,-121.519 258.44,-69.257 90.48,52.238 121.48,167.918 69.23,258.418 -52.24,90.468 -167.93,121.48 -258.41,69.242 z M 453.562,1606.53 c -104.531,0 -189.226,-84.69 -189.226,-189.22 0,-104.5 84.695,-189.2 189.226,-189.2 104.497,0 189.204,84.7 189.204,189.2 0,104.53 -84.707,189.22 -189.204,189.22"
+                   inkscape:connector-curvature="0" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:url(#linearGradient5122);stroke-width:1.42795289;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 1630.3601,420.59999 33.9789,0 5.6631,0 5.6631,0 33.9789,0"
+           id="path5106"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:none;stroke:url(#linearGradient5124);stroke-width:1.427953;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           d="m 1671.4021,390.57692 0,12.36264 0,2.06044 0,2.06044 0,12.36264"
+           id="path5108"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <path
+         transform="matrix(0.494085,0,0,0.484645,975.066,912.245)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path5116"
+         d="m 1699.72,397.07668 c -8.7625,-5 -13.2824,-5.70711 -28.5857,-6.23744 l 0.1767,28.93934 36.6413,0 c -2.3484,-13.23224 -1.818,-15.05026 -8.2323,-22.7019 z"
+         style="fill:#ff8e00;fill-opacity:0.57142861;stroke:none;display:inline;filter:url(#filter4437)" />
+    </g>
+  </g>
+</svg>

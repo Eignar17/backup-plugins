@@ -1,0 +1,66 @@
+<compiz>
+	<plugin name="imageoverlay" useBcop="true">
+	<_short>Image Overlay</_short>
+	<_long>Puts an image up on screen</_long>
+	<category>Utility</category>
+	<deps>
+		<requirement>
+			<plugin>opengl</plugin>
+		</requirement>
+		<relation type="after">
+			<plugin>composite</plugin>
+			<plugin>opengl</plugin>
+			<plugin>svg</plugin>
+			<plugin>png</plugin>
+			<plugin>imgjpeg</plugin>
+			<plugin>decor</plugin>
+		</relation>
+	</deps>
+	<options>
+		<option name="position" type="int">
+			<_short>Position</_short>
+			<_long>Position on screen</_long>
+			<desc>
+				<value>0</value>
+				<_name>Centered on Screen</_name>
+			</desc>
+			<desc>
+				<value>1</value>
+				<_name>Centered on Output</_name>
+			</desc>
+			<desc>
+				<value>2</value>
+				<_name>Absolute</_name>
+			</desc>
+			<default>1</default>
+			<min>0</min>
+			<max>2</max>
+		</option>
+		<option name="absolute_x" type="int">
+			<_short>Absolute X</_short>
+			<_long>X Position of image if using absolute positioning</_long>
+			<default>100</default>
+			<min>0</min>
+			<max>3000</max>
+		</option>
+		<option name="absolute_y" type="int">
+			<_short>Absolute Y</_short>
+			<_long>Y Position of image if using absolute positioning</_long>
+			<default>100</default>
+			<min>0</min>
+			<max>3000</max>
+		</option>
+		<option name="image" type="string">
+			<_short>Image</_short>
+			<_long>Image filename</_long>
+			<default>keysoverlay.svg</default>
+			<hints>file;image;</hints>
+		</option>
+		<option name="toggle_key" type="key">
+			<_short>Toggle</_short>
+			<_long>Show image on screen</_long>
+			<default></default>
+		</option>
+	</options>
+	</plugin>
+</compiz>
