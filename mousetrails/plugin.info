@@ -1,0 +1,3 @@
+PLUGIN = mousetrails
+PKG_DEP = compiz-mousepoll
+CHK_HEADERS = compiz-mousepoll.h
