@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+	<plugin name="locker" useBcop="true">
+	<_short>Screen Locker</_short>
+	<_long>Provides a base implementation for screen locking</_long>
+	<category>Utility</category>
+	<options>
+		<option name="timeout" type="int">
+			<_short>Timeout</_short>
+			<_long>Timeout in minutes before locking the screen</_long>
+			<default>10</default>
+			<min>1</min>
+			<max>40</max>
+		</option>
+		<option name="lock_animation_duration" type="int">
+			<_short>Lock Duration</_short>
+			<_long>How long the lock animation should last (ms)</_long>
+			<default>600</default>
+			<min>200</min>
+			<max>3000</max>
+		</option>
+		<option name="unlock_animation_duration" type="int">
+			<_short>Unlock Duration</_short>
+			<_long>How long the unlock animation should last (ms)</_long>
+			<default>600</default>
+			<min>200</min>
+			<max>3000</max>
+		</option>
+	</options>
+	</plugin>
+</compiz>
