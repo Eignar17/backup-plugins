@@ -1,0 +1,2 @@
+PLUGIN = animation
+LDFLAGS_ADD = -lGLU
