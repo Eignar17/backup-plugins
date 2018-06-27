@@ -1,0 +1,130 @@
+<compiz>
+	<plugin name="multitouch" useBcop="true">
+		<short>Multitouch input</short>
+		<deps>
+			<requirement>
+			<plugin>wobbly</plugin>
+			</requirement>
+			<relation type="after">
+			<plugin>decoration</plugin>
+			<plugin>water</plugin>
+			<plugin>wobbly</plugin>
+			</relation>
+		</deps>
+		<long>Use multitouch screens trough tuio protocol to drive various plugins</long>
+		<category>Accessibility</category>
+		<display>
+		<group>
+		<short>Keys</short>
+			<short>Key Bindings</short>
+			<option name="toggle_multitouch" type="key">
+				<short>Toggle the plugin</short>
+				<long>Toggle the plugin on/off (needed if you change the port).</long>
+				<default>&lt;Super&gt;F8</default>
+			</option>
+			<option name="toggle_debug" type="key">
+				<short>Toggle debug output</short>
+				<long>Toggle detaigled debug output of what's happening.</long>
+				<default>&lt;Super&gt;F9</default>
+			</option>
+			<option name="toggle_fwd" type="key">
+				<short>Toggle tuio forwarding</short>
+				<long>Toggle forwarding of tuio messages to other port.</long>
+				<default>&lt;Super&gt;F10</default>
+			</option>
+			<option name="toggle_wm" type="key">
+				<short>Toggle gestures</short>
+				<long>Toggle moving and resizing windows.</long>
+				<default>&lt;Super&gt;F11</default>
+			</option>
+			<option name="toggle_cur" type="key">
+				<short>Toggle cursor</short>
+				<long>Toggle mouse cursor emulation.</long>
+				<default>&lt;Super&gt;F7</default>
+			</option>
+			<option name="toggle_effects" type="key">
+				<short>Switch effects</short>
+				<long>Switch from annotate to water wave or disable effects.</long>
+				<default>&lt;Super&gt;F12</default>
+			</option>
+		</group>
+		<group>
+		<short>Other</short>
+			<option name="effect" type="int">
+				<short>Choose effect</short>
+				<long>Choose ripples or annotate on the screen.</long>
+				<min>0</min>
+				<max>2</max>
+				<default>0</default>
+				<desc>
+					<value>0</value>
+					<name>Disabled</name>
+				</desc>
+				<desc>
+					<value>1</value>
+					<name>Ripples</name>
+				</desc>
+				<desc>
+					<value>2</value>
+					<name>Annotate</name>
+				</desc>
+			</option>
+			<subgroup>
+				<short>Tuio handling</short>
+				<option name="port" type="int">
+					<short>Tuio Port</short>
+					<long>Tuio Port on which we should listen for the messages.</long>
+					<default>3333</default>
+					<min>1024</min>
+					<max>65535</max>
+				</option>
+				<option name="enable_fwd" type="bool">
+					<short>Enable tuio forwarding</short>
+					<long>Enable forwarding of tuio messages to other port on plugin start.</long>
+					<default>true</default>
+				</option>
+				<option name="fwdport" type="int">
+					<short>Tuio fwd Port</short>
+					<long>Port on which tuio messages are forwarded.</long>
+					<default>3300</default>
+					<min>1024</min>
+					<max>65535</max>
+				</option>
+			</subgroup>
+			<subgroup>
+				<short>Mouse emulation</short>
+				<long>Mouse interval and threshold values.</long>
+				<option name="interval" type="int">
+					<short>Mouse double/tripple click interval</short>
+					<long>Maximal time (in milliseconds) between 2 or 3 mouse clicks that turns them into double/tripple click.</long>
+					<default>400</default>
+					<min>200</min>
+					<max>1000</max>
+				</option>
+				<option name="threshold" type="int">
+				<short>Pointer threshold</short>
+				<long>Smallest distance (in pixels) that the mouse pointer can move when performing double/tripple click to be recognized as such.</long>
+					<default>10</default>
+					<min>1</min>
+					<max>100</max>
+				</option>
+			</subgroup>
+			</group>
+		</display>
+		<screen>
+		<group>
+		<short>Other</short>
+			<subgroup>
+				<short>Annotate related settings</short>
+				<option type="color" name="fill_color">
+					<short>Annotate Fill Color</short>
+					<long>Fill color for annotations</long>
+					<default>
+						<red>0xffff</red>
+					</default>
+				</option>
+			</subgroup>
+		</group>
+		</screen>
+	</plugin>
+</compiz>
