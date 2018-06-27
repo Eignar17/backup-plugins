@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<compiz>
+  <plugin name="dock" useBcop="true">
+    <_short>Dock</_short>
+    <_long>Description</_long>
+    <category>Window Management</category>
+    <deps>
+      <requirement>
+        <plugin>composite</plugin>
+        <plugin>opengl</plugin>
+      </requirement>
+      <relation type="after">
+        <plugin>composite</plugin>
+        <plugin>opengl</plugin>
+        <plugin>cube</plugin>
+        <plugin>expo</plugin>
+        <plugin>png</plugin>
+        <plugin>imjpeg</plugin>
+      </relation>
+    </deps>
+    <options>
+      <group>
+        <_short>Bindings</_short>
+        <option name="toggle_key" type="key">
+          <_short>Toggle docked state</_short>
+          <default>&lt;Super&gt;t</default>
+        </option>
+        <option name="group_key" type="key">
+          <_short>Toggle grouped state</_short>
+          <default>&lt;Super&gt;g</default>
+        </option>
+      </group>
+      <group>
+      <_short>Behaviour</_short>
+      <option name="window_match" type="match">
+        <_short>dock Windows</_short>
+        <_long>Windows that can be docked</_long>
+        <default>Normal</default>
+      </option>
+      <option name="icons" type="bool">
+        <_short>Show icons</_short>
+        <_long>Show icons in dock</_long>
+        <default>true</default>
+      </option>
+      </group>
+      <group>
+      <_short>Backgrounds</_short>
+      <option name="tile_left" type="string">
+      <_short>Left</_short>
+      <_long>Left image file.</_long>
+      <default>/usr/share/pixmaps/compiz_dock/left.png</default>
+      <hints>file;image;</hints>
+      </option>
+      <option name="tile_center" type="string">
+      <_short>Center</_short>
+      <_long>Center image file.</_long>
+      <default>/usr/share/pixmaps/compiz_dock/center.png</default>
+      <hints>file;image;</hints>
+      </option>
+      <option name="tile_right" type="string">
+      <_short>Right</_short>
+      <_long>Right image file.</_long>
+      <default>/usr/share/pixmaps/compiz_dock/right.png</default>
+      <hints>file;image;</hints>
+     </option>
+     </group>
+    </options>
+  </plugin>
+</compiz>
