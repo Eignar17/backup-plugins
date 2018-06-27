@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<compiz>
+  <plugin name="twist" useBcop="true">
+    <_short>Twist </_short>
+    <_long>allows you to twist bottom part of the window that doesn't fit the screen</_long>
+    <category>Window Management</category>
+    <deps>
+	<requirement>
+	    <plugin>opengl</plugin>
+	</requirement>
+	<relation type="after">
+	    <plugin>composite</plugin>
+	    <plugin>opengl</plugin>
+	    <plugin>wall</plugin>
+	    <plugin>decor</plugin>
+	</relation>
+    </deps>
+    <options>
+      <group>
+        <_short>Bindings</_short>
+	<option name="twisting_type" type="int">
+	<_short>Twisting type</_short>
+	<_long>How to twist the bottom part of the window</_long>
+	<min>0</min>
+	<max>1</max>
+	<default>0</default>
+	<desc>
+		<value>0</value>
+		<_name>Screw</_name>
+	</desc>
+	<desc>
+		<value>1</value>
+		<_name>Compress</_name>
+	</desc>
+	</option>
+      </group>
+    </options>
+  </plugin>
+</compiz>
