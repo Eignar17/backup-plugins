@@ -1,0 +1,77 @@
+<compiz>
+    <plugin name="hoverfx" useBcop="true">
+      <_short>Hover Effects</_short>
+      <_long>Window effects on hover</_long>
+	<deps>
+	    <requirement>
+		<plugin>opengl</plugin>
+	    </requirement>
+	</deps>
+        <options>
+            <option name="effect_type" type="int">
+                <_short>Effect Type</_short>
+                <_long>What effect to use on hover</_long>
+                <min>0</min>
+                <max>3</max>
+                <default>0</default>
+                <desc>
+		    <value>0</value>
+		    <_name>Scale</_name>
+		</desc>
+                <desc>
+		    <value>1</value>
+		    <_name>Opacity</_name>
+		</desc>
+                <desc>
+		    <value>2</value>
+		    <_name>Brightness</_name>
+		</desc>
+		<desc>
+		    <value>3</value>
+		    <_name>Saturation</_name>
+		</desc>
+	    </option>
+	    <subgroup>
+		<_short>Scale</_short>
+		<option name="scale_factor" type="float">
+		    <_short>Scale Factor</_short>
+		    <_long>How much to scale the window by on hover</_long>
+		    <min>1.0</min>
+		    <max>1.4</max>
+		    <default>1.1</default>
+		</option>
+	    </subgroup>
+	    <subgroup>
+		<_short>Levels</_short>
+		<option name="brightness" type="int">
+		  <_short>Brightness</_short>
+		  <_long>Brightness of faded windows</_long>
+		  <default>30</default>
+		  <min>1</min>
+		  <max>100</max>
+		</option>
+		<option name="saturation" type="int">
+		  <_short>Saturation</_short>
+		  <_long>Saturation of faded windows</_long>
+		  <default>50</default>
+		  <min>0</min>
+		  <max>100</max>
+		</option>
+		<option name="opacity" type="int">
+		  <_short>Opacity</_short>
+		  <_long>Opacity of faded windows</_long>
+		  <default>100</default>
+		  <min>1</min>
+		  <max>100</max>
+		</option>
+	    </subgroup>
+	    <option name="time" type="int">
+		<_short>Animation time</_short>
+		<_long>How long the animation should run for (ms)</_long>
+		<min>1</min>
+		<max>1000</max>
+		<default>200</default>
+	    </option>
+	</options>
+    </plugin>
+</compiz>
