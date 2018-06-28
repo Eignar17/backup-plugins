@@ -103,7 +103,6 @@ basicblurToggleScreen (CompScreen *s)
             addWindowDamage(w);
             basicblurToggleWindow (w);
 
-            /*
 
             nw->region->rects = &nw->region->extents;
             nw->region->numRects = 1;
@@ -115,7 +114,6 @@ basicblurToggleScreen (CompScreen *s)
 
             damageScreenRegion (w->screen, nw->region);
 
-            */
 
             DAMAGE_WIN_REGION;
         }
