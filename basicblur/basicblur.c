@@ -8,6 +8,12 @@
 #define PAINT_WINDOW_DECORATION_MASK (1 << 4)
 #endif
 
+static int corePrivateIndex;
+
+typedef struct _basicblurCore {
+    ObjectAddProc objectAdd;
+} basicblurCore;
+
 static int BasicBlurdisplayPrivateIndex;
 
 static GLfloat * convfilter;
@@ -20,11 +26,18 @@ typedef struct _basicblurDisplay {
 
 
 typedef struct _basicblurScreen {
-    int                     windowPrivateIndex;
-    DrawWindowTextureProc   drawWindowTexture;
-    DamageWindowRectProc    damageWindowRect;
-    PaintWindowProc         paintWindow;
-    Bool                    isBlured;
+    int                          windowPrivateIndex;
+    PaintWindowProc              paintWindow;
+    DrawWindowProc	         drawWindow;
+    DonePaintScreenProc	         donePaintScreen;
+    PaintTransformedOutputProc	 paintTransformedOutput;
+    PaintOutputProc	         paintOutput;
+    DrawWindowTextureProc        drawWindowTexture;
+
+    WindowResizeNotifyProc       windowResizeNotify;
+    WindowMoveNotifyProc         windowMoveNotify;
+
+    Bool                         isBlured;
 } basicblurScreen;
 
 typedef struct _basicblurWindow {
@@ -33,12 +46,31 @@ typedef struct _basicblurWindow {
     Region region;
 } basicblurWindow;
 
-#define GET_BASICBLUR_DISPLAY(d) ((basicblurDisplay *) (d)->base.privates[BasicBlurdisplayPrivateIndex].ptr)
-#define BASICBLUR_DISPLAY(d) basicblurDisplay *nd = GET_BASICBLUR_DISPLAY (d)
-#define GET_BASICBLUR_SCREEN(s, nd) ((basicblurScreen *) (s)->base.privates[(nd)->screenPrivateIndex].ptr)
-#define BASICBLUR_SCREEN(s) basicblurScreen *ns = GET_BASICBLUR_SCREEN (s, GET_BASICBLUR_DISPLAY (s->display))
-#define GET_BASICBLUR_WINDOW(w, ns) ((basicblurWindow *) (w)->base.privates[(ns)->windowPrivateIndex].ptr)
-#define BASICBLUR_WINDOW(w) basicblurWindow *nw = GET_BASICBLUR_WINDOW  (w, GET_BASICBLUR_SCREEN  (w->screen, GET_BASICBLUR_DISPLAY (w->screen->display)))
+#define GET_BASICBLUR_CORE(c)				    \
+    ((basicblurCore *) (c)->base.privates[corePrivateIndex].ptr)
+
+#define BASICBLUR_CORE(c)		     \
+    BlurCore *nc = GET_BASICBLUR_CORE (c)
+
+#define GET_BASICBLUR_DISPLAY(d)					  \ 
+    ((basicblurDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
+
+#define BASICBLUR_DISPLAY(d)			   \
+    basicblurDisplay *nd = GET_BASICBLUR_DISPLAY (d)
+
+#define GET_BASICBLUR_SCREEN(s, nd)					      \
+    ((basicblurScreen *) (s)->base.privates[(nd)->screenPrivateIndex].ptr)
+
+#define BASICBLUR_SCREEN(s)							\
+    basicblurScreen *ns = GET_BASICBLUR_SCREEN (s, GET_BASICBLUR_DISPLAY (s->display))
+
+#define GET_BASICBLUR_WINDOW(w, ns)					      \
+    ((basicblurWindow *) (w)->base.privates[(ns)->windowPrivateIndex].ptr)
+
+#define BASICBLUR_WINDOW(w)		              \
+    basicblurWindow *nw = GET_BASICBLUR_WINDOW  (w,		     \
+		     GET_BASICBLUR_SCREEN  (w->screen,	     \
+		     GET_BASICBLUR_DISPLAY (w->screen->display)))
 
 #define WIN_OUTPUT_X(w) (w->attrib.x - w->output.left)
 #define WIN_OUTPUT_Y(w) (w->attrib.y - w->output.top)
@@ -263,6 +295,51 @@ basicblurDamageWindowRect (CompWindow *w, Bool initial, BoxPtr rect)
 
     return status;
 }
+
+// ------------------------------------------------------------------------------- CORE
+
+static Bool
+basicblurInitCore (CompPlugin *p,
+	     CompCore   *c)
+{
+    basicblurCore *nc;
+
+    if (!checkPluginABI ("core", CORE_ABIVERSION))
+        return FALSE;
+
+    ac = malloc (sizeof (basicblurCore));
+    if (!ns)
+        return FALSE;
+
+    displayPrivateIndex = allocateDisplayPrivateIndex ();
+    if (displayPrivateIndex < 0)
+    {
+        free (nc);
+        return FALSE;
+    }
+
+    WRAP (nc, c, objectAdd, basicblurObjectAdd);
+
+    c->base.privates[corePrivateIndex].ptr = nc;
+
+    return TRUE;
+}
+
+
+static void
+basicblurFiniCore (CompPlugin *p,
+			CompCore   *c)
+{
+    BASICBLUR_CORE (c);
+
+    freeDisplayPrivateIndex (displayPrivateIndex);
+
+    UNWRAP (nc, c, objectAdd);
+
+    free (nc);
+}
+
+// ------------------------------------------------------------------------------- DISPLAY
 
 static Bool
 basicblurInitDisplay (CompPlugin  *p, CompDisplay *d)
