@@ -1,8 +1,7 @@
-#include <X11/extensions/Xcomposite.h>
-
 #include <compiz-core.h>
 #include "basicblur_options.h"
 
+#include <math.h>
 #include <GL/glext.h>
 
 #ifndef PAINT_WINDOW_DECORATION_MASK
@@ -169,7 +168,6 @@ basicblurPaintWindow (CompWindow		 *w,
 		 Region			 region,
 		 unsigned int		 mask)
 {
-    WindowPaintAttrib sAttrib;
     CompScreen	      *s = w->screen;
     Bool	      status;
 
