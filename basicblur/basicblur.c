@@ -8,6 +8,8 @@
 #define PAINT_WINDOW_DECORATION_MASK (1 << 4)
 #endif
 
+static int displayPrivateIndex;
+
 static int corePrivateIndex;
 
 typedef struct _basicblurCore {
