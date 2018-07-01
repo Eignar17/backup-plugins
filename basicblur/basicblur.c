@@ -1,15 +1,8 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-
-#include <X11/Xatom.h>
-#include <X11/extensions/Xrender.h>
 #include <X11/extensions/Xcomposite.h>
 
 #include <compiz-core.h>
 #include "basicblur_options.h"
 
-#include <math.h>
 #include <GL/glext.h>
 
 #ifndef PAINT_WINDOW_DECORATION_MASK
