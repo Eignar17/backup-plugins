@@ -296,6 +296,28 @@ basicblurDamageWindowRect (CompWindow *w, Bool initial, BoxPtr rect)
     return status;
 }
 
+// ------------------------------------------------------------------------------- OBJECT ADD
+
+static void
+basicblurObjectAdd (CompObject *parent,
+			CompObject *object)
+{
+    static ObjectAddProc dispTab[] = {
+	(ObjectAddProc) 0, /* CoreAdd */
+        (ObjectAddProc) 0, /* DisplayAdd */
+        (ObjectAddProc) 0, /* ScreenAdd */
+        (ObjectAddProc) basicblurWindowAdd
+    };
+
+    BASICBLUR_CORE (&core);
+
+    UNWRAP (nc, &core, objectAdd);
+    (*core.objectAdd) (parent, object);
+    WRAP (nc, &core, objectAdd, anaglyphObjectAdd);
+
+    DISPATCH (object, dispTab, ARRAY_SIZE (dispTab), (parent, object));
+}
+
 // ------------------------------------------------------------------------------- CORE
 
 static Bool
@@ -502,6 +524,7 @@ basicblurInitObject (CompPlugin *p,
 {
     static InitPluginObjectProc dispTab[] = {
 	(InitPluginObjectProc) 0, /* InitCore */
+	(InitPluginObjectProc) basicblurblurInitCore,
 	(InitPluginObjectProc) basicblurInitDisplay,
 	(InitPluginObjectProc) basicblurInitScreen,
 	(InitPluginObjectProc) basicblurInitWindow
@@ -516,6 +539,7 @@ basicblurFiniObject (CompPlugin *p,
 {
     static FiniPluginObjectProc dispTab[] = {
 	(FiniPluginObjectProc) 0, /* FiniCore */
+	(FiniPluginObjectProc) basicblurFiniCore,
 	(FiniPluginObjectProc) basicblurFiniDisplay,
 	(FiniPluginObjectProc) basicblurFiniScreen,
 	(FiniPluginObjectProc) basicblurFiniWindow
