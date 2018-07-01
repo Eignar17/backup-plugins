@@ -296,6 +296,34 @@ basicblurDamageWindowRect (CompWindow *w, Bool initial, BoxPtr rect)
     return status;
 }
 
+//-------------------------------------------------------------------------------
+
+static void
+blurMatchPropertyChanged (CompDisplay *d,
+			  CompWindow  *w)
+{
+    BASICBLUR_DISPLAY (d);
+    BASICBLUR_SCREEN (w->screen);
+
+    basicblurUpdateWindowMatch (nc, w);
+
+    UNWRAP (nc, d, matchPropertyChanged);
+    (*d->matchPropertyChanged) (d, w);
+    WRAP (nc, d, matchPropertyChanged, blurMatchPropertyChanged);
+}
+
+static void
+blurWindowAdd (CompScreen *s,
+	       CompWindow *w)
+{
+     BASICBLUR_SCREEN (s);
+
+    basicblurWindowUpdate (w, BASICBLUR_STATE_CLIENT);
+    basicblurWindowUpdate (w, BASICBLUR_STATE_DECOR);
+
+    blurUpdateWindowMatch (ns, w);
+}
+
 // ------------------------------------------------------------------------------- OBJECT ADD
 
 static void
