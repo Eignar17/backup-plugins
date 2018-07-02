@@ -35,6 +35,7 @@ typedef struct _basicblurScreen {
     PaintTransformedOutputProc	 paintTransformedOutput;
     PaintOutputProc	         paintOutput;
     DrawWindowTextureProc        drawWindowTexture;
+    DamageWindowRectProc         damageWindowRect;
 
     WindowResizeNotifyProc       windowResizeNotify;
     WindowMoveNotifyProc         windowMoveNotify;
