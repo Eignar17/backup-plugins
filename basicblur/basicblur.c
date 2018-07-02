@@ -55,7 +55,7 @@ typedef struct _basicblurWindow {
 #define BASICBLUR_CORE(c)		     \
     basicblurCore *nc = GET_BASICBLUR_CORE (c)
 
-#define GET_BASICBLUR_DISPLAY(d)					  \ 
+#define GET_BASICBLUR_DISPLAY(d)					       \
     ((basicblurDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
 
 #define BASICBLUR_DISPLAY(d)			   \
@@ -309,7 +309,6 @@ basicblurObjectAdd (CompObject *parent,
 	(ObjectAddProc) 0, /* CoreAdd */
         (ObjectAddProc) 0, /* DisplayAdd */
         (ObjectAddProc) 0, /* ScreenAdd */
-        (ObjectAddProc) basicblurWindowAdd
     };
 
     BASICBLUR_CORE (&core);
@@ -332,7 +331,7 @@ basicblurInitCore (CompPlugin *p,
     if (!checkPluginABI ("core", CORE_ABIVERSION))
         return FALSE;
 
-    ac = malloc (sizeof (basicblurCore));
+    nc = malloc (sizeof (basicblurCore));
     if (!nc)
         return FALSE;
 
