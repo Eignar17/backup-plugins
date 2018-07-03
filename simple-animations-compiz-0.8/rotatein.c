@@ -11,7 +11,7 @@
  * E-mail    : davidr@novell.com>
  *
  * Particle system added by : (C) 2006 Dennis Kasprzyk
- * E-mail                   : onestone@beryl-project.org
+ * E-mail                   : onestone@compiz.org
  *
  * Beam-Up added by : Florencio Guimaraes
  * E-mail           : florencio@nexcorp.com.br
@@ -108,6 +108,8 @@ applyRotateinTransform (CompWindow *w)
 	    originX = WIN_X (w) + WIN_W (w);
 	    originY = WIN_Y (w);
 	    break;
+	default:
+	    return;
     }
 
     forwardProgress = fxRotateinAnimProgress (w);
@@ -171,7 +173,6 @@ void fxRotateinPrePaintWindow (CompWindow *w)
     float forwardProgress = fxRotateinAnimProgress (w);
     float xRot, yRot;
     float angleX, angleY;
-    float originX, originY;
     Bool  xInvert = FALSE, yInvert = FALSE;
     int currentCull, invertCull;
 
@@ -185,27 +186,21 @@ void fxRotateinPrePaintWindow (CompWindow *w)
 	case 1:
 	    angleX = 0;
 	    angleY = -animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w) + WIN_H (w);
 	    break;
 	case 2:
 	    angleX = animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
 	    angleY = 0;
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w);
 	    break;
 	case 3:
 	    angleX = 0;
 	    angleY = animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w);
 	    break;
 	case 4:
 	    angleX = -animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
 	    angleY = 0;
-	    originX = WIN_X (w) + WIN_W (w);
-	    originY = WIN_Y (w);
 	    break;
+	default:
+	    return;
     }
 
     /* FIXME: This could be fancy vectorial normal direction calculation */
@@ -229,7 +224,6 @@ void fxRotateinPostPaintWindow (CompWindow * w)
     float forwardProgress = fxRotateinAnimProgress (w);
     float xRot, yRot;
     float angleX, angleY;
-    float originX, originY;
     Bool  xInvert = FALSE, yInvert = FALSE;
     int currentCull, invertCull;
 
@@ -243,27 +237,21 @@ void fxRotateinPostPaintWindow (CompWindow * w)
 	case 1:
 	    angleX = 0;
 	    angleY = -animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w) + WIN_H (w);
 	    break;
 	case 2:
 	    angleX = animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
 	    angleY = 0;
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w);
 	    break;
 	case 3:
 	    angleX = 0;
 	    angleY = animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
-	    originX = WIN_X (w);
-	    originY = WIN_Y (w);
 	    break;
 	case 4:
 	    angleX = -animGetF (w, ANIMSIM_SCREEN_OPTION_ROTATEIN_ANGLE);
 	    angleY = 0;
-	    originX = WIN_X (w) + WIN_W (w);
-	    originY = WIN_Y (w);
 	    break;
+	default:
+	    return;
     }
 
     /* FIXME: This could be fancy vectorial normal direction calculation */
@@ -290,4 +278,3 @@ fxRotateinZoomToIcon (CompWindow *w)
 {
     return FALSE;
 }
-
