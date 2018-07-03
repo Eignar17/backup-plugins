@@ -1,13 +1,13 @@
 #include "animationsim.h"
 
 float
-FanSingleAnim::getFadeProgress ()
+fxFanAnimProgress (CompWindow *w)
 {
     return getProgress ();
 };
 
 void
-FanSingleAnim::applyTransform ()
+applyFanTransform (CompWindow *w)
 {
     /* Starting angle is as a percentage of whichever fan number we are
      * closest to the center
@@ -23,29 +23,60 @@ FanSingleAnim::applyTransform ()
     float div = (ass->optionGetFanAngle () * 2) / 6;
     float startAng = -(ass->optionGetFanAngle ()) + (div * num);
     float currAng = getProgress () * startAng;
-    float offset = (1 - getProgress ()) * (WIN_H (mWindow) / 2);
+    float offset = (1 - getProgress ()) * (WIN_H (w) / 2);
     
     if (num > 3)
 	num += 1;
     
     if (num > 3)
     {
-	mTransform.translate (WIN_X (mWindow) + WIN_W (mWindow) - offset,
-			      WIN_Y (mWindow) + WIN_H (mWindow),
+	matrixTranslate (transform, WIN_X (w) + WIN_W (w) - offset,
+			      WIN_Y (w) + WIN_H (w),
 			      0.0f);
 	mTransform.rotate (currAng, 0.0f, 0.0f, 1.0f);
-	mTransform.translate (-(WIN_X (mWindow) + WIN_W (mWindow) - offset),
-			      -(WIN_Y (mWindow) + WIN_H (mWindow)),
+	matrixTranslate (transform, -(WIN_X (w) + WIN_W (w) - offset),
+			      -(WIN_Y (w) + WIN_H (w)),
 			      0.0f);
     }
     else
     {
-	mTransform.translate (WIN_X (mWindow) + offset,
-			      WIN_Y (mWindow) + WIN_H (mWindow),
+	matrixTranslate (transform, WIN_X (w) + offset,
+			      WIN_Y (w) + WIN_H (w),
 			      0.0f);
 	mTransform.rotate (currAng, 0.0f, 0.0f, 1.0f);
-	mTransform.translate (-(WIN_X (mWindow) + offset),
-			      -(WIN_Y (mWindow) + WIN_H (mWindow)),
+	matrixTranslate (transform, -(WIN_X (w) + offset),
+			      -(WIN_Y (w) + WIN_H (w)),
 			      0.0f);
     }
+}
+void
+fxFanAnimStep (CompWindow *w, float time)
+{
+    ANIMSIM_DISPLAY (w->screen->display);
+    (*ad->animBaseFunc->defaultAnimStep) (w, time);
+
+    applyExpandTransform (w);
+}
+
+void
+fxFanUpdateWindowAttrib (CompWindow * w,
+			   WindowPaintAttrib * wAttrib)
+{
+}
+
+void
+fxFanUpdateWindowTransform (CompWindow *w,
+			      CompTransform *wTransform)
+{
+    ANIMSIM_WINDOW(w);
+
+    matrixMultiply (wTransform, wTransform, &aw->com->transform);
+}
+
+Bool
+fxFanInit (CompWindow * w)
+{
+    ANIMSIM_DISPLAY (w->screen->display);
+
+    return (*ad->animBaseFunc->defaultAnimInit) (w);
 }
