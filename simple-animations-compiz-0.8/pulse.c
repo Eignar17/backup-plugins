@@ -5,7 +5,7 @@
  */
 
 float
-PulseSingleAnim::getFadeProgress ()
+fxPulseAnimProgress (CompWindow *w)
 {
     int num = MultiAnim <PulseSingleAnim, 2>::getCurrAnimNumber (mAWindow);
     
@@ -14,16 +14,17 @@ PulseSingleAnim::getFadeProgress ()
     else
 	return 0.0f;
 };
-
-void
-PulseSingleAnim::applyTransform ()
+static void
+applyPulseTransform (CompWindow *w)
 {
+    ANIMSIM_WINDOW (w);
+
     float scale = 1.0f + (1- getProgress ());
     
     /* Add a bit of a "kick" for open, close,
      * minimize, unminimize, etc anims */
     
-    switch (mCurWindowEvent)
+    switch (CurWindowEvent)
     {
 	case WindowEventOpen:
 	case WindowEventClose:
@@ -38,13 +39,44 @@ PulseSingleAnim::applyTransform ()
 	if (scale > 1.0f)
 	    scale = 1.0f;
   
-    GLMatrix *transform = &mTransform;
+    CompTransform *transform = &aw->com->transform;
 
-    transform->translate (WIN_X (mWindow) + WIN_W (mWindow) / 2.0f,
-			  WIN_Y (mWindow) + WIN_H (mWindow) / 2.0f, 0.0f);
+    matrixTranslate (transform, WIN_X (w) + WIN_W (w) / 2.0f,
+			  WIN_Y (w) + WIN_H (w) / 2.0f, 0.0f);
 
-    transform->scale (scale, scale, 1.0f);
+    matrixScale (transform, scale, scale, 1.0f);
 
-    transform->translate (-(WIN_X (mWindow) + WIN_W (mWindow) / 2.0f),
-			  -(WIN_Y (mWindow) + WIN_H (mWindow) / 2.0f), 0.0f);
+    matrixTranslate (transform, -(WIN_X (w) + WIN_W (w) / 2.0f),
+			  -(WIN_Y (w) + WIN_H (w) / 2.0f), 0.0f);
+}
+void
+fxPulseAnimStep (CompWindow *w, float time)
+{
+    ANIMSIM_DISPLAY (w->screen->display);
+    (*ad->animBaseFunc->defaultAnimStep) (w, time);
+
+    applyExpandTransform (w);
+}
+
+void
+fxPulseUpdateWindowAttrib (CompWindow * w,
+			   WindowPaintAttrib * wAttrib)
+{
+}
+
+void
+fxPulseUpdateWindowTransform (CompWindow *w,
+			      CompTransform *wTransform)
+{
+    ANIMSIM_WINDOW(w);
+
+    matrixMultiply (wTransform, wTransform, &aw->com->transform);
+}
+
+Bool
+fxPulseInit (CompWindow * w)
+{
+    ANIMSIM_DISPLAY (w->screen->display);
+
+    return (*ad->animBaseFunc->defaultAnimInit) (w);
 }
