@@ -11,7 +11,7 @@
  * E-mail    : davidr@novell.com>
  *
  * Particle system added by : (C) 2006 Dennis Kasprzyk
- * E-mail                   : onestone@beryl-project.org
+ * E-mail                   : onestone@compiz.org
  *
  * Beam-Up added by : Florencio Guimaraes
  * E-mail           : florencio@nexcorp.com.br
@@ -81,6 +81,8 @@ applyFlyinTransform (CompWindow *w)
 	    offsetX = animGetF (w, ANIMSIM_SCREEN_OPTION_FLYIN_DIRECTION_X);
 	    offsetY = animGetF (w, ANIMSIM_SCREEN_OPTION_FLYIN_DIRECTION_Y);
 	    break;
+	default:
+	    return;
     }
 
     forwardProgress = fxFlyinAnimProgress (w);
@@ -130,4 +132,3 @@ fxFlyinInit (CompWindow * w)
 
     return (*ad->animBaseFunc->defaultAnimInit) (w);
 }
-
