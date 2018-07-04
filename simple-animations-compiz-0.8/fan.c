@@ -23,7 +23,7 @@ applyFanTransform (CompWindow *w)
     float div = (ass->optionGetFanAngle () * 2) / 6;
     float startAng = -(ass->optionGetFanAngle ()) + (div * num);
     float currAng = getProgress () * startAng;
-    float offset = (1 - getProgress ()) * (WIN_H (w) / 2);
+    float offset = (1 - getProgress ()) * (WIN_H (W) / 2);
     
     if (num > 3)
 	num += 1;
