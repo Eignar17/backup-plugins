@@ -10,7 +10,7 @@ fxPulseAnimProgress (CompWindow *w)
     int num = MultiAnim <PulseSingleAnim, 2>::getCurrAnimNumber (mAWindow);
     
     if (num == 1)
-	return 1 - getProgress ();
+	return 1 - fxPulseAnimProgress (w);
     else
 	return 0.0f;
 };
@@ -19,7 +19,7 @@ applyPulseTransform (CompWindow *w)
 {
     ANIMSIM_WINDOW (w);
 
-    float scale = 1.0f + (1- getProgress ());
+    float scale = 1.0f + (1- fxPulseAnimProgress (w);
     
     /* Add a bit of a "kick" for open, close,
      * minimize, unminimize, etc anims */
