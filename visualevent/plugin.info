@@ -1,0 +1,3 @@
+PLUGIN = visualevent
+LDFLAGS_ADD = -lpthread
+PKG_DEP = xtst cairo cairo-xlib-xrender pango pangocairo

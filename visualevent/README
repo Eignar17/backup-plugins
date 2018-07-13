@@ -1,0 +1,7 @@
+This plugin enables you to display visual indicators when a key modifier (such as Control, Alt...) or a mouse button is pressed. One of the use cases is when demonstrating a software, using this plugin shows viewers what you do while you do it in a fairly simple way.
+
+This plugin requires you to have X Record extension loaded (if it isn't loaded by default, add a Load "record" in your Section "Module" of your xorg.conf)
+
+Hope this will work well and won't freeze your computer (guess I froze mine 10 times while writing this)...
+
+Please report any bug at guillaume@segu.in or on Compiz Fusion bug tracker.
