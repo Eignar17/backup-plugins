@@ -1,0 +1,46 @@
+Head Tracking README
+
+WARNING:
+Using this plugin may cause headaches if it is not set up properly. If you feel
+the distorted view is causing you problems, please, take our advice: stop using
+it! We won't be held responsible for any sickness you feel from staring at a
+constantly distorting screen for extended periods of time.
+
+Overview:
+Headtracking is a fairly simple plugin (really, it is!) that uses one of two
+methods to track the location of your face (more specifically, your eyes) and
+then morphs your Compiz display to appear to be truly 3d. For example, if you
+move your head right, the vanishing point on your screen moves to the right.
+
+The plugin also does one other thing, but I'm thinking of moving it to its own
+plugin for various reasons: it stacks your windows in 3d while keeping the main
+window at screen level (or further up, a setting is available). Without this,
+the effect would be impossible to fully grasp. The further back a window is,
+the further back it actually is in 3d space in Compiz.
+
+Anyway, enough rambling - all this means is that you can take a webcam, hook it
+up, start Compiz, enable this plugin, and (assuming your webcam works with
+OpenCV), have your entire desktop appear as if it were a three-dimensional
+hologram with depth beyond your monitor.
+
+So, cool, 'eh?
+
+Read on for some history:
+This plugin started out as a port of Johnny Chung Lee's Wiimote-based head-
+tracking algorithm to Linux, with usability in mind. The plugin itself never
+had any direct interaction with a Wiimote - SmSpillaz wrote the `wiimote`
+plugin for that. Instead, it allowed `wiimote` to send head location data
+and we just did all the magic to convert two points into a 3d position.
+Amazingly, it worked, though not perfectly. The wiimote isn't as good as
+it could be for that sort of thing. The biggest problem was that you had
+to attach some lights to your head! After a while, progress slowed - the
+thing worked, who cared? Eventually, I lost Git access due to the the faulty
+RNG-in-Debian bug having made me a bad public key. Never, until now, did I
+actually bother to send a new one. As the project sat idle, another coder
+came and picked it up, integrating it with Intel's OpenCV libraries - giving
+it new hope and ease of use. Now all you need to use Head Tracking is a simple
+webcam (though preferablly a higher-quality one). After seeing his work, I was
+both honored and amazed at how well it worked. And so here we are. We've taken
+the original Wiitrack, made it more generic, changed to "Head Tracking", and
+fixed up some things, and we have a working product.
+

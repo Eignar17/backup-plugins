@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <plugin name="headtracking" useBcop="true">
+	    <_short>Head Tracking</_short>
+	    <_long>Create a true 3d desktop with various tracking methods.</_long>
+	    <category>Extras</category>
+	    <!-- Extras feels appropriate now. It's more than an effect. -->
+	    <deps>
+		<relation type="after">
+		    <plugin>cube</plugin>
+		    <plugin>decor</plugin>
+		</relation>
+		<requirement>
+		    <plugin>composite</plugin>
+		    <plugin>opengl</plugin>
+		    <plugin>mousepoll</plugin>
+		    <!-- 
+			XXX: `wiimote` is required to use the `wiimote` operations.
+		    -->
+		</requirement>
+	    </deps>
+	<options>
+	    <!-- Window Stacking Keybindings -->
+		<group>
+		<_short>Stacking</_short>
+			<subgroup>
+			<_short>Keybindings</_short>
+			    <option type="key" name="manual_in">
+				    <_short>Move Window Closer</_short>
+				    <_long>Manually move a window closer. Z-depth is ignored</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;Page_Down</default>
+			    </option>
+			    <option type="key" name="manual_out">
+				    <_short>Move Window Away</_short>
+				    <_long>Manually move a window further out. Z-depth is ignored</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;Page_Up</default>
+			    </option>
+			    <option type="key" name="manual_reset">
+				    <_short>Reset Window Depth</_short>
+				    <_long>Reset the window's depth so it uses Z level</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;Home</default>
+			    </option>
+			</subgroup>
+		</group>
+		<!-- Debugging -->
+		<group>
+		<_short>Debugging</_short>
+			<subgroup>
+			<_short>Keybindings</_short>
+			    <option type="bool" name="debug_enabled">
+				    <_short>Enable debugging keys</_short>
+				    <_long>Enable the debugging key combinations</_long>
+				    <default>false</default>
+			    </option>
+			    <option type="key" name="camera_up">
+				    <_short>Camera up</_short>
+				    <_long>Manually move camera up</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;w</default>
+			    </option>
+			    <option type="key" name="camera_down">
+				    <_short>Camera down</_short>
+				    <_long>Manually move camera down</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;s</default>
+			    </option>
+			    <option type="key" name="camera_left">
+				    <_short>Camera left</_short>
+				    <_long>Manually move camera left</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;a</default>
+			    </option>
+			    <option type="key" name="camera_right">
+				    <_short>Camera right</_short>
+				    <_long>Manually move camera right</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;d</default>
+			    </option>
+			    <option type="key" name="camera_in">
+				    <_short>Camera in</_short>
+				    <_long>Manually move camera closer to screen</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;e</default>
+			    </option>
+			    <option type="key" name="camera_out">
+				    <_short>Camera out</_short>
+				    <_long>Manually move camera away from screen</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;q</default>
+			    </option>
+			    <option type="key" name="camera_reset">
+				    <_short>Camera reset</_short>
+				    <_long>Reset camera to default head position</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;r</default>
+			    </option>
+			    <option type="key" name="toggle_mouse">
+				    <_short>Toggle mouse tracking</_short>
+				    <_long>Toggle mouse tracking on and off</_long>
+				    <default>&lt;Alt&gt;&lt;Super&gt;t</default>
+			    </option>
+			</subgroup>
+		</group>
+	    <!-- General settings -->
+		<option type="bool" name="enable_camtracking">
+		    <_short>Enable Webcam Tracking</_short>
+		    <_long>Enable tracking using OpenCV and JCL. You need a webcam set up to use this.</_long>
+		    <default>false</default>
+		</option>
+        <option type="bool" name="enable_tracking">
+		    <_short>Enable Wiimote Tracking</_short>
+		    <_long>Enable tracking using JCL's algorithm. You must have `wiimote` enabled to use this.</_long>
+		    <default>false</default>
+		</option>
+		<subgroup>
+	    <_short>Tracker Calibration</_short>
+		        <option type="bool" name="wiimote_above">
+		            <_short>Tracker Above Screen</_short>
+		            <_long>Enable this if your tracking device is above your screen.</_long>
+		            <default>true</default>
+		        </option>
+		        <option type="int" name="wiimote_adjust">
+		            <_short>Height Adjustment</_short>
+		            <_long>Use this to adjust the head height.</_long>
+		            <default>0</default>
+		            <min>-100</min>
+		            <max>100</max>
+		        </option>
+		        <option type="int" name="bar_width">
+		            <_short>Width Adjustment</_short>
+		            <!-- formerly sensor bar width -->
+		            <_long>Use this to adjust to different resolution detections.</_long>
+		            <default>10</default>
+		            <min>1</min>
+		            <max>10000</max>
+		        </option>
+		        <option type="int" name="wiimote_vertical_angle">
+		            <_short>Tracker Vertical Angle</_short>
+		            <_long>Angle of your tracking device in hundtredths of radians.</_long>
+		            <default>0</default>
+		            <min>-100</min>
+		            <max>100</max>
+		        </option>
+		</subgroup>
+		<subgroup>
+		<_short>Webcam Tuning</_short>
+		    	<option type="int" name="depth_adjust">
+		            <_short>Field of View Adjustment</_short>
+		            <_long>Adjust your "effectiveness" when using a webcam.</_long>
+		            <default>100</default>
+		            <min>1</min>
+		            <max>1000</max>
+		        </option>
+		        <option type="int" name="scale">
+		            <_short>Image Scale</_short>
+		            <_long>Higher values yield faster detection, but less accuracy. 40 is good for a 640x480 webcam.</_long>
+		            <default>40</default>
+		            <min>10</min>
+		            <max>100</max>
+		        </option>
+		        <option type="bool" name="webcam_lissage">
+		            <_short>Avoid jumpings and trembling</_short>
+		            <_long>Use this if the windows are unstable when you don't move your head</_long>
+		            <default>true</default>
+		        </option>
+		        <option type="bool" name="webcam_smooth">
+		            <_short>Smoothen the movements</_short>
+		            <_long>Use this if the windows are jumping brutally</_long>
+		            <default>false</default>
+		        </option>
+		</subgroup>
+	    <!-- Window Stacking settings
+	        TODO: Move this to a separate plugin.
+	    -->
+		<group>
+		<_short>Stacking</_short>
+			<option type="int" name="window_depth">
+				<_short>Window Depth</_short>
+				<_long>How far apart windows are when stacked based on Z level</_long>
+				<default>10</default>
+				<min>0</min>
+				<max>100</max>
+			</option>
+			<option type="int" name="stack_padding">
+			    <_short>Stack Padding</_short>
+			    <_long>Make your windows pop out this far from the screen. 100 is cube size</_long>
+			    <default>0</default>
+                <min>0</min>
+                <max>1000</max>
+            </option>
+			<option type="int" name="fade_time">
+			    <_short>Fade Time</_short>
+			    <_long>Length of animation for 3d window stacking z-order changes</_long>
+			    <default>20</default>
+                <min>1</min>
+                <max>200</max>
+			</option>
+	    </group>
+	    
+		<!-- Debug settings -->
+		<group>
+		<_short>Debugging</_short>
+		    <option type="int" name="camera_move">
+			    <_short>Camera Movement Increment</_short>
+			    <_long>How far to move the camera on one key press.</_long>
+			    <default>10</default>
+			    <min>0</min>
+			    <max>50</max>
+		    </option>
+		    <option type="int" name="screen_percent">
+			    <_short>Mouse Screen Percentage</_short>
+			    <_long>How much of the screen represents the actual screen. 100 is "exact".</_long>
+			    <default>100</default>
+			    <min>1</min>
+			    <max>100</max>
+		    </option>
+		</group>
+	</options>
+    </plugin>
+</compiz>
