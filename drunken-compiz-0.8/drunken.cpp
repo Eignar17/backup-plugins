@@ -4,15 +4,15 @@ bool
 DrunkenWindow::shouldAnimate ()
 {
     /* Override Redirect windows are painful */
-    if (window->overrideRedirect ())
+    if (w->overrideRedirect ())
 	return false;
     
     /* Don't do this for panels docks or desktops */
-    if (window->wmType () & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
+   if (!(w->type & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
 	return false;
     
     /* Don't do this for invisible windows */
-    if (!window->mapNum () || !window->isViewable ())
+    if (w->mapNum () || !w->isViewable ())
 	return false;
     
     return true;
