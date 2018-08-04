@@ -1,0 +1,2 @@
+PLUGIN = drunken
+LDFLAGS_ADD = -lstdc++
