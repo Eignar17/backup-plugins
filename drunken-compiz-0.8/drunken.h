@@ -14,7 +14,6 @@ typedef struct _DrunkenDisplay
 typedef struct _Stereo3DScreen
 {
     int windowPrivateIndex;
-    CompScreen *s;
 
 	
 	bool		mEnabled;
@@ -32,7 +31,6 @@ typedef struct _Stereo3DScreen
 
 typedef struct _DrunkenWindow DrunkenWindow;
 	  
-	  CompWindow *window;
 	  
 	  Bool shouldAnimate ();
 
