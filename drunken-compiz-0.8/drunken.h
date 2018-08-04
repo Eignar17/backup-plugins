@@ -10,23 +10,16 @@ static int displayPrivateIndex = 0;
 typedef struct _DrunkenDisplay
 {
     int screenPrivateIndex;
-    int windowPrivateIndex;
 
 typedef struct _Stereo3DScreen
 {
+    int windowPrivateIndex;
     CompScreen *s;
 
 	
 	bool		mEnabled;
 	
 	void		toggleFunctions (bool);
-
-	Bool
-	glPaintOutput (const ScreenPaintAttrib &,
-		       const CompMatrix		 &,
-		       const Region		 &,
-		       CompOutput		 *,
-		       unsigned int		   );
 
     PaintWindowProc paintWindow;
 
