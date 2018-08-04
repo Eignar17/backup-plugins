@@ -58,13 +58,16 @@ DrunkenPaintOutput (CompScreen              *s,
 }
 
 static Bool
-stereo3dPaintWindow (CompWindow              *w,
-		     const WindowPaintAttrib *attrib,	     
-		     const CompTransform     *transform,
-		     Region                  region,
-		     unsigned int            mask)
+DrunkenDrawWindow (CompWindow           *w,
+		    const CompTransform  *transform,
+		    const FragmentAttrib *fragment,
+		    Region               region,
+		    unsigned int         mask)
 {
-    DRUNK_SCREEN (screen);
+    Bool status;
+
+    DRUNK_SCREEN(w->screen);
+    DRUNK_WINDOW(w);
   
     int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
@@ -128,6 +131,19 @@ DrunkenInitScreen (CompPlugin *p,
 {
    
     optionSetInitiateKeyInitiate (boost::bind (&DrunkenScreen::toggle, this));
+}
+static void
+DrunkenFiniScreen (CompPlugin *p,
+		    CompScreen *s)
+{
+    DRUNK_SCREEN (s);
+
+    UNWRAP (sos, s, preparePaintScreen);
+    UNWRAP (sos, s, paintOutput);
+    UNWRAP (sos, s, donePaintScreen);
+    UNWRAP (sos, s, drawWindow);
+
+    free(sos);
 }
 
 static void
