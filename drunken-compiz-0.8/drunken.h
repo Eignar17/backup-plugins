@@ -1,78 +1,56 @@
-#include <core/core.h>
-#include <composite/composite.h>
-#include <opengl/opengl.h>
+#include <compiz-core.h>
+#include <compiz-plugin.h>
 
-#include <cmath>
+#include <math.h>
 
 #include "drunken_options.h"
 
-class DrunkenScreen :
-    public PluginClassHandler <DrunkenScreen, CompScreen>,
-    public CompositeScreenInterface,
-    public GLScreenInterface,
-    public DrunkenOptions
+static int displayPrivateIndex = 0;
+
+typedef struct _DrunkenDisplay
 {
-    public:
+    int screenPrivateIndex;
+    int windowPrivateIndex;
 
-	DrunkenScreen (CompScreen *);
+typedef struct _Stereo3DScreen
+{
+    CompScreen *s;
 
-	CompositeScreen *cScreen;
-	GLScreen	*gScreen;
 	
 	bool		mEnabled;
 	
 	void		toggleFunctions (bool);
 
-	bool
-	glPaintOutput (const GLScreenPaintAttrib &,
-		       const GLMatrix		 &,
-		       const CompRegion		 &,
+	Bool
+	glPaintOutput (const ScreenPaintAttrib &,
+		       const CompMatrix		 &,
+		       const Region		 &,
 		       CompOutput		 *,
 		       unsigned int		   );
 
-	bool toggle ();
-	
-	void
-	preparePaint (int);
+    PaintWindowProc paintWindow;
 
-	void
-	donePaint ();
+	Bool toggle ();
+
 };
 
-#define DRUNK_SCREEN(s)							      \
-    DrunkenScreen *ds = DrunkenScreen::get (s)
+#define GET_DRUNK_SCREEN(s, ds)                         \
+    ((DrunkenScreen *) (s)->base.privates[(ds)->screenPrivateIndex].ptr)
 
-class DrunkenWindow :
-    public PluginClassHandler <DrunkenWindow, CompWindow>,
-    public CompositeWindowInterface,
-    public GLWindowInterface
-{
-    public:
-
-	  DrunkenWindow (CompWindow *);
+typedef struct _DrunkenWindow DrunkenWindow;
 	  
 	  CompWindow *window;
-	  CompositeWindow *cWindow;
-	  GLWindow	  *gWindow;
 	  
-	  bool shouldAnimate ();
+	  Bool shouldAnimate ();
 
-	  bool
-	  glPaint (const GLWindowPaintAttrib &,
-		   const GLMatrix	     &,
-		   const CompRegion	     &,
+	  Bool
+	  glPaint (const ScreenPaintAttrib &,
+		   const CompMatrix	     &,
+		   const Region	             &,
 		   unsigned int		      );
 
 	  float	mDrunkFactor;
 };
 
-#define DRUNK_WINDOW(w)							      \
-    DrunkenWindow *dw = DrunkenWindow::get (w)
-
-class DrunkenPluginVTable :
-    public CompPlugin::VTableForScreenAndWindow <DrunkenScreen, DrunkenWindow>
-{
-    public:
-
-	bool init ();
-};
+#define GET_DRUNK_WINDOW(w, dw)                         \
+    ((DrunkenWindow *) (w)->base.privates[(dw)->windowPrivateIndex].ptr)
