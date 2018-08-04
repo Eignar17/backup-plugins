@@ -22,7 +22,7 @@ static void
 DrunkenPreparePaintScreen (CompScreen *s,
 			    int        ms)
 {
-    foreach (CompWindow *w, screen->windows ())
+    foreach (CompWindow *w, screen->w ())
     {
 	DRUNK_WINDOW (w);
 
