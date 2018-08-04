@@ -5,7 +5,7 @@
 
 #include "drunken_options.h"
 
-static int displayPrivateIndex = 0;
+extern int displayPrivateIndex;
 
 typedef struct _DrunkenDisplay
 {
