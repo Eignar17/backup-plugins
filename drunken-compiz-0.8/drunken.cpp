@@ -69,9 +69,9 @@ stereo3dPaintWindow (CompWindow              *w,
     int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
     
-    GLMatrix wTransform1 (transform);
+    GLMatrix wTransform1 (Transform);
     GLMatrix wTransform2 (transform);
-    GLWindowPaintAttrib wAttrib (attrib);
+    WindowPaintAttrib *mAttrib;
 
     wAttrib.opacity *= 0.5;
     wTransform1.translate (-diff, 0.0f, 0.0f);
