@@ -15,6 +15,7 @@ typedef struct _Stereo3DScreen
 {
     int windowPrivateIndex;
 
+    PaintOutputProc              paintOutput;
 	
 	bool		mEnabled;
 	
