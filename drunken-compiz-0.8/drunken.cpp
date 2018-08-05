@@ -133,9 +133,9 @@ DrunkenInitScreen (CompPlugin *p,
 
     s->base.privates[vd->screenPrivateIndex].ptr = vs;
 
-	WRAP (vs, s, preparePaintScreen, vidcapPreparePaintScreen);
-	WRAP (vs, s, donePaintScreen, vidcapDonePaintScreen);
-	WRAP (vs, s, paintScreen, vidcapPaintScreen);
+	WRAP (dw, s, preparePaintScreen, vidcapPreparePaintScreen);
+	WRAP (dw, s, donePaintScreen, vidcapDonePaintScreen);
+	WRAP (dw, s, paintScreen, vidcapPaintScreen);
 
 	return TRUE;
 
@@ -146,11 +146,11 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 {
 	DRUNK_SCREEN (s);
 
-	UNWRAP(as, s, paintOutput);
-	UNWRAP(as, s, paintWindow);
-	UNWRAP(as, s, damageWindowRect);
+	UNWRAP(dw, s, paintOutput);
+	UNWRAP(dw, s, paintWindow);
+	UNWRAP(dw, s, damageWindowRect);
 
-	free (as);
+	free (dw);
 }
 
 static void
@@ -170,7 +170,7 @@ DrunkenInitDisplay (CompPlugin  *p,
 		     CompDisplay *d)
 {
     int index;
-    DrunkenDisplay *sod;
+    DrunkenDisplay *dwd;
 
     if (!checkPluginABI ("core", CORE_ABIVERSION))
         return FALSE;
