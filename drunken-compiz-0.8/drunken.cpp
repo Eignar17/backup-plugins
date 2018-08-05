@@ -106,8 +106,8 @@ DrunkenScreen::toggleFunctions (bool enabled)
 	DrunkenWindow::get (w)->gWindow->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
 }
 
-bool
-DrunkenScreen::toggle ()
+static void
+toggleDrunkenScreen (CompScreen *s)
 {
     mEnabled = !mEnabled;
     
@@ -122,13 +122,35 @@ static Bool
 DrunkenInitScreen (CompPlugin *p,
 		    CompScreen *s)
 {
-    PluginClassHandler <DrunkenScreen, CompScreen> (screen),
-    cScreen (CompositeScreen::get (screen)),
-    gScreen (GLScreen::get (screen)),
-    mEnabled (false)
+	DrunkenScreen *vs;
+
+    DRUNK_DISPLAY (s->display);
+
+    fs = calloc (1, sizeof (DrunkenScreen) );
+
+    if (!fs)
+	return FALSE;
+
+    s->base.privates[vd->screenPrivateIndex].ptr = vs;
+
+	WRAP (vs, s, preparePaintScreen, vidcapPreparePaintScreen);
+	WRAP (vs, s, donePaintScreen, vidcapDonePaintScreen);
+	WRAP (vs, s, paintScreen, vidcapPaintScreen);
+
+	return TRUE;
+
+}
+
+static void
+DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 {
-   
-    optionSetInitiateKeyInitiate (boost::bind (&DrunkenScreen::toggle, this));
+	DRUNK_SCREEN (s);
+
+	UNWRAP(as, s, paintOutput);
+	UNWRAP(as, s, paintWindow);
+	UNWRAP(as, s, damageWindowRect);
+
+	free (as);
 }
 
 static void
@@ -153,11 +175,13 @@ DrunkenInitDisplay (CompPlugin  *p,
     if (!checkPluginABI ("core", CORE_ABIVERSION))
         return FALSE;
 
-    sod = (DrunkenDisplay*) malloc (sizeof (DrunkenDisplay));
-    if (!sod)
-        return FALSE;
+    fd = calloc (1, sizeof (DrunkenDisplay) );
+
+    if (!fd)
+	return FALSE;
 
     sod->screenPrivateIndex = allocateScreenPrivateIndex (d);
+
     if (sod->screenPrivateIndex < 0)
     {
 	free (sod);
@@ -165,6 +189,9 @@ DrunkenInitDisplay (CompPlugin  *p,
     }
 
     d->base.privates[displayPrivateIndex].ptr = sod;
+
+    DrunkenSetInitiateKeyInitiate (d, DrunkenInitiate);
+    DrunkenSetInitiateKeyTerminate (d, DrunkenTerminate);
 
     return TRUE;
 }
