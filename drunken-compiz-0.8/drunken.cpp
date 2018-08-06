@@ -110,9 +110,9 @@ DrunkenScreen::toggleFunctions (bool enabled)
 static void
 toggleDrunkenScreen (CompScreen *s)
 {
-    glEnable = !mEnabled;
+    glEnable = !glEnable;
     
-    cScreen->damageScreen ();
+    Screen->damageScreen ();
     
     toggleFunctions (mEnabled);
     
@@ -123,7 +123,7 @@ static Bool
 DrunkenInitScreen (CompPlugin *p,
 		    CompScreen *s)
 {
-	DrunkenInitScreen *vs;
+	DrunkenInitScreen *s;
 
     DRUNK_DISPLAY (s->display);
 
@@ -132,7 +132,7 @@ DrunkenInitScreen (CompPlugin *p,
     if (!fs)
 	return FALSE;
 
-    s->base.privates[vd->screenPrivateIndex].ptr = vs;
+    s->base.privates[vd->screenPrivateIndex].ptr = s;
 
 	WRAP (dw, s, preparePaintScreen, DrunkenPreparePaintScreen);
 	WRAP (dw, s, donePaintScreen, DrunkenDonePaintScreen);
