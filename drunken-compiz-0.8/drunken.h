@@ -11,7 +11,7 @@ typedef struct _DrunkenDisplay
 {
     int screenPrivateIndex;
 
-typedef struct _Stereo3DScreen
+typedef struct _DrunkenScreen
 {
     int windowPrivateIndex;
 
