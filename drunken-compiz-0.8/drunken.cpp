@@ -84,7 +84,7 @@ DrunkenPaintWindow (CompWindow           *w,
     
     wTransform2.translate (diff, 0.0f, 0.0f);
     
-    status |= gWindow->glPaint (wAttrib, wTransform2, region, mask);
+    status |= gWindow->glPaint (mAttrib, wTransform2, region, mask);
 
     return status;
 }
@@ -114,7 +114,7 @@ toggleDrunkenScreen (CompScreen *s)
     
     Screen->damageScreen ();
     
-    toggleFunctions (mEnabled);
+    toggleFunctions (glEnable);
     
     return true;
 }
@@ -159,7 +159,7 @@ DrunkenInitWindow (CompWindow *window)
 {
     DRUNK_WINDOW(w);
 
-    sow->window = window;
+    pow->window = window;
     drunkenGetFactor (0)
 {
     bool enabled = DrunkenScreen::get (screen)->drunkenGetFactor;
