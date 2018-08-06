@@ -65,8 +65,8 @@ DrunkenPaintWindow (CompWindow           *w,
 		    Region               region,
 		    unsigned int         mask)
 {
-    DRUNK_SCREEN(w->screen);
-    DRUNK_WINDOW(w);
+    DRUNK_SCREEN (s);
+    DRUNK_WINDOW (w);
   
     int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
@@ -123,7 +123,7 @@ static Bool
 DrunkenInitScreen (CompPlugin *p,
 		    CompScreen *s)
 {
-	DrunkenScreen *vs;
+	DrunkenInitScreen *vs;
 
     DRUNK_DISPLAY (s->display);
 
@@ -157,12 +157,12 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 static void
 DrunkenInitWindow (CompWindow *window)
 {
-    DRUNK_WINDOW(window);
+    DRUNK_WINDOW(w);
 
     sow->window = window;
     mDrunkFactor (0)
 {
-    bool enabled = DrunkenScreen::get (screen)->mEnabled;
+    bool enabled = DrunkenScreen::get (screen)->drunkenGetFactor;
   
 }
 
@@ -226,6 +226,7 @@ DrunkenInitObject (CompPlugin *p,
 	(InitPluginObjectProc) 0,
 	(InitPluginObjectProc) DrunkenInitDisplay,
 	(InitPluginObjectProc) DrunkenInitScreen
+        (InitPluginObjectProc) DrunkenInitWindow
     };
 
     RETURN_DISPATCH (o, dispTab, ARRAY_SIZE (dispTab), TRUE, (p, o));
@@ -239,6 +240,7 @@ DrunkenFiniObject (CompPlugin *p,
 	(FiniPluginObjectProc) 0,
 	(FiniPluginObjectProc) DrunkenFiniDisplay,
 	(FiniPluginObjectProc) DrunkenFiniScreen
+	(FiniPluginObjectProc) DrunkenFiniWindow
     };
 
     DISPATCH (o, dispTab, ARRAY_SIZE (dispTab), (p, o));
