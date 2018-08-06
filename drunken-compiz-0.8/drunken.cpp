@@ -69,7 +69,7 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_WINDOW (w);
   
     int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
-    bool status;
+    Bool status;
     
     CompMatrix wTransform1 (Transform);
     CompMatrix wTransform2 (transform);
