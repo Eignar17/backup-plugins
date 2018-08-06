@@ -26,10 +26,10 @@ DrunkenPreparePaintScreen (CompScreen *s,
     {
 	DRUNK_WINDOW (w);
 
-	dw->mDrunkFactor += (ms / 1000.0f);
+	dw->drunkenGetFactor += (ms / 1000.0f);
 	
-	if (dw->mDrunkFactor >= M_PI * 3)
-	    dw->mDrunkFactor = M_PI;
+	if (dw->drunkenGetFactor >= M_PI * 3)
+	    dw->drunkenGetFactor = M_PI;
     }
 
 }
@@ -68,7 +68,7 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_SCREEN (s);
     DRUNK_WINDOW (w);
   
-    int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
+    int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
     
     GLMatrix wTransform1 (Transform);
