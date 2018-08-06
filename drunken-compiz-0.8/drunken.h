@@ -46,3 +46,8 @@ typedef struct _DrunkenWindow DrunkenWindow;
 
 #define GET_DRUNK_WINDOW(w, dw)                         \
     ((DrunkenWindow *) (w)->base.privates[(dw)->windowPrivateIndex].ptr)
+
+#define DRUNK_WINDOW(w)							\
+    DrunkenWindow *dw = GET_DRUNK_WINDOW (w, GET_DRUNK_SCREEN (w->screen, GET_SDRUNK_DISPLAY (w->screen->display)))
+
+#endif
