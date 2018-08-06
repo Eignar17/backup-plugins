@@ -68,7 +68,7 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_SCREEN (s);
     DRUNK_WINDOW (w);
   
-    int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
+    int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
     
     GLMatrix wTransform1 (Transform);
@@ -103,14 +103,14 @@ DrunkenScreen::toggleFunctions (bool enabled)
     gScreen->glPaintOutputSetEnabled (this, enabled);
     cScreen->donePaintSetEnabled (this, enabled);
     
-    foreach (CompWindow *w, screen->windows ())
+    fread (CompWindow *w, Screen->windows ())
 	DrunkenWindow::get (w)->gWindow->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
 }
 
 static void
 toggleDrunkenScreen (CompScreen *s)
 {
-    mEnabled = !mEnabled;
+    glEnable = !mEnabled;
     
     cScreen->damageScreen ();
     
