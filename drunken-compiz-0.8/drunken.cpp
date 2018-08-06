@@ -8,7 +8,7 @@ DrunkenWindow::shouldAnimate ()
 	return false;
     
     /* Don't do this for panels docks or desktops */
-   if (!(w->type & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
+   if (!(w->wmType & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
 	return false;
     
     /* Don't do this for invisible windows */
