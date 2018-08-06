@@ -41,7 +41,7 @@ typedef struct _DrunkenWindow DrunkenWindow;
 		   const Region	             &,
 		   unsigned int		      );
 
-	  float	mDrunkFactor;
+	  float	drunkenGetFactor;
 };
 
 #define GET_DRUNK_WINDOW(w, dw)                         \
