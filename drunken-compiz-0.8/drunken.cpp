@@ -80,7 +80,7 @@ DrunkenPaintWindow (CompWindow           *w,
     
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
-   status = gWindow->glPaint (wAttrib, wTransform1, region, mask);
+   status = gWindow->glPaint (mAttrib, wTransform1, region, mask);
     
     wTransform2.translate (diff, 0.0f, 0.0f);
     
