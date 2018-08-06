@@ -27,7 +27,6 @@ typedef struct _DrunkenScreen
 
 };
 
-
 typedef struct _DrunkenWindow DrunkenWindow;
 	  
 	  
