@@ -49,34 +49,3 @@ applyFanTransform (CompWindow *w)
 			      0.0f);
     }
 }
-void
-fxFanAnimStep (CompWindow *w, float time)
-{
-    ANIMSIM_DISPLAY (w->screen->display);
-    (*ad->animBaseFunc->defaultAnimStep) (w, time);
-
-    applyExpandTransform (w);
-}
-
-void
-fxFanUpdateWindowAttrib (CompWindow * w,
-			   WindowPaintAttrib * wAttrib)
-{
-}
-
-void
-fxFanUpdateWindowTransform (CompWindow *w,
-			      CompTransform *wTransform)
-{
-    ANIMSIM_WINDOW(w);
-
-    matrixMultiply (wTransform, wTransform, &aw->com->transform);
-}
-
-Bool
-fxFanInit (CompWindow * w)
-{
-    ANIMSIM_DISPLAY (w->screen->display);
-
-    return (*ad->animBaseFunc->defaultAnimInit) (w);
-}
