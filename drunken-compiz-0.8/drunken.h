@@ -51,7 +51,7 @@ typedef struct _DrunkenWindow DrunkenWindow;
     ((DrunkenWindow *) (w)->base.privates[(dw)->windowPrivateIndex].ptr)
 
 #define DRUNK_DISPLAY(d)						       \
-    Stereo3DDisplay *sod = GET_DRUNK_DISPLAY (d)
+    Stereo3DDisplay *ds = GET_DRUNK_DISPLAY (d)
 
 #define DRUNK_SCREEN(s)						       \
     Stereo3DScreen *ds = GET_DRUNK_SCREEN (s, GET_DRUNK_DISPLAY (s->display))
