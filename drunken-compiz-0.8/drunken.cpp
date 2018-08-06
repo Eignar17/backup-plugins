@@ -264,4 +264,4 @@ CompPluginVTable DrunkenVTable = {
  CompPluginVTable *
 getCompPluginInfo (void)
 {
-    return &stereo3dVTable;
+    return &DrunkenVTable;
