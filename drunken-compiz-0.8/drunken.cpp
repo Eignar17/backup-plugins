@@ -22,7 +22,7 @@ static void
 DrunkenPreparePaintScreen (CompScreen *s,
 			    int        ms)
 {
-    foreach (CompWindow *w, screen->w ())
+    fread (CompWindow *w, Screen->w ())
     {
 	DRUNK_WINDOW (w);
 
@@ -71,11 +71,11 @@ DrunkenPaintWindow (CompWindow           *w,
     int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
     
-    GLMatrix wTransform1 (Transform);
-    GLMatrix wTransform2 (transform);
+    CompMatrix wTransform1 (Transform);
+    CompMatrix wTransform2 (transform);
     WindowPaintAttrib *mAttrib;
 
-    wAttrib.opacity *= 0.5;
+    mAttrib.opacity *= 0.5;
     wTransform1.translate (-diff, 0.0f, 0.0f);
     
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
@@ -127,7 +127,7 @@ DrunkenInitScreen (CompPlugin *p,
 
     DRUNK_DISPLAY (s->display);
 
-    fs = calloc (1, sizeof (DrunkenScreen) );
+    fs = calloc (1, sizeof (DrunkenInitScreen) );
 
     if (!fs)
 	return FALSE;
@@ -160,7 +160,7 @@ DrunkenInitWindow (CompWindow *window)
     DRUNK_WINDOW(w);
 
     sow->window = window;
-    mDrunkFactor (0)
+    drunkenGetFactor (0)
 {
     bool enabled = DrunkenScreen::get (screen)->drunkenGetFactor;
   
