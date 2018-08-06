@@ -31,6 +31,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 	if (dw->mDrunkFactor >= M_PI * 3)
 	    dw->mDrunkFactor = M_PI;
     }
+
 }
 
 static Bool
@@ -49,23 +50,23 @@ DrunkenPaintOutput (CompScreen              *s,
     mask |= PAINT_SCREEN_WITH_TRANSFORMED_WINDOWS_MASK;
 }
 
-    UNWRAP (sos, s, paintOutput);
+    UNWRAP (dw, s, paintOutput);
     status = (*s->paintOutput) (s, sa, mTransform, region, output, mask);
-    WRAP (sos, s, paintOutput, DrunkenPaintOutput);
+    WRAP (dw, s, paintOutput, DrunkenPaintOutput);
      free (mTransform);
 
      return status;
 }
 
 static Bool
-DrunkenDrawWindow (CompWindow           *w,
+DrunkenPaintWindow (CompWindow           *w,
 		    const CompTransform  *transform,
 		    const FragmentAttrib *fragment,
 		    Region               region,
 		    unsigned int         mask)
 {
     DRUNK_SCREEN(w->screen);
-    STEREO3D_WINDOW(w);
+    DRUNK_WINDOW(w);
   
     int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
@@ -133,9 +134,9 @@ DrunkenInitScreen (CompPlugin *p,
 
     s->base.privates[vd->screenPrivateIndex].ptr = vs;
 
-	WRAP (dw, s, preparePaintScreen, vidcapPreparePaintScreen);
-	WRAP (dw, s, donePaintScreen, vidcapDonePaintScreen);
-	WRAP (dw, s, paintScreen, vidcapPaintScreen);
+	WRAP (dw, s, preparePaintScreen, DrunkenPreparePaintScreen);
+	WRAP (dw, s, donePaintScreen, DrunkenDonePaintScreen);
+	WRAP (dw, s, paintScreen, DrunkenPaintScreen);
 
 	return TRUE;
 
