@@ -4,7 +4,7 @@ bool
 DrunkenWindow::shouldAnimate ()
 {
     /* Override Redirect windows are painful */
-    if (w->overrideRedirect ())
+    if (w->attrib.override_redirect ())
 	return false;
     
     /* Don't do this for panels docks or desktops */
@@ -12,7 +12,7 @@ DrunkenWindow::shouldAnimate ()
 	return false;
     
     /* Don't do this for invisible windows */
-    if (w->mapNum () || !w->isViewable ())
+    if (w->mapNum || !w->attrib.map_state == IsViewable)
 	return false;
     
     return true;
