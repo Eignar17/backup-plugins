@@ -4,7 +4,7 @@ bool
 DrunkenWindow::shouldAnimate ()
 {
     /* Override Redirect windows are painful */
-    if (w->attrib.override_redirect ())
+    if (w->attrib.override_redirect)
 	return false;
     
     /* Don't do this for panels docks or desktops */
