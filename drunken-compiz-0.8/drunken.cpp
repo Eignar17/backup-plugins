@@ -80,11 +80,11 @@ DrunkenPaintWindow (CompWindow           *w,
     
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
-   status = gWindow->glPaint (mAttrib, wTransform1, region, mask);
+   status = (*w->screen->paintWindow) (w, mAttrib, wTransform1, region, mask);
     
     wTransform2.translate (diff, 0.0f, 0.0f);
     
-    status |= gWindow->glPaint (mAttrib, wTransform2, region, mask);
+    status |= (*w->screen->paintWindow) (w, mAttrib, wTransform2, region, mask);
 
     return status;
 }
@@ -104,7 +104,7 @@ DrunkenScreen::toggleFunctions (bool enabled)
     cScreen->donePaintSetEnabled (this, enabled);
     
     fread (CompWindow *w, Screen->windows ())
-	DrunkenWindow::get (w)->gWindow->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
+	DrunkenWindow::get (*w->screen->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
 }
 
 static void
