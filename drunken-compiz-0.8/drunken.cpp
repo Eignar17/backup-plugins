@@ -1,19 +1,20 @@
 #include "drunken.h"
 
-bool
-DrunkenWindow::shouldAnimate ()
+static Bool
+shouldAnimate (CompScreen *s,
+			    CompWindow *w)
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
-	return false;
+	return FALSE;
     
     /* Don't do this for panels docks or desktops */
-   if (!(w->wmType & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
-	return false;
+   if (w->wmType & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
+	return FALSE;
     
     /* Don't do this for invisible windows */
-    if (w->mapNum || !w->attrib.map_state == IsViewable)
-	return false;
+    if (w->mapNum || w->attrib.map_state == IsViewable)
+	return FALSE;
     
     return true;
 }
