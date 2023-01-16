@@ -9,6 +9,13 @@
 		<plugin>opengl</plugin>
 	</relation>
 
+
+		<relation type="before">
+		</relation>
+	</deps>
+	<display>
+
+
 	</deps>
 	<options>
 	    <option name="factor" type="float">
@@ -23,6 +30,6 @@
 		<_long>Toggle drunken.</_long>
 		<default>&lt;Super&gt;y</default>
 	    </option>
-	</options>
+	</display>
     </plugin>
 </compiz>
