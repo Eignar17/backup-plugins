@@ -3,6 +3,7 @@
     <plugin name="drunken" useBcop="true">
 	<_short>Drunk</_short>
 	<_long>In case you are too poor to experience the real thing</_long>
+	<category>Effects</category>
 	<deps>
 	<relation type="after">
 		<plugin>composite</plugin>
@@ -15,8 +16,6 @@
 	</deps>
 	<display>
 
-
-	</deps>
 	<options>
 	    <option name="factor" type="float">
 	    <_short>Factor</_short>
