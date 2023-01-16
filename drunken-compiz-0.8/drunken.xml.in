@@ -3,19 +3,13 @@
     <plugin name="drunken" useBcop="true">
 	<_short>Drunk</_short>
 	<_long>In case you are too poor to experience the real thing</_long>
-	<category>Effects</category>
 	<deps>
 	<relation type="after">
 		<plugin>composite</plugin>
 		<plugin>opengl</plugin>
 	</relation>
 
-
-		<relation type="before">
-		</relation>
 	</deps>
-	<display>
-
 	<options>
 	    <option name="factor" type="float">
 	    <_short>Factor</_short>
