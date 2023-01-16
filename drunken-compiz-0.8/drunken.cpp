@@ -26,10 +26,10 @@ DrunkenPreparePaintScreen (CompScreen *s,
     {
 	DRUNK_WINDOW (w);
 
-	drs->drunkenGetFactor += (ms / 1000.0f);
+	ds->drunkenGetFactor += (ms / 1000.0f);
 	
-	if (drs->drunkenGetFactor >= M_PI * 3)
-	    drs->drunkenGetFactor = M_PI;
+	if (ds->drunkenGetFactor >= M_PI * 3)
+	    ds->drunkenGetFactor = M_PI;
     }
 
 }
@@ -50,9 +50,9 @@ DrunkenPaintOutput (CompScreen              *s,
     mask |= PAINT_SCREEN_WITH_TRANSFORMED_WINDOWS_MASK;
 }
 
-    UNWRAP (drs, s, paintOutput);
+    UNWRAP (ds, s, paintOutput);
     status = (*s->paintOutput) (s, sa, mTransform, region, output, mask);
-    WRAP (drs, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
      free (mTransform);
 
      return status;
@@ -134,9 +134,9 @@ DrunkenInitScreen (CompPlugin *p,
 
     s->base.privates[vd->screenPrivateIndex].ptr = s;
 
-	WRAP (drs, s, preparePaintScreen, DrunkenPreparePaintScreen);
-	WRAP (drs, s, donePaintScreen, DrunkenDonePaintScreen);
-	WRAP (drs, s, paintScreen, DrunkenPaintScreen);
+	WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+	WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
+	WRAP (ds, s, paintScreen, DrunkenPaintScreen);
 
 	return TRUE;
 
@@ -147,11 +147,11 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 {
 	DRUNK_SCREEN (s);
 
-	UNWRAP(drs, s, paintOutput);
-	UNWRAP(drs, s, paintWindow);
-	UNWRAP(drs, s, damageWindowRect);
+	UNWRAP(ds, s, paintOutput);
+	UNWRAP(ds, s, paintWindow);
+	UNWRAP(ds, s, damageWindowRect);
 
-	free (drs);
+	free (ds);
 }
 
 static void
@@ -159,7 +159,7 @@ DrunkenInitWindow (CompWindow *window)
 {
     DRUNK_WINDOW(w);
 
-    pow->window = window;
+    dw->window = window;
     drunkenGetFactor (0)
 {
     bool enabled = DrunkenScreen::get (screen)->drunkenGetFactor;
@@ -171,7 +171,7 @@ DrunkenInitDisplay (CompPlugin  *p,
 		     CompDisplay *d)
 {
     int index;
-    DrunkenDisplay *drd;
+    DrunkenDisplay *dd;
 
     if (!checkPluginABI ("core", CORE_ABIVERSION))
         return FALSE;
@@ -181,15 +181,15 @@ DrunkenInitDisplay (CompPlugin  *p,
     if (!fd)
 	return FALSE;
 
-    drd->screenPrivateIndex = allocateScreenPrivateIndex (d);
+    dd->screenPrivateIndex = allocateScreenPrivateIndex (d);
 
-    if (drd->screenPrivateIndex < 0)
+    if (dd->screenPrivateIndex < 0)
     {
-	free (drd);
+	free (dd);
 	return FALSE;
     }
 
-    d->base.privates[displayPrivateIndex].ptr = drd;
+    d->base.privates[displayPrivateIndex].ptr = dd;
 
     DrunkenSetInitiateKeyInitiate (d, DrunkenInitiate);
     DrunkenSetInitiateKeyTerminate (d, DrunkenTerminate);
@@ -203,8 +203,8 @@ DrunkenFiniDisplay (CompPlugin  *p,
 {
     DRUNK_DISPLAY (d);
 
-    freeScreenPrivateIndex (d, drd->screenPrivateIndex);
-    free (drd);
+    freeScreenPrivateIndex (d, dd->screenPrivateIndex);
+    free (dd);
 }
 
 static Bool
