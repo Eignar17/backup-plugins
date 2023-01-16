@@ -23,6 +23,6 @@
 		<_long>Toggle drunken.</_long>
 		<default>&lt;Super&gt;y</default>
 	    </option>
-	</display>
+	</option>
     </plugin>
 </compiz>
