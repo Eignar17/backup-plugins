@@ -181,15 +181,15 @@ DrunkenInitDisplay (CompPlugin  *p,
     if (!fd)
 	return FALSE;
 
-    sod->screenPrivateIndex = allocateScreenPrivateIndex (d);
+    drd->screenPrivateIndex = allocateScreenPrivateIndex (d);
 
-    if (sod->screenPrivateIndex < 0)
+    if (drd->screenPrivateIndex < 0)
     {
-	free (sod);
+	free (drd);
 	return FALSE;
     }
 
-    d->base.privates[displayPrivateIndex].ptr = sod;
+    d->base.privates[displayPrivateIndex].ptr = drd;
 
     DrunkenSetInitiateKeyInitiate (d, DrunkenInitiate);
     DrunkenSetInitiateKeyTerminate (d, DrunkenTerminate);
@@ -203,8 +203,8 @@ DrunkenFiniDisplay (CompPlugin  *p,
 {
     DRUNK_DISPLAY (d);
 
-    freeScreenPrivateIndex (d, sod->screenPrivateIndex);
-    free (sod);
+    freeScreenPrivateIndex (d, drd->screenPrivateIndex);
+    free (drd);
 }
 
 static Bool
