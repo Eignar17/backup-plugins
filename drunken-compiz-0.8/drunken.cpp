@@ -1,7 +1,7 @@
 #include "drunken.h"
 
 static Bool
-shouldAnimate (CompScreen *s)
+shouldAnimate()
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
@@ -96,7 +96,7 @@ DrunkenDonePaintScreen (CompScreen *s)
         damageScreen (s);
 }
 
-void
+static void
 DrunkenScreen::toggleFunctions (bool enabled)
 {
     cScreen->preparePaintSetEnabled (this, enabled);
@@ -123,20 +123,25 @@ static Bool
 DrunkenInitScreen (CompPlugin *p,
 		    CompScreen *s)
 {
-	DrunkenInitScreen *s;
+	DrunkenInitScreen *ds;
 
     DRUNK_DISPLAY (s->display);
 
-    fs = calloc (1, sizeof (DrunkenInitScreen) );
-
-    if (!fs)
+    ds = calloc (1, sizeof (DrunkenScreen) );
+    //ds = new DrunkenScreen;
+    if (!ds)
 	return FALSE;
 
-    s->base.privates[vd->screenPrivateIndex].ptr = s;
+    s->base.privates[dd->screenPrivateIndex].ptr = ds;
 
-	WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
-	WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
-	WRAP (ds, s, paintScreen, DrunkenPaintScreen);
+    ds->mEnabled=(false);
+
+    // register key bindings
+    DrunkenSetInitiateKeyInitiate (s->display, toggle);
+
+    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 
 	return TRUE;
 
@@ -176,9 +181,9 @@ DrunkenInitDisplay (CompPlugin  *p,
     if (!checkPluginABI ("core", CORE_ABIVERSION))
         return FALSE;
 
-    fd = calloc (1, sizeof (DrunkenDisplay) );
+    dd = calloc (1, sizeof (DrunkenDisplay) );
 
-    if (!fd)
+    if (!dd)
 	return FALSE;
 
     dd->screenPrivateIndex = allocateScreenPrivateIndex (d);
@@ -191,8 +196,8 @@ DrunkenInitDisplay (CompPlugin  *p,
 
     d->base.privates[displayPrivateIndex].ptr = dd;
 
-    DrunkenSetInitiateKeyInitiate (d, DrunkenInitiate);
-    DrunkenSetInitiateKeyTerminate (d, DrunkenTerminate);
+    DrunkenSetInitiateKeyInitiate (dd, DrunkenInitiate);
+    DrunkenSetInitiateKeyTerminate (dd, DrunkenTerminate);
 
     return TRUE;
 }
