@@ -132,7 +132,12 @@ DrunkenInitScreen (CompPlugin *p,
     if (!ds)
 	return FALSE;
 
-    s->base.privates[dd->screenPrivateIndex].ptr = ds;
+       ds->windowPrivateIndex = allocateWindowPrivateIndex (s);
+    if (ds->windowPrivateIndex < 0)
+    {
+        free (ds);
+        return FALSE;
+    }
 
     ds->mEnabled=(false);
 
@@ -272,3 +277,4 @@ CompPluginVTable DrunkenVTable = {
 getCompPluginInfo (void)
 {
     return &DrunkenVTable;
+}
