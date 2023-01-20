@@ -1,19 +1,19 @@
 #include "drunken.h"
 
-static Bool
+static bool
 shouldAnimate()
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
-	return FALSE;
+	return false;
     
     /* Don't do this for panels docks or desktops */
    if (w->wmType & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
-	return FALSE;
+	return false;
     
     /* Don't do this for invisible windows */
     if (w->mapNum || w->attrib.map_state == IsViewable)
-	return FALSE;
+	return false;
     
     return true;
 }
@@ -24,7 +24,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 {
     fread (CompWindow *w, w->screen)
     {
-	DRUNK_WINDOW (w);
+	DRUNKEN_WINDOW (w);
 
 	ds->drunkenGetFactor += (ms / 1000.0f);
 	
@@ -34,7 +34,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 
 }
 
-static Bool
+static bool
 DrunkenPaintOutput (CompScreen              *s,
 		    	      const ScreenPaintAttrib *sa,
 			      const CompTransform     *origTransform,
@@ -42,7 +42,7 @@ DrunkenPaintOutput (CompScreen              *s,
 			      CompOutput	       *output,
 			      unsigned int	       mask)
 {
-    Bool status;
+    bool status;
     CompTransform *mTransform;
 	
     DRUNK_SCREEN (s);
@@ -58,7 +58,7 @@ DrunkenPaintOutput (CompScreen              *s,
      return status;
 }
 
-static Bool
+static bool
 DrunkenPaintWindow (CompWindow           *w,
 		    const CompTransform  *transform,
 		    const FragmentAttrib *fragment,
@@ -69,7 +69,7 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_WINDOW (w);
   
     int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
-    Bool status;
+    bool status;
     
     CompMatrix wTransform1 (Transform);
     CompMatrix wTransform2 (transform);
@@ -119,7 +119,7 @@ toggleDrunkenScreen (CompScreen *s)
     return true;
 }
 
-static Bool
+static bool
 DrunkenInitScreen (CompPlugin *p,
 		    CompScreen *s)
 {
@@ -130,13 +130,13 @@ DrunkenInitScreen (CompPlugin *p,
     ds = calloc (1, sizeof (DrunkenScreen) );
     //ds = new DrunkenScreen;
     if (!ds)
-	return FALSE;
+	return false;
 
        ds->windowPrivateIndex = allocateWindowPrivateIndex (s);
     if (ds->windowPrivateIndex < 0)
     {
         free (ds);
-        return FALSE;
+        return false;
     }
 
     ds->mEnabled=(false);
@@ -148,7 +148,7 @@ DrunkenInitScreen (CompPlugin *p,
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 
-	return TRUE;
+	return true;
 
 }
 
@@ -167,7 +167,7 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 static void
 DrunkenInitWindow (CompWindow *window)
 {
-    DRUNK_WINDOW(w);
+    DRUNKEN_WINDOW(w);
 
     dw->window = window;
     drunkenGetFactor (0)
@@ -176,7 +176,7 @@ DrunkenInitWindow (CompWindow *window)
   
 }
 
-static Bool
+static bool
 DrunkenInitDisplay (CompPlugin  *p,
 		     CompDisplay *d)
 {
@@ -184,19 +184,19 @@ DrunkenInitDisplay (CompPlugin  *p,
     DrunkenDisplay *dd;
 
     if (!checkPluginABI ("core", CORE_ABIVERSION))
-        return FALSE;
+        return false;
 
     dd = calloc (1, sizeof (DrunkenDisplay) );
 
     if (!dd)
-	return FALSE;
+	return false;
 
     dd->screenPrivateIndex = allocateScreenPrivateIndex (d);
 
     if (dd->screenPrivateIndex < 0)
     {
 	free (dd);
-	return FALSE;
+	return false;
     }
 
     d->base.privates[displayPrivateIndex].ptr = dd;
@@ -204,7 +204,7 @@ DrunkenInitDisplay (CompPlugin  *p,
     DrunkenSetInitiateKeyInitiate (dd, DrunkenInitiate);
     DrunkenSetInitiateKeyTerminate (dd, DrunkenTerminate);
 
-    return TRUE;
+    return true;
 }
 
 static void
@@ -217,18 +217,18 @@ DrunkenFiniDisplay (CompPlugin  *p,
     free (dd);
 }
 
-static Bool
+static bool
 DrunkenInit (CompPlugin *p)
 {
     displayPrivateIndex = allocateDisplayPrivateIndex ();
 
     if (displayPrivateIndex < 0)
-	return FALSE;
+	return false;
 
-    return TRUE;
+    return true;
 }
 
-static CompBool
+static bool
 DrunkenInitObject (CompPlugin *p,
 		    CompObject *o)
 {
@@ -239,7 +239,7 @@ DrunkenInitObject (CompPlugin *p,
         (InitPluginObjectProc) DrunkenInitWindow
     };
 
-    RETURN_DISPATCH (o, dispTab, ARRAY_SIZE (dispTab), TRUE, (p, o));
+    RETURN_DISPATCH (o, dispTab, ARRAY_SIZE (dispTab), true, (p, o));
 }
 
 static void
