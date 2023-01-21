@@ -15,17 +15,28 @@ typedef struct _DrunkenScreen
 {
     int windowPrivateIndex;
 
-    PaintOutputProc              paintOutput;
+        PaintOutputProc              paintOutput;
 	
-	bool		mEnabled;
-	
-	void		toggleFunctions (bool);
+	bool		enabled;
 
-    PaintWindowProc paintWindow;
+        PaintTransformedOutputProc paintTransformedOutput;
+
+	void		toggleFunctions (CompAction         *action,
+		                                CompActionState  state,
+		                                CompOption *option, int nOption);
+
+        PaintWindowProc paintWindow;
 
 	Bool toggle ();
 
-};
+        PreparePaintScreenProc preparePaintScreen;
+        DonePaintScreenProc donePaintScreen;
+/********************************************************************
+*******************   Window Open GL funcs    ***********************
+*********************************************************************/
+
+        PaintOutputProc paintOutput;
+} DrunkenScreen;
 
 typedef struct _DrunkenWindow DrunkenWindow;
 	  
