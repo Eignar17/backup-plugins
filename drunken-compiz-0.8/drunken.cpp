@@ -111,15 +111,27 @@ DrunkenDonePaintScreen (CompScreen *s)
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
-static void
-toggleFunctions (CompScreen *s, bool enabled)
+static void toggleDrunkenScreen (CompScreen *s)
 {
-    enablePaintScreen (s, enabled);
-    enableOutput (s, enabled);
-    enablePaintScreen (s, enabled);
-    
-    for (CompWindow *w = s->windows (); w; w = w->next)
-        enablePaintWindow (w, enabled);
+    DRUNK_SCREEN (s);
+    ds->enabled = !ds->enabled;
+    if (ds->enabled)
+{
+    s->preparePaintScreen = DrunkenPreparePaintScreen;
+    s->paintOutput = DrunkenPaintOutput;
+    s->paintWindow = DrunkenPaintWindow;
+    s->donePaintScreen = DrunkenDonePaintScreen;
+}
+    else
+{
+    s->preparePaintScreen = preparePaintScreen;
+    s->paintOutput = paintOutput;
+    s->paintWindow = paintWindow;
+    s->donePaintScreen = donePaintScreen;
+}
+
+    damageScreen (s);
+
 }
 
 static void
