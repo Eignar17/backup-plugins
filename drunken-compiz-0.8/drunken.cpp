@@ -153,7 +153,7 @@ DrunkenInitScreen (CompPlugin *p,
         return false;
     }
 
-    ds->Enabled=(false);
+    ds->enabled=(false);
 
     // register key bindings
     DrunkenSetInitiateKeyInitiate (s->display, toggle);
