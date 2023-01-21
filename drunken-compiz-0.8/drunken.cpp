@@ -43,7 +43,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 static bool
 DrunkenPaintOutput (CompScreen              *s,
 		    	      const ScreenPaintAttrib *sa,
-			      const CompTransform     *origTransform,
+			      const CompTransform     *mTransform,
 			      Region	               region,
 			      CompOutput	       *output,
 			      unsigned int	       mask)
@@ -66,13 +66,14 @@ DrunkenPaintOutput (CompScreen              *s,
 
 static bool
 DrunkenPaintWindow (CompWindow           *w,
-		    const CompTransform  *transform,
-		    const FragmentAttrib *fragment,
-		    Region               region,
-		    unsigned int         mask)
+		              const CompTransform	   *transform,
+		    	      const WindowPaintAttrib *attrib,    	      
+		    	      CompMatrix *matrix,
+		    	      Region     region,
+		    	      unsigned int		   mask)
 {
+    DRUNK_WINDOW (w);    
     DRUNK_SCREEN (w->screen);
-    DRUNK_WINDOW (w);
   
     int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
