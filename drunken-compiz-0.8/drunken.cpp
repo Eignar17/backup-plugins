@@ -122,30 +122,15 @@ toggleFunctions (CompScreen *s, bool enabled)
 }
 
 static void
-toggleDrunkenScreen (CompDisplay     *d,
-	  CompAction      *action,
-	  CompActionState state,
-	  CompOption      *option,
-	  int             nOption)
+toggleDrunkenScreen (CompScreen *s)
 {
-{
-    CompScreen *s;
-    Window xid;
-
-    xid = getIntOptionNamed (option, nOption, "root", 0);
-    s = findScreenAtDisplay (d, xid);
-
-    if (s)
-    {
-	DRUNK_SCREEN (s)
-
-    glEnable = !glEnable;
-    
-    Screen->damageScreen ();
-    
-    toggleFunctions (glEnable);
-    
-    return true;
+    DRUNK_SCREEN (s);
+    ds->enabled = !ds->enabled;
+    s->preparePaintScreen = (ds->enabled) ? DrunkenPreparePaintScreen : preparePaintScreen;
+    s->paintOutput = (ds->enabled) ? DrunkenPaintOutput : paintOutput;
+    s->paintWindow = (ds->enabled) ? DrunkenPaintWindow : paintWindow;
+    s->donePaintScreen = (ds->enabled) ? DrunkenDonePaintScreen : donePaintScreen;
+    damageScreen (s);
 }
 
 static bool
@@ -168,7 +153,7 @@ DrunkenInitScreen (CompPlugin *p,
         return false;
     }
 
-    ds->mEnabled=(false);
+    ds->Enabled=(false);
 
     // register key bindings
     DrunkenSetInitiateKeyInitiate (s->display, toggle);
