@@ -22,6 +22,12 @@ static void
 DrunkenPreparePaintScreen (CompScreen *s,
 			    int        ms)
 {
+    DRUNK_SCREEN (s);
+
+    UNWRAP (ds, s, preparePaintScreen);
+    (*s->preparePaintScreen) (s, ms);
+    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+
     fread (CompWindow *w, w->screen)
     {
 	DRUNKEN_WINDOW (w);
@@ -65,7 +71,7 @@ DrunkenPaintWindow (CompWindow           *w,
 		    Region               region,
 		    unsigned int         mask)
 {
-    DRUNK_SCREEN (s);
+    DRUNK_SCREEN (w->screen);
     DRUNK_WINDOW (w);
   
     int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
@@ -86,6 +92,10 @@ DrunkenPaintWindow (CompWindow           *w,
     
     status |= (*w->screen->paintWindow) (w, mAttrib, wTransform2, region, mask);
 
+    UNWRAP (ds, w->screen, paintWindow);
+    Bool status = (*w->screen->paintWindow) (w, mAttrib, mTransform, region, mask);
+    WRAP (ds, w->screen, paintWindow, DrunkenPaintWindow);
+
     return status;
 }
 
@@ -94,6 +104,10 @@ DrunkenDonePaintScreen (CompScreen *s)
 {
     DRUNK_SCREEN (s);
         damageScreen (s);
+
+    UNWRAP (ds, s, donePaintScreen);
+    (*s->donePaintScreen) (s);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
 static void
@@ -108,8 +122,23 @@ DrunkenScreen::toggleFunctions (bool enabled)
 }
 
 static void
-toggleDrunkenScreen (CompScreen *s)
+toggleDrunkenScreen (CompDisplay     *d,
+	  CompAction      *action,
+	  CompActionState state,
+	  CompOption      *option,
+	  int             nOption)
 {
+{
+    CompScreen *s;
+    Window xid;
+
+    xid = getIntOptionNamed (option, nOption, "root", 0);
+    s = findScreenAtDisplay (d, xid);
+
+    if (s)
+    {
+	DRUNK_SCREEN (s)
+
     glEnable = !glEnable;
     
     Screen->damageScreen ();
@@ -148,6 +177,8 @@ DrunkenInitScreen (CompPlugin *p,
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 
+    s->base.privates[dd->screenPrivateIndex].ptr = ds;
+
 	return true;
 
 }
@@ -158,11 +189,11 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 	DRUNK_SCREEN (s);
 
 	freeWindowPrivateIndex (s, ds->windowPrivateIndex);
-
-
-	UNWRAP(ds, s, paintOutput);
-	UNWRAP(ds, s, paintWindow);
-	UNWRAP(ds, s, damageWindowRect);
+      
+	UNWRAP (ds, s, preparePaintScreen);
+	UNWRAP (ds, s, paintOutput);
+	UNWRAP (ds, s, paintWindow);
+        UNWRAP (ds, s, donePaintScreen);
 
 	free (ds);
 }
