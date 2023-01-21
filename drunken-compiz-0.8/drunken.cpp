@@ -112,12 +112,7 @@ DrunkenDonePaintScreen (CompScreen *s)
 }
 
 static void
-toggleFunctions (CompScreen *s, bool enabled,
-		 CompDisplay     *d,
-		 CompAction      *action,
-		 CompActionState state,
-		 CompOption      *option,
-	  int             nOption))
+toggleFunctions (CompScreen *s, bool enabled)
 {
     enablePaintScreen (s, enabled);
     enableOutput (s, enabled);
