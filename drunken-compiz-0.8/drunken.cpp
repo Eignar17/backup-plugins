@@ -192,7 +192,7 @@ DrunkenInitWindow (CompWindow *window)
 dw->setWindow (window);
 dw->drunkenGetFactor = 0.0f;
 
-bool enabled = GET_DRUNK_SCREEN (window->screen, GET_DRUNK_DISPLAY (window->screen->display))->enabled;
+bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->enabled;
 
 
 static void
