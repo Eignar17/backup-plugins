@@ -94,7 +94,7 @@ DrunkenPaintWindow (CompWindow           *w,
     status |= (*w->screen->paintWindow) (w, mAttrib, wTransform2, region, mask);
 
     UNWRAP (ds, w->screen, paintWindow);
-    Bool status = (*w->screen->paintWindow) (w, mAttrib, mTransform, region, mask);
+    bool status = (*w->screen->paintWindow) (w, mAttrib, mTransform, region, mask);
     WRAP (ds, w->screen, paintWindow, DrunkenPaintWindow);
 
     return status;
