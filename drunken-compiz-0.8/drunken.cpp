@@ -210,6 +210,14 @@ DrunkenInitWindow (CompWindow *window)
   
 }
 
+static void
+DrunkeFiniWindow (CompPlugin *p, CompWindow *w)
+{
+    DRUNKEN_WINDOW(w);
+
+    free(dw);
+}
+
 static bool
 DrunkenInitDisplay (CompPlugin  *p,
 		     CompDisplay *d)
