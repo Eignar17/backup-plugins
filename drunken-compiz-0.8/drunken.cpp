@@ -156,7 +156,7 @@ DrunkenInitScreen (CompPlugin *p,
     ds->enabled=(false);
 
     // register key bindings
-    DrunkenSetInitiateKeyInitiate (s->display, toggle);
+    DrunkenSetInitiateKeyInitiate (s->display, toggleFunctions);
 
     WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
