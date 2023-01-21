@@ -147,17 +147,14 @@ toggleDrunkenScreen (CompScreen *s)
 }
 
 static bool
-DrunkenInitScreen (CompPlugin *p,
-		    CompScreen *s)
+DrunkenInitWindow  (CompPlugin *p, CompWindow *w)
 {
-	DrunkenInitScreen *ds;
-
+    DrunkenInitScreen *ds;
     DRUNK_DISPLAY (s->display);
 
-    ds = calloc (1, sizeof (DrunkenScreen) );
-    //ds = new DrunkenScreen;
-    if (!ds)
-	return false;
+    sow = (DrunkenWindow*)calloc (1, sizeof (DrunkenWindow));
+    if (!dw)
+        return FALSE;
 
        ds->windowPrivateIndex = allocateWindowPrivateIndex (s);
     if (ds->windowPrivateIndex < 0)
