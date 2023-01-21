@@ -66,7 +66,7 @@ DrunkenPaintOutput (CompScreen              *s,
 
 static bool
 DrunkenPaintWindow (CompWindow           *w,
-		              const CompTransform	   *transform,
+		              const CompTransform	   *wTransform,
 		    	      const WindowPaintAttrib *attrib,    	      
 		    	      CompMatrix *matrix,
 		    	      Region     region,
@@ -75,19 +75,19 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_WINDOW (w);    
     DRUNK_SCREEN (w->screen);
   
-    int diff =  int (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10) * ds->optionGetFactor () / 3;
+    int diff = (int) (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10 * optionGetFactor (ds->o)) / 3;
     bool status;
-    
+
     CompMatrix wTransform1 (Transform);
     CompMatrix wTransform2 (transform);
     WindowPaintAttrib *mAttrib;
 
     mAttrib.opacity *= 0.5;
     wTransform1.translate (-diff, 0.0f, 0.0f);
-    
+
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
-   status = (*w->screen->paintWindow) (w, mAttrib, wTransform1, region, mask);
+    status = (*w->screen->paintWindow) (w, mAttrib, wTransform1, region, mask);
     
     wTransform2.translate (diff, 0.0f, 0.0f);
     
