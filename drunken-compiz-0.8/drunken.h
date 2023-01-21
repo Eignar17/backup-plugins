@@ -21,9 +21,7 @@ typedef struct _DrunkenScreen
 
         PaintTransformedOutputProc paintTransformedOutput;
 
-	void		toggleFunctions (CompAction         *action,
-		                                CompActionState  state,
-		                                CompOption *option, int nOption);
+	void		toggleFunctions (bool);
 
         PaintWindowProc paintWindow;
 
