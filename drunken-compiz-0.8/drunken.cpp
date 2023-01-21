@@ -1,7 +1,7 @@
 #include "drunken.h"
 
 static bool
-shouldAnimate()
+shouldAnimate(CompWindow *window)
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
@@ -156,6 +156,9 @@ static void
 DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 {
 	DRUNK_SCREEN (s);
+
+	freeWindowPrivateIndex (s, ds->windowPrivateIndex);
+
 
 	UNWRAP(ds, s, paintOutput);
 	UNWRAP(ds, s, paintWindow);
