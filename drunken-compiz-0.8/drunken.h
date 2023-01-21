@@ -32,19 +32,13 @@ typedef struct _DrunkenWindow DrunkenWindow;
 	  
 	  Bool shouldAnimate ();
 
-	  Bool
-	  glPaint (const ScreenPaintAttrib &,
-		   const CompMatrix	     &,
-		   const Region	             &,
-		   unsigned int		      );
-
 	  float	drunkenGetFactor;
 };
 
 #define GET_STEREO3D_DISPLAY(d)                            \
     ((DrunkeDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
 
-#define GET_DRUNK_SCREEN(s, drs)                         \
+#define GET_DRUNK_SCREEN(s, ds)                         \
     ((DrunkenScreen *) (s)->base.privates[(ds)->screenPrivateIndex].ptr)
 
 #define GET_DRUNK_WINDOW(w, dw)                           \
