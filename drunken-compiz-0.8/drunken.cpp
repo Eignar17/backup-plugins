@@ -111,14 +111,14 @@ DrunkenDonePaintScreen (CompScreen *s)
 }
 
 static void
-DrunkenScreen::toggleFunctions (bool enabled)
+toggleFunctions (CompScreen *s, bool enabled)
 {
-    cScreen->preparePaintSetEnabled (this, enabled);
-    gScreen->glPaintOutputSetEnabled (this, enabled);
-    cScreen->donePaintSetEnabled (this, enabled);
+    enablePaintScreen (s, enabled);
+    enableOutput (s, enabled);
+    enablePaintScreen (s, enabled);
     
-    fread (CompWindow *w, Screen->windows ())
-	DrunkenWindow::get (*w->screen->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
+    for (CompWindow *w = s->windows (); w; w = w->next)
+        enablePaintWindow (w, enabled);
 }
 
 static void
