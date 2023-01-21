@@ -30,7 +30,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 
     fread (CompWindow *w, w->screen)
     {
-	DRUNKEN_WINDOW (w);
+	DRUNK_WINDOW (w);
 
 	ds->drunkenGetFactor += (ms / 1000.0f);
 	
@@ -191,19 +191,18 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 static void
 DrunkenInitWindow (CompWindow *window)
 {
-    DRUNKEN_WINDOW(w);
+    DRUNK_WINDOW(w);
 
-    dw->window = window;
-    drunkenGetFactor (0)
-{
-    bool enabled = DrunkenScreen::get (screen)->drunkenGetFactor;
-  
-}
+dw->setWindow (window);
+dw->drunkenGetFactor = 0.0f;
+
+bool enabled = GET_DRUNK_SCREEN (window->screen, GET_DRUNK_DISPLAY (window->screen->display))->enabled;
+
 
 static void
 DrunkeFiniWindow (CompPlugin *p, CompWindow *w)
 {
-    DRUNKEN_WINDOW(w);
+    DRUNK_WINDOW(w);
 
     free(dw);
 }
