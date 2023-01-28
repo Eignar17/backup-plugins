@@ -5,17 +5,17 @@ shouldAnimate(CompWindow *window)
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
-	return false;
+	return FALSE;
     
     /* Don't do this for panels docks or desktops */
    if (w->wmType & (CompWindowTypeDockMask | CompWindowTypeDesktopMask))
-	return false;
+	return FALSE;
     
     /* Don't do this for invisible windows */
     if (w->mapNum || w->attrib.map_state == IsViewable)
-	return false;
+	return FALSE;
     
-    return true;
+    return TRUE;
 }
 
 static void
@@ -160,10 +160,10 @@ DrunkenInitWindow  (CompPlugin *p, CompWindow *w)
     if (ds->windowPrivateIndex < 0)
     {
         free (ds);
-        return false;
+        return FALSE;
     }
 
-    ds->enabled=(false);
+    ds->enabled=(FALSE);
 
     // register key bindings
     DrunkenSetInitiateKeyInitiate (s->display, toggleFunctions);
@@ -174,7 +174,7 @@ DrunkenInitWindow  (CompPlugin *p, CompWindow *w)
 
     s->base.privates[dd->screenPrivateIndex].ptr = ds;
 
-	return true;
+	return TRUE;
 
 }
 
@@ -220,19 +220,19 @@ DrunkenInitDisplay (CompPlugin  *p,
     DrunkenDisplay *dd;
 
     if (!checkPluginABI ("core", CORE_ABIVERSION))
-        return false;
+        return FALSE;
 
     dd = calloc (1, sizeof (DrunkenDisplay) );
 
     if (!dd)
-	return false;
+	return FALSE;
 
     dd->screenPrivateIndex = allocateScreenPrivateIndex (d);
 
     if (dd->screenPrivateIndex < 0)
     {
 	free (dd);
-	return false;
+	return FALSE;
     }
 
     d->base.privates[displayPrivateIndex].ptr = dd;
@@ -259,9 +259,9 @@ DrunkenInit (CompPlugin *p)
     displayPrivateIndex = allocateDisplayPrivateIndex ();
 
     if (displayPrivateIndex < 0)
-	return false;
+	return FALSE;
 
-    return true;
+    return TRUE;
 }
 
 static bool
