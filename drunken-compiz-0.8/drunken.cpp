@@ -46,8 +46,6 @@ DrunkenPaintOutput (CompScreen              *s,
 			      CompOutput	       *output,
 			      unsigned int	       mask)
 {
-    bool status;
-    CompTransform *mTransform;
 	
     DRUNK_SCREEN (s);
 {
