@@ -103,7 +103,8 @@ DrunkenDonePaintScreen (CompScreen *s)
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
-static void toggleFunctions (CompScreen *s)
+static void 
+toggleFunctions (CompScreen *s)
 {
     DRUNK_SCREEN (s);
     ds->enabled = !ds->enabled;
