@@ -66,35 +66,39 @@ DrunkenPaintOutput (CompScreen              *s,
 
 static bool
 DrunkenPaintWindow (CompWindow           *w,
-		              const CompTransform	   *wTransform,
+		              const CompTransform	   *Transform,
 		    	      const WindowPaintAttrib *attrib,    	      
 		    	      CompMatrix *matrix,
 		    	      Region     region,
 		    	      unsigned int		   mask)
 {
-    DRUNK_WINDOW (w);    
+    CompTransform *wTransform1;
+    CompTransform *wTransform2;
+    WindowPaintAttrib *wAttrib;
+
     DRUNK_SCREEN (w->screen);
+    DRUNK_WINDOW (w);
   
     int diff = (int) (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10 * optionGetFactor (ds->o)) / 3;
     bool status;
 
-    CompMatrix wTransform1 (Transform);
-    CompMatrix wTransform2 (transform);
-    WindowPaintAttrib *mAttrib;
+    wTransform1 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
+    wTransform2 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
+    wAttrib = (WindowPaintAttrib*)memcpy (malloc (sizeof (WindowPaintAttrib)), attrib, sizeof (WindowPaintAttrib));
 
-    mAttrib.opacity *= 0.5;
-    wTransform1.translate (-diff, 0.0f, 0.0f);
+    wAttrib->opacity *= dw->0.5;
+    matrixTranslate (wTransform1,sow->-diff, 0.0f, 0.0f);
 
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
-    status = (*w->screen->paintWindow) (w, mAttrib, wTransform1, region, mask);
+    status = (*w->screen->paintWindow) (w, wAttrib, wTransform1, region, mask);
     
-    wTransform2.translate (diff, 0.0f, 0.0f);
+    matrixTranslate (wTransform2,sow->diff, 0.0f, 0.0f);
     
-    status |= (*w->screen->paintWindow) (w, mAttrib, wTransform2, region, mask);
+    status |= (*w->screen->paintWindow) (w, wAttrib, wTransform2, region, mask);
 
     UNWRAP (ds, w->screen, paintWindow);
-    bool status = (*w->screen->paintWindow) (w, mAttrib, mTransform, region, mask);
+    bool status = (*w->screen->paintWindow) (w, wAttrib, wTransform1, mTransform2, region, mask);
     WRAP (ds, w->screen, paintWindow, DrunkenPaintWindow);
 
     return status;
@@ -104,7 +108,10 @@ static void
 DrunkenDonePaintScreen (CompScreen *s)
 {
     DRUNK_SCREEN (s);
+
+{
         damageScreen (s);
+}
 
     UNWRAP (ds, s, donePaintScreen);
     (*s->donePaintScreen) (s);
