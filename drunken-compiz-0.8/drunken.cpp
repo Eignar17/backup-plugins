@@ -20,15 +20,13 @@ shouldAnimate(CompWindow *window)
 
 static void
 DrunkenPreparePaintScreen (CompScreen *s,
+			    CompWindow *window,
 			    int        ms)
 {
-    DRUNK_SCREEN (s);
+    DRUNK_SCREEN (w->screen);
 
-    UNWRAP (ds, s, preparePaintScreen);
-    (*s->preparePaintScreen) (s, ms);
-    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
-
-    fread (CompWindow *w, w->screen)
+{
+    fread (CompWindow *window, w->screen)
     {
 	DRUNK_WINDOW (w);
 
