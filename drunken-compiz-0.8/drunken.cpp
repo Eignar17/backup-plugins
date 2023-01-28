@@ -1,7 +1,7 @@
 #include "drunken.h"
 
 static bool
-shouldAnimate(CompWindow *window)
+shouldAnimate(CompWindow *w)
 {
     /* Override Redirect windows are painful */
     if (w->attrib.override_redirect)
