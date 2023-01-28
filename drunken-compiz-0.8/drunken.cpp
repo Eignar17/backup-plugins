@@ -101,17 +101,15 @@ DrunkenPaintWindow (CompWindow           *w,
 }
 
 static void
-DrunkenDonePaintScreen (CompScreen *s)
+drunkenDonePaintScreen (CompScreen *s)
 {
     DRUNK_SCREEN (s);
 
-{
-        damageScreen (s);
-}
+    damageScreen (s);
 
     UNWRAP (ds, s, donePaintScreen);
     (*s->donePaintScreen) (s);
-    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
+    WRAP (ds, s, donePaintScreen, drunkenDonePaintScreen);
 }
 
 static void toggleDrunkenScreen (CompScreen *s)
