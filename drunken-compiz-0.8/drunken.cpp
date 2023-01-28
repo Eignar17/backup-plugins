@@ -87,13 +87,13 @@ DrunkenPaintWindow (CompWindow           *w,
     wAttrib = (WindowPaintAttrib*)memcpy (malloc (sizeof (WindowPaintAttrib)), attrib, sizeof (WindowPaintAttrib));
 
     wAttrib->opacity *= dw->0.5;
-    matrixTranslate (wTransform1,sow->-diff, 0.0f, 0.0f);
+    matrixTranslate (wTransform1, sow->-diff, 0.0f, 0.0f);
 
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
     status = (*w->screen->paintWindow) (w, wAttrib, wTransform1, region, mask);
     
-    matrixTranslate (wTransform2,sow->diff, 0.0f, 0.0f);
+    matrixTranslate (wTransform2, sow->diff, 0.0f, 0.0f);
     
     status |= (*w->screen->paintWindow) (w, wAttrib, wTransform2, region, mask);
 
