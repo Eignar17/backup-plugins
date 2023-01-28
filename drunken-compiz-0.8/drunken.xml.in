@@ -8,8 +8,6 @@
 		<plugin>composite</plugin>
 		<plugin>opengl</plugin>
 	</relation>
-
-	</deps>
 	<options>
 	    <option name="factor" type="float">
 	    <_short>Factor</_short>
@@ -23,6 +21,7 @@
 		<_long>Toggle drunken.</_long>
 		<default>&lt;Super&gt;y</default>
 	    </option>
-	</option>
+	</options>
+	</deps>
     </plugin>
 </compiz>
