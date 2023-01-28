@@ -36,7 +36,7 @@ DrunkenPreparePaintScreen (CompScreen *s, int ms)
 }
 
 static bool
-DrunkenPaintOutput (CompScreen              *s,
+DrunkenPaintTransformedOutput (CompScreen              *s,
 		    	      const ScreenPaintAttrib *attrib,
 			      const CompTransform     *Transform,
 			      Region	               region,
@@ -59,15 +59,13 @@ DrunkenPaintOutput (CompScreen              *s,
 
 static bool
 DrunkenPaintWindow (CompWindow           *w,
-		              const CompTransform	   *Transform,
-		    	      const WindowPaintAttrib *attrib,    	      
-		    	      CompMatrix *matrix,
-		    	      Region     region,
-		    	      unsigned int		   mask)
+                    const CompTransform   *transform,
+                    const WindowPaintAttrib *attrib,    	      
+                    Region                region,
+                    unsigned int          mask)
 {
-    CompTransform *wTransform1;
-    CompTransform *wTransform2;
-    WindowPaintAttrib *wAttrib;
+    CompTransform wTransform1, wTransform2;
+    WindowPaintAttrib wAttrib;
 
     DRUNK_SCREEN (w->screen);
     DRUNK_WINDOW (w);
@@ -75,30 +73,26 @@ DrunkenPaintWindow (CompWindow           *w,
     int diff = (int) (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10 * optionGetFactor (ds->o)) / 3;
     bool status;
 
-    wTransform1 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
-    wTransform2 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
-    wAttrib = (WindowPaintAttrib*)memcpy (malloc (sizeof (WindowPaintAttrib)), attrib, sizeof (WindowPaintAttrib));
+    wTransform1 = *transform;
+    wTransform2 = *transform;
+    wAttrib = *attrib;
 
-    wAttrib->opacity *= dw->0.5;
-    matrixTranslate (wTransform1, sow->-diff, 0.0f, 0.0f);
+    wAttrib->opacity *= 0.5;
+    matrixTranslate (&wTransform1, -diff, 0.0f, 0.0f);
 
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
     
-    status = (*w->screen->paintWindow) (w, wAttrib, wTransform1, region, mask);
+    status = (*w->screen->paintWindow) (w, &wAttrib, &wTransform1, region, mask);
     
-    matrixTranslate (wTransform2, sow->diff, 0.0f, 0.0f);
+    matrixTranslate (&wTransform2, diff, 0.0f, 0.0f);
     
-    status |= (*w->screen->paintWindow) (w, wAttrib, wTransform2, region, mask);
-
-    UNWRAP (ds, w->screen, paintWindow);
-    bool status = (*w->screen->paintWindow) (w, wAttrib, wTransform1, WTransform2, region, mask);
-    WRAP (ds, w->screen, paintWindow, DrunkenPaintWindow);
+    status |= (*w->screen->paintWindow) (w, &wAttrib, &wTransform2, region, mask);
 
     return status;
 }
 
 static void
-drunkenDonePaintScreen (CompScreen *s)
+DrunkenDonePaintScreen (CompScreen *s)
 {
     DRUNK_SCREEN (s);
 
@@ -106,10 +100,10 @@ drunkenDonePaintScreen (CompScreen *s)
 
     UNWRAP (ds, s, donePaintScreen);
     (*s->donePaintScreen) (s);
-    WRAP (ds, s, donePaintScreen, drunkenDonePaintScreen);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
-static void toggleDrunkenScreen (CompScreen *s)
+static void toggleFunctions (CompScreen *s)
 {
     DRUNK_SCREEN (s);
     ds->enabled = !ds->enabled;
@@ -133,7 +127,7 @@ static void toggleDrunkenScreen (CompScreen *s)
 }
 
 static void
-toggleDrunkenScreen (CompScreen *s)
+toggle (CompScreen *s)
 {
     DRUNK_SCREEN (s);
     ds->enabled = !ds->enabled;
@@ -145,7 +139,7 @@ toggleDrunkenScreen (CompScreen *s)
 }
 
 static bool
-DrunkenInitWindow  (CompPlugin *p, CompWindow *w)
+DrunkenScreen  (CompPlugin *p, CompWindow *w)
 {
     DrunkenInitScreen *ds;
     DRUNK_DISPLAY (s->display);
@@ -168,7 +162,9 @@ DrunkenInitWindow  (CompPlugin *p, CompWindow *w)
 
     WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, paintTransformedOutput, DrunkenPaintTransformedOutput);
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
+
 
     s->base.privates[dd->screenPrivateIndex].ptr = ds;
 
@@ -201,6 +197,7 @@ dw->drunkenGetFactor = 0.0f;
 
 bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->enabled;
 
+}
 
 static void
 DrunkeFiniWindow (CompPlugin *p, CompWindow *w)
