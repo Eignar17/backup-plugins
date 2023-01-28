@@ -42,7 +42,7 @@ DrunkenPreparePaintScreen (CompScreen *s,
 
 static bool
 DrunkenPaintOutput (CompScreen              *s,
-		    	      const ScreenPaintAttrib *sa,
+		    	      const ScreenPaintAttrib *attrib,
 			      const CompTransform     *mTransform,
 			      Region	               region,
 			      CompOutput	       *output,
