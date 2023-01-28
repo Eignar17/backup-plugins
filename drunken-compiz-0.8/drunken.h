@@ -10,48 +10,43 @@ extern int displayPrivateIndex;
 typedef struct _DrunkenDisplay
 {
     int screenPrivateIndex;
+} DrunkenDisplay;
 
 typedef struct _DrunkenScreen
 {
     int windowPrivateIndex;
 
-        PaintOutputProc              paintOutput;
-	
-	bool		enabled;
+    PaintOutputProc paintOutput;
 
-        PaintTransformedOutputProc paintTransformedOutput;
+    bool enabled;
 
-	void		toggleFunctions (bool);
+    PaintTransformedOutputProc paintTransformedOutput;
 
-        PaintWindowProc paintWindow;
+    void toggleFunctions (bool);
 
-	Bool toggle ();
+    PaintWindowProc paintWindow;
 
-        PreparePaintScreenProc preparePaintScreen;
-        DonePaintScreenProc donePaintScreen;
-/********************************************************************
-*******************   Window Open GL funcs    ***********************
-*********************************************************************/
+    Bool toggle ();
 
-        PaintOutputProc paintOutput;
+    PreparePaintScreenProc preparePaintScreen;
+    DonePaintScreenProc donePaintScreen;
 } DrunkenScreen;
 
-typedef struct _DrunkenWindow DrunkenWindow;
-	  
-	  
-	  Bool shouldAnimate ();
+typedef struct _DrunkenWindow
+{
+    Bool shouldAnimate ();
 
-	  float	drunkenGetFactor;
-};
+    float drunkenGetFactor;
+} DrunkenWindow;
 
-#define GET_STEREO3D_DISPLAY(d)                            \
-    ((DrunkeDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
+#define GET_DRUNK_DISPLAY(d)                            \
+    ((DrunkenDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
 
-#define GET_DRUNK_SCREEN(s, ds)                         \
-    ((DrunkenScreen *) (s)->base.privates[(ds)->screenPrivateIndex].ptr)
+#define GET_DRUNK_SCREEN(s, dd)                         \
+    ((DrunkenScreen *) (s)->base.privates[(dd)->screenPrivateIndex].ptr)
 
-#define GET_DRUNK_WINDOW(w, dw)                           \
-    ((DrunkenWindow *) (w)->base.privates[(dw)->windowPrivateIndex].ptr)
+#define GET_DRUNK_WINDOW(w, ds)                           \
+    ((DrunkenWindow *) (w)->base.privates[(ds)->windowPrivateIndex].ptr)
 
 #define DRUNK_DISPLAY(d)						       \
     DrunkenDisplay *dd = GET_DRUNK_DISPLAY (d)
