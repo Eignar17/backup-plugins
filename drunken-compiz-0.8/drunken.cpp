@@ -19,23 +19,20 @@ shouldAnimate(CompWindow *window)
 }
 
 static void
-DrunkenPreparePaintScreen (CompScreen *s,
-			    CompWindow *window,
-			    int        ms)
+DrunkenPreparePaintScreen (CompScreen *s, int ms)
 {
-    DRUNK_SCREEN (w->screen);
+    DRUNK_SCREEN (s);
+    CompWindow *w;
 
-{
-    fread (CompWindow *window, w->screen)
+    for (w = ds->windows; w; w = dw->next)
     {
-	DRUNK_WINDOW (w);
+        DRUNK_WINDOW (w);
 
-	ds->drunkenGetFactor += (ms / 1000.0f);
-	
-	if (ds->drunkenGetFactor >= M_PI * 3)
-	    ds->drunkenGetFactor = M_PI;
+        dw->mDrunkFactor += (ms / 1000.0f);
+
+        if (dw->mDrunkFactor >= M_PI * 3)
+            dw->mDrunkFactor = M_PI;
     }
-
 }
 
 static bool
