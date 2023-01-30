@@ -21,8 +21,7 @@
 
 #include <string.h>
 
-typedef void (*MultiListStructProc) (void *object,
-				     void *closure);
+typedef void (*MultiListStructProc) (void *object, void *closure);
 
 static void *
 processMultiList (unsigned int        structSize,
@@ -33,12 +32,6 @@ processMultiList (unsigned int        structSize,
 		  void                *closure,
 		  unsigned int        numOptions,
 		  ...)
-{
-    ...
-
-    unsigned int *numReturn = (unsigned int *) numReturn;
-    ...
-}
 
 {
     CompOption     *option;
