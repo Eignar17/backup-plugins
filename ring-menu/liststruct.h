@@ -178,7 +178,7 @@ processMultiList (unsigned int        structSize,
 		    stringValue = (char **) malloc(strlen(optVal->s) + 1);
 		    strcpy(*stringValue, optVal->s);
 		    if (optVal->s)
-			*stringValue = strdup (optVal->s);
+			*stringValue = strdup ( (char *) optVal->s );
 		    else
 			*stringValue = strdup ("");
 		    stringValue2 = (char **) value;
