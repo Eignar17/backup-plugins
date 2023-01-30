@@ -174,6 +174,8 @@ ringmenuDonePaintScreen (CompScreen *s)
 	WRAP (ss, s, donePaintScreen, ringmenuDonePaintScreen);
 }
 
+void drawRingSegment(double anglefrom,double angleto,double rfrom,double rto);
+
 void drawRingSegment(double anglefrom,double angleto,double rfrom,double rto)
 {
 	for(double k=anglefrom;k<(angleto-0.01);k+=0.01) {
@@ -184,7 +186,7 @@ void drawRingSegment(double anglefrom,double angleto,double rfrom,double rto)
 	}
 }
 
-void drawIdent(char* ident,float angle,Bool active)
+void drawIdent(char* ident, float angle, Bool active);
 {
 	glPushMatrix();
 
@@ -453,9 +455,9 @@ ringmenuEntriesChanged (CompScreen             *s,
 {
 	RINGMENU_SCREEN(s);
 	
-	ss->nent=0;
-	ss->ent=processMultiList(sizeof (RingmenuEntry),
-				 ss->ent, &ss->nent,
+	int nent;
+	ss->ent = processMultiList(sizeof (RingmenuEntry),
+				 ss->ent, &nent,
 				 initEntry, finiEntry, s, 4,
 				 ringmenuGetOptStartOption (s),
 				 offsetof (RingmenuEntry, start),
@@ -466,6 +468,7 @@ ringmenuEntriesChanged (CompScreen             *s,
 				 ringmenuGetOptCommandOption (s),
 				 offsetof (RingmenuEntry, command)
 				 );
+	ss->nent = nent;
 }
 
 static Bool
