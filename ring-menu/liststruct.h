@@ -19,6 +19,8 @@
  *
  */
 
+#include <string.h>
+
 typedef void (*MultiListStructProc) (void *object,
 				     void *closure);
 
@@ -31,6 +33,13 @@ processMultiList (unsigned int        structSize,
 		  void                *closure,
 		  unsigned int        numOptions,
 		  ...)
+{
+    ...
+
+    unsigned int *numReturn = (unsigned int *) numReturn;
+    ...
+}
+
 {
     CompOption     *option;
     CompListValue  **options;
@@ -173,7 +182,8 @@ processMultiList (unsigned int        structSize,
 		    changed |= memcmp (value, setVal, sizeof (float));
 		    break;
 		case CompOptionTypeString:
-		    stringValue = (char **) setVal;
+		    stringValue = (char **) malloc(strlen(optVal->s) + 1);
+		    strcpy(*stringValue, optVal->s);
 		    if (optVal->s)
 			*stringValue = strdup (optVal->s);
 		    else
