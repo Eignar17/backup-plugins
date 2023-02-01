@@ -48,11 +48,9 @@ DrunkenPaintTransformedOutput (CompScreen              *s,
 {
     mask |= PAINT_SCREEN_WITH_TRANSFORMED_WINDOWS_MASK;
 }
-
-    UNWRAP (ds, s, paintOutput);
-    status = (*s->paintOutput) (s, attrib, transform, region, output, mask);
-    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
-     free (Transform);
+        UNWRAP (ds, s, paintTransformedOutput);
+        (*s->paintTransformedOutput) (s, sa, mTransform, region, output, mask);
+        WRAP (ds, s, paintTransformedOutput, DrunkenPaintTransformedOutput);
 
      return status;
 }
@@ -117,10 +115,10 @@ toggleFunctions (CompScreen *s)
 }
     else
 {
-    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
-    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
-    WRAP (ds, s, paintWindow, DrunkenPaintWindow);
-    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
+    UNWRAP (ds, s, preparePaintScreen);
+    UNWRAP (ds, s, paintOutput);
+    UNWRAP (ds, s, paintWindow);
+    UNWRAP (ds, s, donePaintScreen);
 }
 
     damageScreen (s);
@@ -131,7 +129,7 @@ static void
 toggle (CompScreen *s)
 {
     DRUNK_SCREEN (s);
-    ds->enabled = !ds->enabled;
+    ds->mEnabled = !ds->mEnabled;
 
     WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
@@ -157,7 +155,7 @@ DrunkenScreen  (CompPlugin *p, CompWindow *w)
         return FALSE;
     }
 
-    ds->enabled=(FALSE);
+    ds->mEnabled=(FALSE);
 
     // register key bindings
     DrunkenSetInitiateKeyInitiate (s->display, toggleFunctions);
@@ -201,7 +199,7 @@ DrunkenInitWindow (CompPlugin *p, CompWindow *w)
 
     dw->mDrunkFactor = 0;
 
-    bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->enabled;
+    bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->mEnabled;
 
     w->base.privates[ds->windowPrivateIndex].ptr = dw;
 
