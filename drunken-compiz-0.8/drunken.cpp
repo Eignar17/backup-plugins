@@ -110,17 +110,17 @@ toggleFunctions (CompScreen *s)
     ds->enabled = !ds->enabled;
     if (ds->enabled)
 {
-    s->preparePaintScreen = DrunkenPreparePaintScreen;
-    s->paintOutput = DrunkenPaintOutput;
-    s->paintWindow = DrunkenPaintWindow;
-    s->donePaintScreen = DrunkenDonePaintScreen;
+    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, paintWindow, DrunkenPaintWindow);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
     else
 {
-    s->preparePaintScreen = preparePaintScreen;
-    s->paintOutput = paintOutput;
-    s->paintWindow = paintWindow;
-    s->donePaintScreen = donePaintScreen;
+    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, paintWindow, DrunkenPaintWindow);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
     damageScreen (s);
@@ -132,10 +132,11 @@ toggle (CompScreen *s)
 {
     DRUNK_SCREEN (s);
     ds->enabled = !ds->enabled;
-    s->preparePaintScreen = (ds->enabled) ? DrunkenPreparePaintScreen : preparePaintScreen;
-    s->paintOutput = (ds->enabled) ? DrunkenPaintOutput : paintOutput;
-    s->paintWindow = (ds->enabled) ? DrunkenPaintWindow : paintWindow;
-    s->donePaintScreen = (ds->enabled) ? DrunkenDonePaintScreen : donePaintScreen;
+
+    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
+    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, DrunkenPaintWindow, paintWindow);
+    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
     damageScreen (s);
 }
 
@@ -163,6 +164,7 @@ DrunkenScreen  (CompPlugin *p, CompWindow *w)
 
     WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
+    WRAP (ds, s, DrunkenPaintWindow, paintWindow);
     WRAP (ds, s, paintTransformedOutput, DrunkenPaintTransformedOutput);
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 
@@ -189,15 +191,21 @@ DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
 }
 
 static void
-DrunkenInitWindow (CompWindow *window)
+DrunkenInitWindow (CompPlugin *p, CompWindow *w)
 {
-    DRUNK_WINDOW(w);
+    DRUNK_WINDOW(w->screen);
 
-dw->setWindow (window);
-dw->drunkenGetFactor = 0.0f;
+    sow = (Stereo3DWindow*)calloc (1, sizeof (Stereo3DWindow));
+    if (!sow)
+        return FALSE;
 
-bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->enabled;
+    dw->mDrunkFactor = 0;
 
+    bool enabled = GET_DRUNK_SCREEN (w->screen, GET_DRUNK_DISPLAY (w->screen->display))->enabled;
+
+    w->base.privates[ds->windowPrivateIndex].ptr = dw;
+
+    return TRUE;
 }
 
 static void
@@ -231,10 +239,9 @@ DrunkenInitDisplay (CompPlugin  *p,
 	return FALSE;
     }
 
-    d->base.privates[displayPrivateIndex].ptr = dd;
+    d->base.privates[displayPrivateIndex].ptr = ds;
 
     DrunkenSetInitiateKeyInitiate (dd, DrunkenInitiate);
-    DrunkenSetInitiateKeyTerminate (dd, DrunkenTerminate);
 
     return true;
 }
