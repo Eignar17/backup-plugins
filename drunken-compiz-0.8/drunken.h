@@ -1,5 +1,6 @@
 #include <compiz-core.h>
 #include <compiz-plugin.h>
+#include <compiz-animation.h>
 
 #include <math.h>
 
