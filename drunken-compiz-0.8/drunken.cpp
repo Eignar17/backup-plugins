@@ -49,7 +49,7 @@ DrunkenPaintOutput (CompScreen              *s,
     mask |= PAINT_SCREEN_WITH_TRANSFORMED_WINDOWS_MASK;
 }
     UNWRAP (ds, s, paintOutput);
-    status = (*s->paintOutput) (s, sAttrib, transform, region, output, mask);
+    status = (*s->paintOutput) (s, attrib, transform, region, output, mask);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
 
      return status;
