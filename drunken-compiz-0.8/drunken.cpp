@@ -66,7 +66,7 @@ DrunkenPaintWindow (CompWindow           *w,
     DRUNK_SCREEN (w->screen);
     DRUNK_WINDOW (w);
   
-    int diff = (int) (sin (drunkenGetFactor * 8 * M_PI) * (1 - drunkenGetFactor) * 10 * optionGetFactor (ds->o)) / 3;
+    int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
 
     CompTransform wTransform1 = *transform;
@@ -191,8 +191,8 @@ DrunkenInitWindow (CompPlugin *p, CompWindow *w)
 {
     DRUNK_WINDOW(w->screen);
 
-    sow = (Stereo3DWindow*)calloc (1, sizeof (Stereo3DWindow));
-    if (!sow)
+    sow = (DrunkenWindow*)calloc (1, sizeof (DrunkenWindow));
+    if (!dw)
         return FALSE;
 
     dw->mDrunkFactor = 0;
