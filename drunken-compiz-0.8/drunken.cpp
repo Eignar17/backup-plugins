@@ -117,10 +117,20 @@ toggleFunctions (CompScreen *s)
     if (ds->mEnabled)
 
     damageScreen (s);
+    UNWRAP (ds, w->screen, preparePaintSetEnabled);
+    (*s->preparePaintSetEnabled (this, enabled);
+    WRAP (ds, w->screen, preparePaintSetEnabled, DrunkenpreparePaintSetEnabled);
+  
+    UNWRAP (ds, w->screen, PaintOutputSetEnabled);
+    (*s->PaintOutputSetEnabled) (this, enabled);
+     WRAP (ds, w->screen, PaintOutputSetEnabled, DrunkenPaintOutputSetEnableds);
 
-    UNWRAP (sos, w->screen, toggleFunctions);
-    (*w->screen->toggleFunctions) (w, toggleFunctions, mEnabled, mask);
-     WRAP (sos, w->screen, toggleFunctions, DrunkentoggleFunctions);
+    UNWRAP (ds, w->screen, donePaintSetEnabled);
+    (*s->donePaintSetEnabled (this, enabled);
+    WRAP (ds, w->screen, donePaintSetEnabled, DrunkendonePaintSetEnabled);
+   
+    foreach (CompWindow *w, screen->windows ())
+	DrunkenWindow::get (w)->gWindow->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
 }
 
 static void
