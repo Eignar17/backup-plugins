@@ -19,27 +19,21 @@ typedef struct _DrunkenScreen
 
     bool mEnabled;
 
-    PaintWindowProc paintWindow;
-    PaintTransformedOutputProc paintTransformedOutput;
-
     void toggleFunctions (bool);
-
-    PaintWindowProc paintWindow;
 
     Bool toggle ();
 
     PreparePaintScreenProc preparePaintScreen;
-    DonePaintScreenProc donePaintScreen;
-    PaintOutputProc paintOutput;
-    DrawWindowProc drawWindow;
+    PaintOutputProc        paintOutput;
+    DonePaintScreenProc    donePaintScreen;
 } DrunkenScreen;
 
 typedef struct _DrunkenWindow
 {
-    Bool shouldAnimate ();
+        Bool shouldAnimate ();
 
-    float mDrunkFactor;
-} DrunkenWindow;
+        float mDrunkFactor;
+};
 
 #define GET_DRUNK_DISPLAY(d)                            \
     ((DrunkenDisplay *) (d)->base.privates[displayPrivateIndex].ptr)
