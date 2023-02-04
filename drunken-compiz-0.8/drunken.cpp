@@ -179,6 +179,7 @@ DrunkenFiniScreen (CompPlugin *p,
 static void
 DrunkenInitWindow (CompPlugin *p, CompWindow *w)
 {
+    DrunkenWindow *dw;
     DRUNK_WINDOW(w->screen);
 
     sow = (DrunkenWindow*)calloc (1, sizeof (DrunkenWindow));
