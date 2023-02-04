@@ -227,8 +227,6 @@ DrunkenInitDisplay (CompPlugin  *p,
 
     d->base.privates[displayPrivateIndex].ptr = ds;
 
-    DrunkenSetInitiateKeyInitiate (dd, DrunkenInitiate);
-
     return true;
 }
 
@@ -288,7 +286,6 @@ DrunkenFini (CompPlugin *p)
 }
 	
 CompPluginVTable DrunkenVTable = {
-{
     "Drunken",
     0,
     DrunkenInit,
@@ -298,7 +295,8 @@ CompPluginVTable DrunkenVTable = {
     0,
     0,
 };
- CompPluginVTable *
+
+CompPluginVTable *
 getCompPluginInfo (void)
 {
     return &DrunkenVTable;
