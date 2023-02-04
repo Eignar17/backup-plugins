@@ -111,33 +111,21 @@ DrunkenDonePaintScreen (CompScreen *s)
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
-static void 
-toggleFunctions (CompScreen *s)
-{
-    DRUNK_SCREEN (s);
-    ds->mEnabled = !ds->mEnabled;
-    if (ds->mEnabled)
-
-    damageScreen (s);
-    UNWRAP (ds, w->screen, preparePaintSetEnabled);
-    (*s->preparePaintSetEnabled (this, enabled);
-    WRAP (ds, w->screen, preparePaintSetEnabled, DrunkenpreparePaintSetEnabled);
-  
-    UNWRAP (ds, w->screen, PaintOutputSetEnabled);
-    (*s->PaintOutputSetEnabled) (this, enabled);
-     WRAP (ds, w->screen, PaintOutputSetEnabled, DrunkenPaintOutputSetEnableds);
-
-    UNWRAP (ds, w->screen, donePaintSetEnabled);
-    (*s->donePaintSetEnabled (this, enabled);
-    WRAP (ds, w->screen, donePaintSetEnabled, DrunkendonePaintSetEnabled);
-   
-    foreach (CompWindow *w, screen->windows ())
-	DrunkenWindow::get (w)->gWindow->glPaintSetEnabled (DrunkenWindow::get (w), enabled);
-}
-
 static void
-toggle (CompScreen *s)
+toggle (CompDisplay     *d,
+		 CompAction      *action,
+		 CompActionState state,
+		 CompOption      *option,
+		 int		 nOption)
 {
+    CompScreen *s;
+    Window xid;
+
+    xid = getIntOptionNamed (option, nOption, "root", 0);
+    s = findScreenAtDisplay (d, xid);
+    if (s)
+    {
+
     DRUNK_SCREEN (s);
     ds->mEnabled = !ds->mEnabled;
 
@@ -149,51 +137,41 @@ toggle (CompScreen *s)
 }
 
 static bool
-DrunkenScreen  (CompPlugin *p, CompWindow *w)
+DrunkenInitScreen  (CompPlugin *p, CompWindow *w)
 {
     DrunkenInitScreen *ds;
+
     DRUNK_DISPLAY (s->display);
 
-    sow = (DrunkenWindow*)calloc (1, sizeof (DrunkenWindow));
-    if (!dw)
-        return FALSE;
 
-       ds->windowPrivateIndex = allocateWindowPrivateIndex (s);
-    if (ds->windowPrivateIndex < 0)
-    {
-        free (ds);
-        return FALSE;
-    }
+    ds = calloc (1, sizeof (DrunkenScreen) );
+
+    if (!ds)
+	return FALSE;
+
+    s->base.privates[dd->screenPrivateIndex].ptr = ds;
 
     ds->mEnabled=(FALSE);
 
     // register key bindings
-    DrunkenSetInitiateKeyInitiate (s->display, toggleFunctions);
+    DrunkenSetInitiateKeyInitiate  (s->display, toggle);
 
     WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
-    WRAP (ds, s, DrunkenPaintWindow, paintWindow);
-    WRAP (ds, s, paintTransformedOutput, DrunkenPaintTransformedOutput);
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 
-
-    s->base.privates[dd->screenPrivateIndex].ptr = ds;
-
-	return TRUE;
-
+    return TRUE;
 }
 
 static void
-DrunkenFiniScreen (CompPlugin *p, CompScreen *s)
+DrunkenFiniScreen (CompPlugin *p,
+		   CompScreen *s)
 {
 	DRUNK_SCREEN (s);
 
-	freeWindowPrivateIndex (s, ds->windowPrivateIndex);
-      
-	UNWRAP (ds, s, preparePaintScreen);
-	UNWRAP (ds, s, paintOutput);
-	UNWRAP (ds, s, paintWindow);
-        UNWRAP (ds, s, donePaintScreen);
+    UNWRAP (ds, s, preparePaintScreen);
+    UNWRAP (ds, s, paintOutput);
+    UNWRAP (ds, s, donePaintScreen);
 
 	free (ds);
 }
