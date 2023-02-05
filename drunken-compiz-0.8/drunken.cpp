@@ -129,10 +129,6 @@ toggle (CompDisplay     *d,
     DRUNK_SCREEN (s);
     ds->mEnabled = !ds->mEnabled;
 
-    WRAP (ds, s, preparePaintScreen, DrunkenPreparePaintScreen);
-    WRAP (ds, s, paintOutput, DrunkenPaintOutput);
-    WRAP (ds, s, DrunkenPaintWindow, paintWindow);
-    WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
     damageScreen (s);
 }
 
