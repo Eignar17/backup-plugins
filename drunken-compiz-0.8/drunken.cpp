@@ -101,12 +101,12 @@ DrunkenDonePaintScreen (CompScreen *s)
     WRAP (ds, s, donePaintScreen, DrunkenDonePaintScreen);
 }
 
-static void
+static Bool
 toggle (CompDisplay     *d,
-		 CompAction      *action,
-		 CompActionState state,
-		 CompOption      *option,
-		 int		 nOption)
+        CompAction      *action,
+        CompActionState state,
+        CompOption      *option,
+        int             nOption)
 {
     CompScreen *s;
     Window xid;
@@ -115,11 +115,13 @@ toggle (CompDisplay     *d,
     s = findScreenAtDisplay (d, xid);
     if (s)
     {
+        DRUNK_SCREEN (s);
+        ds->mEnabled = !ds->mEnabled;
 
-    DRUNK_SCREEN (s);
-    ds->mEnabled = !ds->mEnabled;
+        damageScreen (s);
+    }
 
-    damageScreen (s);
+    return true;
 }
 
 static bool
