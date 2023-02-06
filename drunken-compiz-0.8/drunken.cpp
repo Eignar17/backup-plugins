@@ -22,10 +22,9 @@ static void
 DrunkenPreparePaintScreen (CompScreen *s,
 			   int ms)
 {
-    DRUNK_SCREEN (w->screen);
     CompWindow *w;
 
-    for (w = ds->windows; w; w = dw->next)
+    for (w = s->windows; w; w = w->next)
     {
         DRUNK_WINDOW (w);
 
@@ -38,22 +37,21 @@ DrunkenPreparePaintScreen (CompScreen *s,
 
 static Bool
 DrunkenPaintOutput (CompScreen              *s,
-		    	      const ScreenPaintAttrib *attrib,
-			      const CompTransform     *Transform,
-			      Region	               region,
-			      CompOutput	       *output,
-			      unsigned int	       mask)
+		     const ScreenPaintAttrib *attrib,
+		     const CompTransform     *transform,
+		     Region                  region,
+		     CompOutput              *output,
+		     unsigned int            mask)
 {
-	
     DRUNK_SCREEN (s);
-{
+
     mask |= PAINT_SCREEN_WITH_TRANSFORMED_WINDOWS_MASK;
-}
+
     UNWRAP (ds, s, paintOutput);
-    status = (*s->paintOutput) (s, attrib, transform, region, output, mask);
+    Bool status = (*s->paintOutput) (s, attrib, transform, region, output, mask);
     WRAP (ds, s, paintOutput, DrunkenPaintOutput);
 
-     return status;
+    return status;
 }
 
 static bool
@@ -63,38 +61,30 @@ DrunkenPaintWindow (CompWindow           *w,
                     Region                region,
                     unsigned int          mask)
 {
-    CompTransform *wTransform1;
-    CompTransform *wTransform2;
-    WindowPaintAttrib *wAttrib;
+    CompTransform wTransform1 = *transform;
+    CompTransform wTransform2 = *transform;
+    WindowPaintAttrib wAttrib = *attrib;
 
     DRUNK_SCREEN (w->screen);
     DRUNK_WINDOW (w);
   
-    wTransform1 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
-    wTransform2 = (CompTransform*)memcpy (malloc (sizeof (CompTransform)), transform, sizeof (CompTransform));
-    wAttrib = (WindowPaintAttrib*)memcpy (malloc (sizeof (WindowPaintAttrib)), attrib, sizeof (WindowPaintAttrib));
-
     int diff =  int (sin (mDrunkFactor * 8 * M_PI) * (1 - mDrunkFactor) * 10) * ds->optionGetFactor () / 3;
     bool status;
 
-    wAttrib->opacity *= dw->0.5;
+    wAttrib.opacity *= 0.5;
     matrixTranslate (&wTransform1, -diff, 0.0f, 0.0f);
 
     mask |= PAINT_WINDOW_TRANSFORMED_MASK;
 
     UNWRAP(ds, w->screen, paintWindow);
-    status = (*w->screen->paintWindow) (w, &wAttrib, &wTransform1, region, mask);
+    status = (*w->screen->paintWindow) (w, &wTransform1, &wAttrib, region, mask);
     WRAP(ds, w->screen, paintWindow, DrunkenPaintPaintWindow);
 
     matrixTranslate (&wTransform2, diff, 0.0f, 0.0f);
 
     UNWRAP(ds, w->screen, paintWindow);
-    status |= (*w->screen->paintWindow) (w, &wAttrib, &wTransform2, region, mask);
+    status |= (*w->screen->paintWindow) (w, &wTransform2, &wAttrib, region, mask);
     WRAP(ds, w->screen, paintWindow, DrunkenPaintPaintWindow);
-
-    free (wAttrib);
-    free (wTransform1);
-    free (wTransform2);
 
     return status;
 }
